@@ -1,4 +1,4 @@
-# Traffic-Control-for-Autonomous-Vehicles-F1Tenth-ROS2-Implementation
+# Traffic Control for Autonomous Vehicles: An F1Tenth ROS2-Based Implementation
 
 ### Description
 In this project, ROS2 implementation of Autonomous driving of F1Tenth vehicles based on known algorithms (Disparity Extender and Pure Pursuit) are provided. However, because the focus is on Intelligent Traffic Control, a simulated implementation of vehicles driven using the Geo-Coordinate points used in Pure Pursuit and also have integrated abilities to transmit and receive V2X communication are used to make the simulation in an F1Tenth Environment more realistic. To simulate the traffic control problem, Static Pre-timed Controllers are used as benchmarks compared to the proposed Fuzzy Logic Controllers.
