@@ -1,0 +1,5 @@
+  File "/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimtls.py", line 92
+    tlsmsg = OneCIMTlsMsg(pathids = self.tlsPaths, starttime = self.startTime, tlsmsg.duration = float(self.signalDuration),
+                                                                               ^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+

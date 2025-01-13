@@ -1,0 +1,35 @@
+running develop
+running egg_info
+writing cim.egg-info/PKG-INFO
+writing dependency_links to cim.egg-info/dependency_links.txt
+writing entry points to cim.egg-info/entry_points.txt
+writing requirements to cim.egg-info/requires.txt
+writing top-level names to cim.egg-info/top_level.txt
+reading manifest file 'cim.egg-info/SOURCES.txt'
+writing manifest file 'cim.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim.egg-link (link to .)
+Installing cimnode script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing debugdsrcmsg script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing debugewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing dsrcsimplecim script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing ewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing fhcim script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing fiscim script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing fisewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing fissnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing playde script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing playpp script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing plotpoint script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing recanalysis script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing recanalysisserver script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing snagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing statictls script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing stlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing stlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing test script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing tlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+Installing tlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+
+Installed /home/babangida/ros_ws/build/cim
+running install_data

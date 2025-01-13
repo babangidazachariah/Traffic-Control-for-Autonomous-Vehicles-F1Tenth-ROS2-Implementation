@@ -1,0 +1,24 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/dsrc_message__type_support.cpp.o"
+  "CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/intersection_bsm__type_support.cpp.o"
+  "CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/one_cim_keypoints__type_support.cpp.o"
+  "CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/one_cim_tls_msg__type_support.cpp.o"
+  "CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/traffic_lights_message__type_support.cpp.o"
+  "libdsrcmsg__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libdsrcmsg__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/dsrc_message__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/intersection_bsm__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/one_cim_keypoints__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/one_cim_tls_msg__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/traffic_lights_message__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/one_cim_keypoints__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/one_cim_tls_msg__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

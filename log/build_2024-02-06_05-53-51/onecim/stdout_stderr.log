@@ -1,0 +1,34 @@
+running egg_info
+creating ../../build/onecim/onecim.egg-info
+writing ../../build/onecim/onecim.egg-info/PKG-INFO
+writing dependency_links to ../../build/onecim/onecim.egg-info/dependency_links.txt
+writing entry points to ../../build/onecim/onecim.egg-info/entry_points.txt
+writing requirements to ../../build/onecim/onecim.egg-info/requires.txt
+writing top-level names to ../../build/onecim/onecim.egg-info/top_level.txt
+writing manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+reading manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+writing manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/babangida/ros_ws/build/onecim/build
+creating /home/babangida/ros_ws/build/onecim/build/lib
+creating /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/__init__.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimtls.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+running install
+running install_lib
+creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/__init__.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimtls.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimtls.py to onecimtls.cpython-38.pyc
+running install_data
+creating /home/babangida/ros_ws/install/onecim/share/ament_index
+creating /home/babangida/ros_ws/install/onecim/share/ament_index/resource_index
+creating /home/babangida/ros_ws/install/onecim/share/ament_index/resource_index/packages
+copying resource/onecim -> /home/babangida/ros_ws/install/onecim/share/ament_index/resource_index/packages
+copying package.xml -> /home/babangida/ros_ws/install/onecim/share/onecim
+running install_egg_info
+Copying ../../build/onecim/onecim.egg-info to /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/babangida/ros_ws/build/onecim/install.log'

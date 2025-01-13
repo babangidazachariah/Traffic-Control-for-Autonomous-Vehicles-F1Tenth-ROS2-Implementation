@@ -1,0 +1,10 @@
+  File "/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/generateVehicles.py", line 264
+    if (((tlsmsg.duration - dur) > 2) and ((tlsmsg.duration - dur) <= 3):
+                                                                        ^
+SyntaxError: invalid syntax
+
+  File "/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/FISBasedCIMLoopTls.py", line 457
+    elif (((self.signalDuration - duration) > 2 ) and ((self.signalDuration - duration) <= 7): #change green light to yellow
+                                                                                             ^
+SyntaxError: invalid syntax
+

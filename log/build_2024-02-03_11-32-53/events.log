@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.001058] (-) JobUnselected: {'identifier': 'dsrcmsg'}
+[0.001153] (-) JobUnselected: {'identifier': 'reactivemethods'}
+[0.001216] (-) JobUnselected: {'identifier': 'trafficrecord'}
+[0.001292] (cim) JobQueued: {'identifier': 'cim', 'dependencies': OrderedDict([('dsrcmsg', '/home/babangida/ros_ws/install/dsrcmsg'), ('trafficrecord', '/home/babangida/ros_ws/install/trafficrecord')])}
+[0.002407] (cim) JobStarted: {'identifier': 'cim'}
+[0.100695] (-) TimerEvent: {}
+[0.201291] (-) TimerEvent: {}
+[0.303162] (-) TimerEvent: {}
+[0.404723] (-) TimerEvent: {}
+[0.508891] (-) TimerEvent: {}
+[0.609586] (-) TimerEvent: {}
+[0.710176] (-) TimerEvent: {}
+[0.810676] (-) TimerEvent: {}
+[0.911208] (-) TimerEvent: {}
+[1.011659] (-) TimerEvent: {}
+[1.112471] (-) TimerEvent: {}
+[1.213149] (-) TimerEvent: {}
+[1.313703] (-) TimerEvent: {}
+[1.414251] (-) TimerEvent: {}
+[1.514859] (-) TimerEvent: {}
+[1.615307] (-) TimerEvent: {}
+[1.715725] (-) TimerEvent: {}
+[1.816199] (-) TimerEvent: {}
+[1.916867] (-) TimerEvent: {}
+[2.017305] (-) TimerEvent: {}
+[2.118066] (-) TimerEvent: {}
+[2.219349] (-) TimerEvent: {}
+[2.321316] (-) TimerEvent: {}
+[2.421833] (-) TimerEvent: {}
+[2.524658] (-) TimerEvent: {}
+[2.626461] (-) TimerEvent: {}
+[2.726971] (-) TimerEvent: {}
+[2.827777] (-) TimerEvent: {}
+[2.928321] (-) TimerEvent: {}
+[3.028911] (-) TimerEvent: {}
+[3.129441] (-) TimerEvent: {}
+[3.230145] (-) TimerEvent: {}
+[3.330678] (-) TimerEvent: {}
+[3.431239] (-) TimerEvent: {}
+[3.531623] (-) TimerEvent: {}
+[3.632085] (-) TimerEvent: {}
+[3.732478] (-) TimerEvent: {}
+[3.832894] (-) TimerEvent: {}
+[3.933340] (-) TimerEvent: {}
+[4.033766] (-) TimerEvent: {}
+[4.134207] (-) TimerEvent: {}
+[4.200953] (cim) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/babangida/ros_ws/build/cim/build', '--no-deps', 'install_data'], 'cwd': '/home/babangida/ros_ws/build/cim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'babangida', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/babangida', 'OLDPWD': '/home/babangida', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/babangida/ros_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'babangida', 'NAME': 'DeBangis', 'WSL_INTEROP': '/run/WSL/439_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '6c3e575e-ff08-40c0-b001-7e8be51430e6', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/reactivemethods:/home/babangida/ros_ws/install/dsrcmsg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/babangida/ros_ws/build/cim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[4.234397] (-) TimerEvent: {}
+[4.335605] (-) TimerEvent: {}
+[4.436069] (-) TimerEvent: {}
+[4.536587] (-) TimerEvent: {}
+[4.637063] (-) TimerEvent: {}
+[4.737466] (-) TimerEvent: {}
+[4.774378] (cim) StdoutLine: {'line': b'running develop\n'}
+[4.837598] (-) TimerEvent: {}
+[4.938018] (-) TimerEvent: {}
+[5.038465] (-) TimerEvent: {}
+[5.081188] (cim) StdoutLine: {'line': b'running egg_info\n'}
+[5.081538] (cim) StdoutLine: {'line': b'writing cim.egg-info/PKG-INFO\n'}
+[5.082190] (cim) StdoutLine: {'line': b'writing dependency_links to cim.egg-info/dependency_links.txt\n'}
+[5.083002] (cim) StdoutLine: {'line': b'writing entry points to cim.egg-info/entry_points.txt\n'}
+[5.083440] (cim) StdoutLine: {'line': b'writing requirements to cim.egg-info/requires.txt\n'}
+[5.083850] (cim) StdoutLine: {'line': b'writing top-level names to cim.egg-info/top_level.txt\n'}
+[5.138615] (-) TimerEvent: {}
+[5.145231] (cim) StdoutLine: {'line': b"reading manifest file 'cim.egg-info/SOURCES.txt'\n"}
+[5.147910] (cim) StdoutLine: {'line': b"writing manifest file 'cim.egg-info/SOURCES.txt'\n"}
+[5.210463] (cim) StdoutLine: {'line': b'running build_ext\n'}
+[5.211205] (cim) StdoutLine: {'line': b'Creating /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim.egg-link (link to .)\n'}
+[5.212969] (cim) StdoutLine: {'line': b'Installing cimnode script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.213414] (cim) StdoutLine: {'line': b'Installing debugewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.213882] (cim) StdoutLine: {'line': b'Installing dsrcsimplecim script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.214178] (cim) StdoutLine: {'line': b'Installing ewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.214466] (cim) StdoutLine: {'line': b'Installing fhcim script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.216505] (cim) StdoutLine: {'line': b'Installing fiscim script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.216686] (cim) StdoutLine: {'line': b'Installing fisewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.216832] (cim) StdoutLine: {'line': b'Installing fissnagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.216961] (cim) StdoutLine: {'line': b'Installing playde script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.217948] (cim) StdoutLine: {'line': b'Installing playpp script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.218177] (cim) StdoutLine: {'line': b'Installing plotpoint script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.218347] (cim) StdoutLine: {'line': b'Installing recanalysis script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.218890] (cim) StdoutLine: {'line': b'Installing recanalysisserver script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.219087] (cim) StdoutLine: {'line': b'Installing snagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.219403] (cim) StdoutLine: {'line': b'Installing statictls script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.219538] (cim) StdoutLine: {'line': b'Installing stlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.219696] (cim) StdoutLine: {'line': b'Installing stlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.219846] (cim) StdoutLine: {'line': b'Installing test script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.219976] (cim) StdoutLine: {'line': b'Installing tlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.220193] (cim) StdoutLine: {'line': b'Installing tlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[5.220334] (cim) StdoutLine: {'line': b'\n'}
+[5.220461] (cim) StdoutLine: {'line': b'Installed /home/babangida/ros_ws/build/cim\n'}
+[5.220587] (cim) StdoutLine: {'line': b'running install_data\n'}
+[5.238793] (-) TimerEvent: {}
+[5.264944] (cim) CommandEnded: {'returncode': 0}
+[5.339299] (-) TimerEvent: {}
+[5.439956] (-) TimerEvent: {}
+[5.541846] (-) TimerEvent: {}
+[5.634034] (cim) JobEnded: {'identifier': 'cim', 'rc': 0}
+[5.635296] (-) EventReactorShutdown: {}

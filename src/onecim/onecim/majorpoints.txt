@@ -1,0 +1,26 @@
+oneintersectionloop_map critical points
+
+South-North:
+	start point: -16.9602, -2.39461
+	stop line 1: 6.45326, -0.197454
+	stop line 2: 6.45326, -1.24986
+	safe point1: 16.5769, -0.216034
+	safe point2: 16.5769, -1.5712
+North-South:
+	Start point: 41.2903, 3.88033
+	Stop line 1: 16.1896, 1.30897
+	Stop line 2: 16.1896, 2.8237
+	Safe point1: 5.89368, 1.20361
+	Safe point2: 5.89548, 2.60523
+West-East:
+	Start point: 8.57243, 27.9159
+	Stop line 1: 10.5759, 5.81817
+	Stop line 2: 9.21734, 5.81817
+	Safe point1: 10.4326, -4.28049
+	Safe point2: 9.10096, -4.28049
+East-West:
+	Start point: 14.906, -27.0955
+	Stop line 1: 12.1985, -3.87282
+	Stop line 2: 13.6945, -3.87282
+	Safe point1: 12.131, 6.4993
+	Safe point2: 13.4185, 6.4993

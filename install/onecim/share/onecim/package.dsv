@@ -1,0 +1,9 @@
+source;share/onecim/hook/pythonpath.ps1
+source;share/onecim/hook/pythonpath.dsv
+source;share/onecim/hook/pythonpath.sh
+source;share/onecim/hook/ament_prefix_path.ps1
+source;share/onecim/hook/ament_prefix_path.dsv
+source;share/onecim/hook/ament_prefix_path.sh
+source;../../build/onecim/share/onecim/hook/pythonpath_develop.ps1
+source;../../build/onecim/share/onecim/hook/pythonpath_develop.dsv
+source;../../build/onecim/share/onecim/hook/pythonpath_develop.sh

@@ -1,0 +1,23 @@
+[console_scripts]
+cimnode = cim.cimnode:main
+debugdsrcmsg = cim.debugdsrcmsg:main
+debugewagent = cim.debugewagent:main
+dsrcsimplecim = cim.DsrcBasedSimpleCIM:main
+ewagent = cim.ewagent:main
+fhcim = cim.FISBasedCIM:main
+fiscim = cim.FISCentralizedIntersectionController:main
+fisewagent = cim.fisewagent:main
+fissnagent = cim.fisnsagent:main
+playde = cim.DisparityExtenderObstacleAvoidance:main
+playpp = cim.PurePursuit:main
+plotpoint = cim.plotPoint:main
+recanalysis = cim.TrafficRecordingAnalysis:main
+recanalysisserver = cim.TrafficRecordingAnalysisServer:main
+snagent = cim.snagent:main
+statictls = cim.StaticTrafficLights:main
+stlsewagent = cim.stlsewagent:main
+stlssnagent = cim.stlssnagent:main
+test = cim.testStop:main
+tlsewagent = cim.tlsewagent:main
+tlssnagent = cim.tlssnagent:main
+

@@ -1,0 +1,9 @@
+source;share/reactivemethods/hook/pythonpath.ps1
+source;share/reactivemethods/hook/pythonpath.dsv
+source;share/reactivemethods/hook/pythonpath.sh
+source;share/reactivemethods/hook/ament_prefix_path.ps1
+source;share/reactivemethods/hook/ament_prefix_path.dsv
+source;share/reactivemethods/hook/ament_prefix_path.sh
+source;../../build/reactivemethods/share/reactivemethods/hook/pythonpath_develop.ps1
+source;../../build/reactivemethods/share/reactivemethods/hook/pythonpath_develop.dsv
+source;../../build/reactivemethods/share/reactivemethods/hook/pythonpath_develop.sh

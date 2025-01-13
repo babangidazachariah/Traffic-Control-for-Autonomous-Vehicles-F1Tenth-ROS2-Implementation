@@ -1,0 +1,5 @@
+  File "/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimtls.py", line 204
+    if key = appLeg:
+           ^
+SyntaxError: invalid syntax
+

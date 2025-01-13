@@ -1,0 +1,33 @@
+[3.662s] Invoking command in '/home/babangida/ros_ws/build/onecim': AMENT_PREFIX_PATH=/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg LD_LIBRARY_PATH=/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/onecim/build --no-deps install_data
+[4.122s] running develop
+[4.365s] running egg_info
+[4.365s] writing onecim.egg-info/PKG-INFO
+[4.365s] writing dependency_links to onecim.egg-info/dependency_links.txt
+[4.366s] writing entry points to onecim.egg-info/entry_points.txt
+[4.366s] writing requirements to onecim.egg-info/requires.txt
+[4.366s] writing top-level names to onecim.egg-info/top_level.txt
+[4.416s] reading manifest file 'onecim.egg-info/SOURCES.txt'
+[4.418s] writing manifest file 'onecim.egg-info/SOURCES.txt'
+[4.479s] running build_ext
+[4.480s] Creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim.egg-link (link to .)
+[4.481s] Installing ewfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.482s] Installing fisonecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.482s] Installing fisonecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.483s] Installing genveh script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.483s] Installing onecimew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.483s] Installing onecimloopew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.483s] Installing onecimloopsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.484s] Installing onecimloopstatictls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.484s] Installing onecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.484s] Installing onecimsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.485s] Installing onecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.485s] Installing playde script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.486s] Installing playpp script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.486s] Installing simspeed script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.486s] Installing snfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.487s] Installing veh script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.487s] Installing wypts script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.488s] 
+[4.488s] Installed /home/babangida/ros_ws/build/onecim
+[4.488s] running install_data
+[4.537s] Invoked command in '/home/babangida/ros_ws/build/onecim' returned '0': AMENT_PREFIX_PATH=/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg LD_LIBRARY_PATH=/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/onecim/build --no-deps install_data

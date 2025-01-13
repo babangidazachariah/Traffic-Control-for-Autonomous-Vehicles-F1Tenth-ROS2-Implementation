@@ -1,0 +1,29 @@
+running develop
+running egg_info
+writing reactivemethods.egg-info/PKG-INFO
+writing dependency_links to reactivemethods.egg-info/dependency_links.txt
+writing entry points to reactivemethods.egg-info/entry_points.txt
+writing requirements to reactivemethods.egg-info/requires.txt
+writing top-level names to reactivemethods.egg-info/top_level.txt
+reading manifest file 'reactivemethods.egg-info/SOURCES.txt'
+writing manifest file 'reactivemethods.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods.egg-link (link to .)
+Installing agapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing agent1purepursuit script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing degapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing emergencybreaking script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing followgap script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing gapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing leftwallfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing northsouthagent script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing play script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing publishwaypoints script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing purepursuit script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing waypointfollow script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing waypointsgenerator script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing westeastagent script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+Installing wptflw script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+
+Installed /home/babangida/ros_ws/build/reactivemethods
+running install_data

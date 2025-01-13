@@ -1,0 +1,9 @@
+Right turn phasing:
+	https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter4.htm#4.6
+	
+Types of signal control - Pretimed/fixed, signal retiming (time-of-day, or type-of-day),
+	semi-actuated, fully-actuated:
+	https://ops.fhwa.dot.gov/publications/fhwahop06006/chapter_7.htm
+	
+Traffic control for Autonomous and Connected Vehicles
+	https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/part5.pdf

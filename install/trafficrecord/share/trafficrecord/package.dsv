@@ -1,0 +1,14 @@
+source;share/trafficrecord/hook/cmake_prefix_path.ps1
+source;share/trafficrecord/hook/cmake_prefix_path.dsv
+source;share/trafficrecord/hook/cmake_prefix_path.sh
+source;share/trafficrecord/hook/ld_library_path_lib.ps1
+source;share/trafficrecord/hook/ld_library_path_lib.dsv
+source;share/trafficrecord/hook/ld_library_path_lib.sh
+source;share/trafficrecord/hook/pythonpath.ps1
+source;share/trafficrecord/hook/pythonpath.dsv
+source;share/trafficrecord/hook/pythonpath.sh
+source;share/trafficrecord/local_setup.bash
+source;share/trafficrecord/local_setup.dsv
+source;share/trafficrecord/local_setup.ps1
+source;share/trafficrecord/local_setup.sh
+source;share/trafficrecord/local_setup.zsh

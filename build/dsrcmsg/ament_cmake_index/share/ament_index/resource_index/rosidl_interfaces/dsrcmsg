@@ -1,0 +1,10 @@
+msg/DSRCMessage.idl
+msg/DSRCMessage.msg
+msg/IntersectionBSM.idl
+msg/IntersectionBSM.msg
+msg/OneCIMKeypoints.idl
+msg/OneCIMKeypoints.msg
+msg/OneCIMTlsMsg.idl
+msg/OneCIMTlsMsg.msg
+msg/TrafficLightsMessage.idl
+msg/TrafficLightsMessage.msg

@@ -1,0 +1,101 @@
+running develop
+Removing /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim.egg-link (link to .)
+running egg_info
+writing ../../build/onecim/onecim.egg-info/PKG-INFO
+writing dependency_links to ../../build/onecim/onecim.egg-info/dependency_links.txt
+writing entry points to ../../build/onecim/onecim.egg-info/entry_points.txt
+writing requirements to ../../build/onecim/onecim.egg-info/requires.txt
+writing top-level names to ../../build/onecim/onecim.egg-info/top_level.txt
+reading manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+writing manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+running build
+running build_py
+copying onecim/FISTrafficSignalOptimizer.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/FISBasedDecentralizedCIM.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/ewagentFISCIM.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimloopsnagentold.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimlooptls.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimloopstatictls.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/FISBasedOneCIMTLS.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/snagentFISCIM.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/trafficRecordingNode.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/PurePursuit.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/generateMultipleVehicles.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/simpleWaypoints.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimloopewagent.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/simSpeed.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/oneintersectionsnagent.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/oneintersectionewagent.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/generateVehicles.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/FISBasedCIMLoopTls.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimloopsnagent.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+copying onecim/onecimtls.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+running install
+running install_lib
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/FISTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/FISBasedDecentralizedCIM.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/ewagentFISCIM.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/__init__.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimloopsnagentold.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimlooptls.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimloopstatictls.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/FISBasedOneCIMTLS.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/snagentFISCIM.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/trafficRecordingNode.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/PurePursuit.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/generateMultipleVehicles.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/simpleWaypoints.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimloopewagent.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/simSpeed.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/oneintersectionsnagent.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/oneintersectionewagent.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/generateVehicles.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/FISBasedCIMLoopTls.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimloopsnagent.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimtls.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/DisparityExtenderObstacleAvoidance.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/FISTrafficSignalOptimizer.py to FISTrafficSignalOptimizer.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/FISBasedDecentralizedCIM.py to FISBasedDecentralizedCIM.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/ewagentFISCIM.py to ewagentFISCIM.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimloopsnagentold.py to onecimloopsnagentold.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimlooptls.py to onecimlooptls.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimloopstatictls.py to onecimloopstatictls.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/FISBasedOneCIMTLS.py to FISBasedOneCIMTLS.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/snagentFISCIM.py to snagentFISCIM.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/trafficRecordingNode.py to trafficRecordingNode.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/PurePursuit.py to PurePursuit.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/generateMultipleVehicles.py to generateMultipleVehicles.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/simpleWaypoints.py to simpleWaypoints.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimloopewagent.py to onecimloopewagent.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/simSpeed.py to simSpeed.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/oneintersectionsnagent.py to oneintersectionsnagent.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/oneintersectionewagent.py to oneintersectionewagent.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/generateVehicles.py to generateVehicles.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/FISBasedCIMLoopTls.py to FISBasedCIMLoopTls.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimloopsnagent.py to onecimloopsnagent.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimtls.py to onecimtls.cpython-38.pyc
+byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/DisparityExtenderObstacleAvoidance.py to DisparityExtenderObstacleAvoidance.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/onecim/onecim.egg-info to /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim-0.0.0-py3.8.egg-info
+running install_scripts
+Installing ewfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing fisonecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing fisonecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing genveh script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimloopew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimloopsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimloopstatictls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing onecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing playde script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing playpp script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing rectraffic script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing simspeed script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing snfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing veh script to /home/babangida/ros_ws/install/onecim/lib/onecim
+Installing wypts script to /home/babangida/ros_ws/install/onecim/lib/onecim
+writing list of installed files to '/home/babangida/ros_ws/build/onecim/install.log'

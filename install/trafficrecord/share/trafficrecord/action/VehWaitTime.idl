@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from trafficrecord/action/VehWaitTime.action
+// generated code does not contain a copyright notice
+
+
+module trafficrecord {
+  module action {
+    @verbatim (language="comment", text=
+      " This action interface file is used by autonomous vehicles for the purpose of ensuring that" "\n"
+      " traffic information of a vehicle is recorded by the traffic recording unit (node)" "\n"
+      " For now, it only provides and records the approachleg and waiting time" "\n"
+      " This ensures that waiting time of a vehicle is recorded only once.")
+    struct VehWaitTime_Goal {
+      @verbatim (language="comment", text=
+        " The identification of the approach leg")
+      string approachleg;
+
+      @verbatim (language="comment", text=
+        " The waiting time of the vehicle: difference between when the vehicle enters and exits an" "\n"
+        " intersection's area")
+      float waittime;
+    };
+    struct VehWaitTime_Result {
+      @verbatim (language="comment", text=
+        " The returned value to indicate whether the traffic information was successfully record" "\n"
+        " by the traffic recording unit (node)")
+      boolean recorded;
+    };
+    struct VehWaitTime_Feedback {
+      @verbatim (language="comment", text=
+        " Should the process take longer than necessary, this provides feedback." "\n"
+        " However, for the purpose of this simulation, it not used.")
+      boolean partiallyrecorded;
+    };
+  };
+};

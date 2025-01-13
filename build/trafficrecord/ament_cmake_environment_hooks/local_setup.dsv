@@ -1,0 +1,4 @@
+source;share/trafficrecord/environment/ament_prefix_path.sh
+source;share/trafficrecord/environment/library_path.sh
+source;share/trafficrecord/environment/path.sh
+source;share/trafficrecord/environment/pythonpath.sh

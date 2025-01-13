@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsrcmsg/msg/TrafficLightsMessage.msg
+// generated code does not contain a copyright notice
+
+
+module dsrcmsg {
+  module msg {
+    @verbatim (language="comment", text=
+      " TrafficLightsMessage.msg")
+    struct TrafficLightsMessage {
+      @verbatim (language="comment", text=
+        "The identification of the path that has greenwave")
+      sequence<string> pathids;
+
+      @verbatim (language="comment", text=
+        "Initial time the greenwave traffic ligh signal was assigned")
+      double starttime;
+
+      @verbatim (language="comment", text=
+        "the duration of the greenwave")
+      double duration;
+
+      @verbatim (language="comment", text=
+        "recommended speed for vehicles")
+      double speed;
+    };
+  };
+};

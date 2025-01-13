@@ -1,0 +1,82 @@
+# This action interface file is used by autonomous vehicles (decentralized controller) and traffic light system (centralized controller)
+# for the purpose of exchanging traffic information and intersection schedule 
+# Vehicles (decentralized controller) request to be scheduled to utilize an intersection
+# TLS (Centralized controller) receive vehicles request and determine an optimized schedule based on the current (or predicted)
+# traffic scenario. TLS communicates the schedule to all connected vehicles.
+# Vehicles determine if they have been scheduled or not and then act accordingly
+#The format of the communication is as follows:
+
+
+# The vehicle identification
+string vehicleid
+
+
+# The name of Junction
+string junction
+
+
+# The identification of the approach leg
+string approachleg 
+
+
+# The identification of the departure leg
+string departleg 
+
+
+# The arrival time of vehicle, which is used to determine the waiting time of the vehicle
+float64 arrivaltime
+
+
+# The point where the vehicle is at currently
+float32[] point
+
+
+# The current speed of vehicle
+float32 speed
+
+
+# Earlier (string): The vehicle type: two-seater, minicompact, subcompact, compact, mid-size and large/full-size cars --- based on https://www.fueleconomy.gov/feg/info.shtml#sizeclasses
+# Later(int): Based on vehicle type codes found at https://actar.org/pdf/ca_veh1.pdf
+int32 vehicletype
+
+
+# The priority of vehicles may be used to influence schedule and is between 0 and N depending on the classes of priority
+int32 priority
+
+
+---
+
+# Opon schedule, the vehicle receive the following information from the centralized TLS controller
+
+
+#list of scheduled vehicles
+string[] vehicleids
+
+
+# The start time of schedule
+float64 starttime
+
+
+# The duration of the schedule
+int32 duration
+
+
+# The recommended speed of vehicle
+int32 speed
+
+# The returned value to indicate whether the vehicle arrival traffic information was successfully record 
+# by the CIM controller unit (node)
+
+bool recorded
+
+---
+
+# Because the centralized TLS Controller execute schedule at (or towards) the of the previous, there might be need for feedback
+# 
+
+# The remaining time before the next schedule
+int32 schedulein
+
+
+# Next approach leg to be scheduled
+string nextapproachleg

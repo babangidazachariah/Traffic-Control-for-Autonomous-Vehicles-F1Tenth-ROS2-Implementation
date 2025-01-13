@@ -1,0 +1,4 @@
+source;share/trafficrecord/local_setup.bash
+source;share/trafficrecord/local_setup.dsv
+source;share/trafficrecord/local_setup.sh
+source;share/trafficrecord/local_setup.zsh

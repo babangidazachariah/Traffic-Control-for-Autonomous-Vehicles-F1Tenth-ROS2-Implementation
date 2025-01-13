@@ -1,0 +1,346 @@
+[4.680s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.680s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7676edeb80>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7676edeb80>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7676e31be0>)
+[4.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.845s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/babangida/ros_ws'
+[4.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['ignore', 'ignore_ament_install']
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'ignore'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'ignore_ament_install'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['colcon_pkg']
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'colcon_pkg'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['colcon_meta']
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'colcon_meta'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['ros']
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'ros'
+[4.868s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cim' with type 'ros.ament_python' and name 'cim'
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['ignore', 'ignore_ament_install']
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'ignore'
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'ignore_ament_install'
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['colcon_pkg']
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'colcon_pkg'
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['colcon_meta']
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'colcon_meta'
+[4.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['ros']
+[4.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'ros'
+[4.870s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dsrcmsg' with type 'ros.ament_cmake' and name 'dsrcmsg'
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['ignore', 'ignore_ament_install']
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'ignore'
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'ignore_ament_install'
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['colcon_pkg']
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'colcon_pkg'
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['colcon_meta']
+[4.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'colcon_meta'
+[4.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['ros']
+[4.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'ros'
+[4.872s] DEBUG:colcon.colcon_core.package_identification:Package 'src/reactivemethods' with type 'ros.ament_python' and name 'reactivemethods'
+[4.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['ignore', 'ignore_ament_install']
+[4.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'ignore'
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'ignore_ament_install'
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['colcon_pkg']
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'colcon_pkg'
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['colcon_meta']
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'colcon_meta'
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['ros']
+[4.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'ros'
+[4.874s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trafficrecord' with type 'ros.ament_cmake' and name 'trafficrecord'
+[4.874s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.874s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.874s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.874s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.874s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.295s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/babangida/ros_ws/install/trafficrecord' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[5.295s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/babangida/ros_ws/install/reactivemethods' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[5.296s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/babangida/ros_ws/install/action_tutorials_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[5.296s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/babangida/ros_ws/install/trafficrecord' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[5.296s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/babangida/ros_ws/install/action_tutorials_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[5.365s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/babangida/ros_ws/install
+[5.431s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/foxy
+[5.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'cmake_args' from command line to 'None'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'cmake_target' from command line to 'None'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'cmake_clean_cache' from command line to 'False'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'cmake_clean_first' from command line to 'False'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'cmake_force_configure' from command line to 'False'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'ament_cmake_args' from command line to 'None'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'catkin_cmake_args' from command line to 'None'
+[5.799s] Level 5:colcon.colcon_core.verb:set package 'dsrcmsg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.799s] DEBUG:colcon.colcon_core.verb:Building package 'dsrcmsg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/babangida/ros_ws/build/dsrcmsg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/babangida/ros_ws/install/dsrcmsg', 'merge_install': False, 'path': '/home/babangida/ros_ws/src/dsrcmsg', 'symlink_install': False, 'test_result_base': None}
+[5.881s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'cmake_args' from command line to 'None'
+[5.881s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'cmake_target' from command line to 'None'
+[5.881s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.881s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'cmake_clean_cache' from command line to 'False'
+[5.882s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'cmake_clean_first' from command line to 'False'
+[5.882s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'cmake_force_configure' from command line to 'False'
+[5.882s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'ament_cmake_args' from command line to 'None'
+[5.882s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'catkin_cmake_args' from command line to 'None'
+[5.882s] Level 5:colcon.colcon_core.verb:set package 'trafficrecord' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.882s] DEBUG:colcon.colcon_core.verb:Building package 'trafficrecord' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/babangida/ros_ws/build/trafficrecord', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/babangida/ros_ws/install/trafficrecord', 'merge_install': False, 'path': '/home/babangida/ros_ws/src/trafficrecord', 'symlink_install': False, 'test_result_base': None}
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'cmake_args' from command line to 'None'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'cmake_target' from command line to 'None'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'cmake_clean_cache' from command line to 'False'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'cmake_clean_first' from command line to 'False'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'cmake_force_configure' from command line to 'False'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'ament_cmake_args' from command line to 'None'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'catkin_cmake_args' from command line to 'None'
+[5.961s] Level 5:colcon.colcon_core.verb:set package 'cim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.961s] DEBUG:colcon.colcon_core.verb:Building package 'cim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/babangida/ros_ws/build/cim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/babangida/ros_ws/install/cim', 'merge_install': False, 'path': '/home/babangida/ros_ws/src/cim', 'symlink_install': False, 'test_result_base': None}
+[6.038s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'cmake_args' from command line to 'None'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'cmake_target' from command line to 'None'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'cmake_clean_cache' from command line to 'False'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'cmake_clean_first' from command line to 'False'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'cmake_force_configure' from command line to 'False'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'ament_cmake_args' from command line to 'None'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'catkin_cmake_args' from command line to 'None'
+[6.039s] Level 5:colcon.colcon_core.verb:set package 'reactivemethods' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.039s] DEBUG:colcon.colcon_core.verb:Building package 'reactivemethods' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/babangida/ros_ws/build/reactivemethods', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/babangida/ros_ws/install/reactivemethods', 'merge_install': False, 'path': '/home/babangida/ros_ws/src/reactivemethods', 'symlink_install': False, 'test_result_base': None}
+[6.118s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.192s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.192s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/babangida/ros_ws/src/dsrcmsg' with build type 'ament_cmake'
+[6.193s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/babangida/ros_ws/src/dsrcmsg'
+[6.273s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.274s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.274s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.512s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/babangida/ros_ws/src/trafficrecord' with build type 'ament_cmake'
+[6.513s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/babangida/ros_ws/src/trafficrecord'
+[6.594s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.594s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.847s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/build/dsrcmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --build /home/babangida/ros_ws/build/dsrcmsg -- -j8 -l8
+[6.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/build/trafficrecord': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake /home/babangida/ros_ws/src/trafficrecord -DCMAKE_INSTALL_PREFIX=/home/babangida/ros_ws/install/trafficrecord
+[7.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/build/dsrcmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --build /home/babangida/ros_ws/build/dsrcmsg -- -j8 -l8
+[7.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/build/dsrcmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --install /home/babangida/ros_ws/build/dsrcmsg
+[7.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsrcmsg)
+[7.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/build/dsrcmsg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --install /home/babangida/ros_ws/build/dsrcmsg
+[7.665s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg' for CMake module files
+[7.667s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg' for CMake config files
+[7.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsrcmsg', 'cmake_prefix_path')
+[7.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/cmake_prefix_path.ps1'
+[7.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/cmake_prefix_path.dsv'
+[7.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/cmake_prefix_path.sh'
+[7.775s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/lib'
+[7.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsrcmsg', 'ld_library_path_lib')
+[7.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/ld_library_path_lib.ps1'
+[7.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/ld_library_path_lib.dsv'
+[7.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/ld_library_path_lib.sh'
+[7.860s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/bin'
+[7.861s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/lib/pkgconfig/dsrcmsg.pc'
+[7.861s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages'
+[7.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsrcmsg', 'pythonpath')
+[7.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/pythonpath.ps1'
+[7.954s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/pythonpath.dsv'
+[7.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/pythonpath.sh'
+[7.956s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/bin'
+[8.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.ps1'
+[8.039s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.dsv'
+[8.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.sh'
+[8.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.bash'
+[8.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.zsh'
+[8.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/dsrcmsg/share/colcon-core/packages/dsrcmsg)
+[8.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsrcmsg)
+[8.356s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg' for CMake module files
+[8.357s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg' for CMake config files
+[8.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsrcmsg', 'cmake_prefix_path')
+[8.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/cmake_prefix_path.ps1'
+[8.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/cmake_prefix_path.dsv'
+[8.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/cmake_prefix_path.sh'
+[8.454s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/lib'
+[8.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsrcmsg', 'ld_library_path_lib')
+[8.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/ld_library_path_lib.ps1'
+[8.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/ld_library_path_lib.dsv'
+[8.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/ld_library_path_lib.sh'
+[8.539s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/bin'
+[8.539s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/lib/pkgconfig/dsrcmsg.pc'
+[8.539s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages'
+[8.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsrcmsg', 'pythonpath')
+[8.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/pythonpath.ps1'
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/pythonpath.dsv'
+[8.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/hook/pythonpath.sh'
+[8.634s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/dsrcmsg/bin'
+[8.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.ps1'
+[8.731s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.dsv'
+[8.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.sh'
+[8.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.bash'
+[8.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.zsh'
+[8.734s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/dsrcmsg/share/colcon-core/packages/dsrcmsg)
+[8.735s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/babangida/ros_ws/src/reactivemethods' with build type 'ament_python'
+[8.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('reactivemethods', 'ament_prefix_path')
+[8.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/hook/ament_prefix_path.ps1'
+[8.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/hook/ament_prefix_path.dsv'
+[8.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/hook/ament_prefix_path.sh'
+[8.939s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.939s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.283s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/babangida/ros_ws/src/reactivemethods'
+[10.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/src/reactivemethods': CMAKE_PREFIX_PATH=/home/babangida/ros_ws/install/dsrcmsg:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/action_tutorials_interfaces LD_LIBRARY_PATH=/home/babangida/ros_ws/install/dsrcmsg/lib:/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/babangida/ros_ws/build/reactivemethods/prefix_override:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/reactivemethods build --build-base /home/babangida/ros_ws/build/reactivemethods/build install --record /home/babangida/ros_ws/build/reactivemethods/install.log --install-scripts $base/lib/reactivemethods --single-version-externally-managed
+[13.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/src/reactivemethods' returned '0': CMAKE_PREFIX_PATH=/home/babangida/ros_ws/install/dsrcmsg:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/action_tutorials_interfaces LD_LIBRARY_PATH=/home/babangida/ros_ws/install/dsrcmsg/lib:/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/babangida/ros_ws/build/reactivemethods/prefix_override:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/reactivemethods build --build-base /home/babangida/ros_ws/build/reactivemethods/build install --record /home/babangida/ros_ws/build/reactivemethods/install.log --install-scripts $base/lib/reactivemethods --single-version-externally-managed
+[13.238s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods' for CMake module files
+[13.239s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods' for CMake config files
+[13.241s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods/lib'
+[13.241s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods/bin'
+[13.241s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods/lib/pkgconfig/reactivemethods.pc'
+[13.241s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages'
+[13.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('reactivemethods', 'pythonpath')
+[13.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/hook/pythonpath.ps1'
+[13.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/hook/pythonpath.dsv'
+[13.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/hook/pythonpath.sh'
+[13.359s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/reactivemethods/bin'
+[13.359s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(reactivemethods)
+[13.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/package.ps1'
+[13.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/package.dsv'
+[13.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/package.sh'
+[13.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/package.bash'
+[13.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/reactivemethods/share/reactivemethods/package.zsh'
+[13.548s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/reactivemethods/share/colcon-core/packages/reactivemethods)
+[41.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake /home/babangida/ros_ws/src/trafficrecord -DCMAKE_INSTALL_PREFIX=/home/babangida/ros_ws/install/trafficrecord
+[41.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/build/trafficrecord': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --build /home/babangida/ros_ws/build/trafficrecord -- -j8 -l8
+[54.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --build /home/babangida/ros_ws/build/trafficrecord -- -j8 -l8
+[54.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/build/trafficrecord': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --install /home/babangida/ros_ws/build/trafficrecord
+[54.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trafficrecord)
+[54.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --install /home/babangida/ros_ws/build/trafficrecord
+[54.544s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord' for CMake module files
+[54.545s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord' for CMake config files
+[54.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('trafficrecord', 'cmake_prefix_path')
+[54.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/cmake_prefix_path.ps1'
+[54.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/cmake_prefix_path.dsv'
+[54.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/cmake_prefix_path.sh'
+[54.622s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/lib'
+[54.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('trafficrecord', 'ld_library_path_lib')
+[54.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/ld_library_path_lib.ps1'
+[54.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/ld_library_path_lib.dsv'
+[54.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/ld_library_path_lib.sh'
+[54.695s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/bin'
+[54.695s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/lib/pkgconfig/trafficrecord.pc'
+[54.695s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages'
+[54.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('trafficrecord', 'pythonpath')
+[54.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/pythonpath.ps1'
+[54.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/pythonpath.dsv'
+[54.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/pythonpath.sh'
+[54.773s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/bin'
+[54.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.ps1'
+[54.843s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.dsv'
+[54.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.sh'
+[54.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.bash'
+[54.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.zsh'
+[54.845s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/trafficrecord/share/colcon-core/packages/trafficrecord)
+[55.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trafficrecord)
+[55.075s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord' for CMake module files
+[55.076s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord' for CMake config files
+[55.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('trafficrecord', 'cmake_prefix_path')
+[55.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/cmake_prefix_path.ps1'
+[55.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/cmake_prefix_path.dsv'
+[55.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/cmake_prefix_path.sh'
+[55.153s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/lib'
+[55.153s] Level 1:colcon.colcon_core.shell:create_environment_hook('trafficrecord', 'ld_library_path_lib')
+[55.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/ld_library_path_lib.ps1'
+[55.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/ld_library_path_lib.dsv'
+[55.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/ld_library_path_lib.sh'
+[55.224s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/bin'
+[55.225s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/lib/pkgconfig/trafficrecord.pc'
+[55.225s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages'
+[55.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('trafficrecord', 'pythonpath')
+[55.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/pythonpath.ps1'
+[55.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/pythonpath.dsv'
+[55.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/hook/pythonpath.sh'
+[55.296s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/trafficrecord/bin'
+[55.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.ps1'
+[55.381s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.dsv'
+[55.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.sh'
+[55.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.bash'
+[55.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.zsh'
+[55.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/trafficrecord/share/colcon-core/packages/trafficrecord)
+[55.385s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/babangida/ros_ws/src/cim' with build type 'ament_python'
+[55.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('cim', 'ament_prefix_path')
+[55.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/cim/share/cim/hook/ament_prefix_path.ps1'
+[55.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/cim/share/cim/hook/ament_prefix_path.dsv'
+[55.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/cim/share/cim/hook/ament_prefix_path.sh'
+[55.561s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[55.561s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[56.835s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/babangida/ros_ws/src/cim'
+[56.905s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[56.905s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[58.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/src/cim': PYTHONPATH=/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/cim build --build-base /home/babangida/ros_ws/build/cim/build install --record /home/babangida/ros_ws/build/cim/install.log --install-scripts $base/lib/cim --single-version-externally-managed
+[59.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/src/cim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/cim build --build-base /home/babangida/ros_ws/build/cim/build install --record /home/babangida/ros_ws/build/cim/install.log --install-scripts $base/lib/cim --single-version-externally-managed
+[60.059s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim' for CMake module files
+[60.060s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim' for CMake config files
+[60.061s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim/lib'
+[60.061s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim/bin'
+[60.061s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim/lib/pkgconfig/cim.pc'
+[60.062s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages'
+[60.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('cim', 'pythonpath')
+[60.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/cim/share/cim/hook/pythonpath.ps1'
+[60.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/cim/share/cim/hook/pythonpath.dsv'
+[60.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/cim/share/cim/hook/pythonpath.sh'
+[60.139s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/cim/bin'
+[60.139s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cim)
+[60.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/cim/share/cim/package.ps1'
+[60.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/cim/share/cim/package.dsv'
+[60.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/cim/share/cim/package.sh'
+[60.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/cim/share/cim/package.bash'
+[60.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/cim/share/cim/package.zsh'
+[60.224s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/cim/share/colcon-core/packages/cim)
+[60.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[60.226s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[60.226s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[60.226s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[60.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[60.486s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[60.524s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[60.524s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[60.526s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[60.526s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[60.636s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.ps1'
+[60.638s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/babangida/ros_ws/install/_local_setup_util_ps1.py'
+[60.640s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.ps1'
+[60.730s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.sh'
+[60.731s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/babangida/ros_ws/install/_local_setup_util_sh.py'
+[60.732s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.sh'
+[60.829s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.bash'
+[60.830s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.bash'
+[60.926s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.zsh'
+[60.928s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.zsh'

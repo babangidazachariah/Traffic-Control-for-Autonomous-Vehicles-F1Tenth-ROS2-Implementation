@@ -1,0 +1,4 @@
+Created:  504
+Removed:  465
+Throughput Performance: 92.26%
+Percentage throughput=(465/504​)×100

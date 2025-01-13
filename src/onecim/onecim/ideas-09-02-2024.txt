@@ -1,0 +1,41 @@
+
+To track waiting time of vehicles
+I will just need to add a stopTime and waitingTime fields in tls controller dataframe
+if speed of vehicle == 0 and its distance to the stopline > 0 
+	it means vehicle stoped because of signal or some other vehicle
+	if stopTime field is empty
+		record this time
+elif speed > 0 and stopedTime field is not empty
+	it means vehicle previously stopped and just started moving
+	compute the difference between now and stopTime, 
+	  then record or update the waitingTime field of vehicle
+	
+Instead of deleting instances of a vehicle in the trafficData dataframe,
+copy into another dataframe, which can be used for performance analysis
+
+At scheduling
+Determine the vehicle with max waitingTime
+If any,
+	retrieve its approach leg and depart leg
+	use dual-ring approach to GetCompatibleFlows
+	for each vehicle on the compatible approaches,
+		compute time requirement to arrive at and utilized the intersection
+		and choose the maximum.
+		
+	if computed time < the maximum assignable green phase for a given flow,
+		determine if there are other vehicles on the other flows
+		if there vehicles of flows other than the chosen compatible flows, 
+			enforce the miximum assignable phase duration
+		otherwise,
+			use this computed time as phase duration
+			
+Otherwise (no waiting vehicle),
+	if there are approaching vehicles,
+		compute the minimum time required by a approaching
+		retrieve its approach leg and departure leg
+		get the compatible flows
+		and assign the computed minimum time as phase duration
+	otherwise (no approaching vehicles),
+		set the approach different from the previous (concluding) 
+		green phase flow to the minimum assignable phase duration
+	

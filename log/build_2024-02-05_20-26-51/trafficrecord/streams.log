@@ -1,0 +1,140 @@
+[0.282s] Invoking command in '/home/babangida/ros_ws/build/trafficrecord': /usr/bin/cmake --build /home/babangida/ros_ws/build/trafficrecord -- -j8 -l8
+[2.355s] [  2%] Built target trafficrecord__cpp
+[2.824s] [ 12%] Built target trafficrecord__rosidl_generator_c
+[2.832s] [ 23%] Built target trafficrecord__rosidl_typesupport_cpp
+[2.992s] [ 33%] Built target trafficrecord__rosidl_typesupport_introspection_cpp
+[3.034s] [ 43%] Built target trafficrecord__rosidl_typesupport_fastrtps_cpp
+[3.047s] [ 53%] Built target trafficrecord__rosidl_typesupport_introspection_c
+[3.051s] [ 64%] Built target trafficrecord__rosidl_typesupport_c
+[3.212s] [ 74%] Built target trafficrecord__rosidl_typesupport_fastrtps_c
+[3.249s] [ 74%] Built target trafficrecord
+[3.341s] [ 76%] Built target trafficrecord__py
+[3.455s] [ 84%] Built target trafficrecord__python
+[3.590s] [ 94%] Built target trafficrecord__rosidl_typesupport_fastrtps_c__pyext
+[3.594s] [ 94%] Built target trafficrecord__rosidl_typesupport_introspection_c__pyext
+[3.618s] [100%] Built target trafficrecord__rosidl_typesupport_c__pyext
+[3.631s] Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': /usr/bin/cmake --build /home/babangida/ros_ws/build/trafficrecord -- -j8 -l8
+[3.692s] Invoking command in '/home/babangida/ros_ws/build/trafficrecord': /usr/bin/cmake --install /home/babangida/ros_ws/build/trafficrecord
+[3.704s] -- Install configuration: ""
+[3.705s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/rosidl_interfaces/trafficrecord
+[3.705s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord
+[3.706s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action
+[3.706s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/veh_wait_time.h
+[3.706s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail
+[3.706s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__struct.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__struct.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__functions.c
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__functions.c
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__functions.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__functions.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/hybrid_cim.h
+[3.707s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg
+[3.724s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_generator_c__visibility_control.h
+[3.778s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/library_path.sh
+[3.779s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/library_path.dsv
+[3.815s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_generator_c.so
+[3.816s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord
+[3.816s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action
+[3.816s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail
+[3.817s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_fastrtps_c.h
+[3.817s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_fastrtps_c.h
+[3.817s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg
+[3.817s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.868s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_fastrtps_c.so
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/dds_fastrtps
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_fastrtps_cpp.hpp
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_fastrtps_cpp.hpp
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg
+[3.869s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.915s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_fastrtps_cpp.so
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_introspection_c.h
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.c
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.c
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_introspection_c.h
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg
+[3.916s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.944s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_introspection_c.so
+[3.945s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_c.so
+[3.945s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord
+[3.946s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action
+[3.946s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail
+[3.946s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__struct.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__builder.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__traits.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__struct.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__builder.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__traits.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/hybrid_cim.hpp
+[3.947s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/veh_wait_time.hpp
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.cpp
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_introspection_cpp.hpp
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.cpp
+[3.948s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_introspection_cpp.hpp
+[4.013s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_introspection_cpp.so
+[4.029s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_cpp.so
+[4.029s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/pythonpath.sh
+[4.029s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/pythonpath.dsv
+[4.061s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/__init__.py
+[4.174s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action
+[4.205s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/__init__.py
+[4.205s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_veh_wait_time.py
+[4.205s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_hybrid_cim.py
+[4.205s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_hybrid_cim_s.c
+[4.205s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_veh_wait_time_s.c
+[4.244s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/trafficrecord_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[4.245s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/trafficrecord_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[4.246s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/trafficrecord_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[4.270s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__python.so
+[4.270s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/VehWaitTime.idl
+[4.271s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/HybridCIM.idl
+[4.271s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/VehWaitTime.action
+[4.271s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/HybridCIM.action
+[4.271s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/package_run_dependencies/trafficrecord
+[4.271s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/parent_prefix_path/trafficrecord
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/ament_prefix_path.sh
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/ament_prefix_path.dsv
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/path.sh
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/path.dsv
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.bash
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.sh
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.zsh
+[4.272s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.dsv
+[4.272s] -- Installing: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.dsv
+[4.306s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/packages/trafficrecord
+[4.319s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_generator_cExport.cmake
+[4.319s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_generator_cExport-noconfig.cmake
+[4.320s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cExport.cmake
+[4.320s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.321s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cExport.cmake
+[4.321s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cExport-noconfig.cmake
+[4.330s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_generator_cppExport.cmake
+[4.342s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cppExport.cmake
+[4.342s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.343s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cppExport.cmake
+[4.343s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cppExport-noconfig.cmake
+[4.343s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/rosidl_cmake-extras.cmake
+[4.343s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.343s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_libraries-extras.cmake
+[4.344s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_targets-extras.cmake
+[4.344s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.344s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.344s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.345s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecordConfig.cmake
+[4.345s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecordConfig-version.cmake
+[4.346s] -- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.xml
+[4.349s] Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': /usr/bin/cmake --install /home/babangida/ros_ws/build/trafficrecord

@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsrcmsg/msg/DSRCMessage.msg
+// generated code does not contain a copyright notice
+
+
+module dsrcmsg {
+  module msg {
+    @verbatim (language="comment", text=
+      " DSRCMessage.msg")
+    struct DSRCMessage {
+      @verbatim (language="comment", text=
+        "The identification of the vehicle publishing the DSRCMessage")
+      string vehicleid;
+
+      @verbatim (language="comment", text=
+        " The time the DSRC message was generated at some distance away from a stop line")
+      double initialtime;
+
+      @verbatim (language="comment", text=
+        " Current time the DSRC message was generated")
+      double currenttime;
+
+      @verbatim (language="comment", text=
+        " Current path on which the vehicle is approaching the intersection")
+      string approachleg;
+
+      @verbatim (language="comment", text=
+        " Planned path (trajectory) the vehicle will follow after the intersection")
+      string departureleg;
+
+      @verbatim (language="comment", text=
+        " Distance to stop line")
+      double disttostopline;
+
+      @verbatim (language="comment", text=
+        " Distance from stop line")
+      double distfromstopline;
+
+      @verbatim (language="comment", text=
+        " The point where the vehicle is at currently")
+      sequence<float> point;
+
+      @verbatim (language="comment", text=
+        " Current speed of vehicle - used for decision as to which vehicle utilizes the intersection first")
+      double speed;
+    };
+  };
+};

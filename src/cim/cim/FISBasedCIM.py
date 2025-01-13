@@ -1,0 +1,371 @@
+import rclpy
+from rclpy.node import Node
+from visualization_msgs.msg import Marker, MarkerArray
+
+import pandas as pd
+import numpy as np
+from scipy.spatial.distance import cdist
+from scipy.stats import hmean
+
+import time
+import math
+import random
+
+#Import DSRC Message Package
+from dsrcmsg.msg import IntersectionBSM, TrafficLightsMessage
+
+
+from cim.FISTrafficSignalOptimizer import FuzzyIntersectionManager
+
+from rclpy.action import ActionServer
+
+class FISCentralizedCIMTLS(Node):
+    """
+        DSRCMessage
+        #WEJ4 - WEJ1: Distance≈6.75
+        #SNJ1 - SNJ2: Distance≈10.7
+    """
+    def __init__(self):
+        super().__init__('HybridCentralizedTrafficController')
+        self.trafficLightPub = self.create_publisher(MarkerArray, '/tlsbulbs', 10)
+        self.dsrcmsSub = self.create_subscription(IntersectionBSM, '/dsrcmsg', self.RecordTrafficData, 10)
+        self.timer = self.create_timer(0.1, self.SwitchTrafficSignal) 
+        self.startTime = 0.0
+        self.switch = False
+        self.idx = None
+        self.tlsPaths = None
+        self.MINSTOPLINEDIST = 3.0
+        
+        self.signalDuration = 0
+        self.durationCounter = 0
+        self.nextSignalDuration = 5 #Set this value to serve as the initial condition in SwitchTrafficSignal()
+        self.nextSchedulePerformed = False
+        
+        self.recommendedSpeed = 0
+        self.nextRecommendedSpeed = 0
+        self.nextFlow = None #A set of compatible flows to be assigned green wave in the next phase
+        
+        self.minPhaseDuration = 5 #Minimum phase duration assignable to a flow
+        self.maxPhaseDuration = 9 #Maximum phase duration assignable to a flow
+        
+        self.scheduledFlows = None #Holds list of flows that have been scheduled to utilize the intersection
+        
+        self.tlsPub = self.create_publisher(TrafficLightsMessage, '/tls', 10)
+        self.tlsBulbsSettings = None
+        
+        self.trafficData = pd.DataFrame(data={}, columns=['vehicleid', 'junctionid', 'approachleg', 'departleg', 'distfromstopline', 'point', 'arrivaltime', 'speed', 'priority'])
+        
+        self.scheduledTime = None
+        self.nextScheduleTime = None
+        
+        self.scheduledVehicles = None
+        self.nextScheduledVehicles = None
+        self.fiscontroller = FuzzyIntersectionManager()
+        
+        
+    def TLSPublisher(self):
+        tlsmsg = TrafficLightsMessage()
+        #print(self.tlsPaths)
+        tlsmsg.pathids = self.tlsPaths
+        tlsmsg.starttime = self.startTime
+        tlsmsg.duration = float(self.signalDuration)
+        tlsmsg.speed = float(self.recommendedSpeed)
+        
+        #print('Green Flow: ', self.tlsPaths, ' StartTime: ', self.startTime, ' Duration: ', self.signalDuration)
+        self.tlsPub.publish(tlsmsg)
+        
+    def CreateTrafficLightBulb(self, point, leg, color):
+        marker = Marker()
+        marker.header.frame_id = 'map'
+        marker.scale.x = 0.1
+        marker.scale.y = 1.0
+        marker.scale.z = 0.1
+        marker.pose.position.z = 0.0
+        marker.color.a = 1.0
+        marker.color.r = color[0] 
+        marker.color.g = color[1] 
+        marker.color.b = color[2]
+        marker.type = Marker.CUBE
+        marker.action = Marker.ADD
+        marker.id = self.idx
+        self.idx += 1
+        marker.pose.position.x = float(point[0])
+        marker.pose.position.y = float(point[1])
+        if 'WEJ' in leg :
+            marker.pose.orientation.z = 0.707
+            marker.pose.orientation.w = 0.707
+        elif  'NSJ' in leg:
+            marker.pose.orientation.z = 0.0
+            marker.pose.orientation.w = 1.0
+        
+        return marker
+        
+    def TrafficLights(self, appLeg, color='green'):
+        marker_array = MarkerArray()
+        greenPoints = None
+        redPoints = None
+        self.idx = 0
+        
+        if color =='yellow':
+            if 'NSJ' in appLeg:
+                greenPoints = [(4.0, -0.85), (14.7, -0.85), (15.7, 6), (4.95, 6)]
+                redPoints = [(4.5,6.5),  (4.5, -0.25), (15.3, -1.25), (15.3, 5.55)]
+                
+                self.switch = False
+                for point in greenPoints:
+                    marker_array.markers.append(self.CreateTrafficLightBulb(point, 'NSJ', (1.0, 1.0, 0.0)))
+                for point in redPoints:
+                    marker_array.markers.append(self.CreateTrafficLightBulb(point, 'WEJ', (1.0, 0.0, 0.0)))
+            elif 'WEJ' in appLeg:
+                redPoints = [(4.0, -0.85), (14.7, -0.85), (15.7, 6), (4.95, 6)]
+                greenPoints = [(4.5,6.5),  (4.5, -0.25), (15.3, -1.25), (15.3, 5.55)]
+                               
+                self.switch = True
+                for point in greenPoints:
+                    marker_array.markers.append(self.CreateTrafficLightBulb(point, 'WEJ', (1.0, 1.0, 0.0)))
+                for point in redPoints:
+                    marker_array.markers.append(self.CreateTrafficLightBulb(point, 'NSJ', (1.0, 0.0, 0.0)))
+
+            
+        elif 'NSJ' in appLeg or 'SNJ' in appLeg:
+            greenPoints = [(4.0, -0.85), (14.7, -0.85), (15.7, 6), (4.95, 6)]
+            redPoints = [(4.5,6.5),  (4.5, -0.25), (15.3, -1.25), (15.3, 5.55)]
+            
+            self.switch = False
+            for point in greenPoints:
+                marker_array.markers.append(self.CreateTrafficLightBulb(point, 'NSJ', (0.0, 1.0, 0.0)))
+            for point in redPoints:
+                marker_array.markers.append(self.CreateTrafficLightBulb(point, 'WEJ', (1.0, 0.0, 0.0)))
+        elif 'WEJ' in appLeg or 'EWJ' in appLeg:
+            redPoints = [(4.0, -0.85), (14.7, -0.85), (15.7, 6), (4.95, 6)]
+            greenPoints = [(4.5,6.5),  (4.5, -0.25), (15.3, -1.25), (15.3, 5.55)]
+            
+            self.switch = True   
+            for point in greenPoints:
+                marker_array.markers.append(self.CreateTrafficLightBulb(point, 'WEJ', (0.0, 1.0, 0.0)))
+            for point in redPoints:
+                marker_array.markers.append(self.CreateTrafficLightBulb(point, 'NSJ', (1.0, 0.0, 0.0)))
+        
+        self.tlsBulbsSettings = marker_array
+        
+    def GetCompatibleFlows(self, appLeg):
+        """
+            This function gets the flows that can utilize the intersection without high risk of collision(s)
+        """
+        appLegs = None
+        scheFlows = None 
+        if 'NSJ' in appLeg or 'SNJ' in appLeg: # North-South flows are compatible with the appLeg 
+            #thus, return the flows and their stop line(s) point
+            appLegs =  {'SNJ1': (4.0, -0.85), 'SNJ2': (14.7, -0.85), 'NSJ3':(15.7, 6), 'NSJ4':(4.95, 6)}
+            scheFlows = ['SNJ1', 'SNJ2', 'NSJ3', 'NSJ4']
+        elif 'WEJ' in appLeg or 'EWJ' in appLeg:
+            appLegs = {'WEJ1': (4.5, -0.25), 'EWJ2': (15.3, -1.25), 'EWJ3':(15.3, 5.55), 'WEJ4': (4.5,6.5)}
+            scheFlows = ['WEJ1', 'EWJ2', 'EWJ3', 'WEJ4']
+        
+        self.tlsPaths = scheFlows
+        return appLegs
+        
+    def GetDistance(self, point1, point2):
+        return np.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
+    
+    
+    def StartFromInitial(self):
+        #Assigns yellow phase to a random set of compatible flows: signal phase
+        appLeg = None
+        if random.randint(1, 2) == 1:
+            appLeg = 'NSJ'
+        else:
+            appLeg = 'WEJ'
+        self.signalDuration = 5
+        self.recommendedSpeed = 1.0
+        self.GetCompatibleFlows(appLeg)
+        
+        self.nextFlow = appLeg
+        
+    def SwitchTrafficSignal(self):
+        appLeg = None
+        duration = time.time() - self.startTime 
+        
+        maxArivalTime = 0
+        
+        if (self.signalDuration - duration) > 0 and (self.signalDuration - duration) <= 2 and not self.startTime == 0.0 and not self.nextSchedulePerformed: # 5s to end of signal duration
+            #Determine if there are vehicles within the region of intersections
+            
+            #print('self.signalDuration - duration) <= 2')
+            self.nextSchedulePerformed = True
+            if len(self.trafficData) > 0:
+                #print('len(self.trafficData) > 0')
+                # Determine the next flow to be assigned the green wave
+                
+                flowsAndStopLines = None
+                vehDistances = np.array([])
+                flows = None
+                maxDistance = 0
+                maxQueueLength = 0
+                vehicleSpeeds = np.array([])
+                
+                #Determine the vehicle with max waiting time
+                #scheduleIdx = self.trafficData.loc[self.trafficData['arrivaltime'].idxmin()]
+                scheduleIdx = self.trafficData['arrivaltime'].idxmin()
+                maxWaitingTime = self.trafficData.loc[scheduleIdx]['arrivaltime'] #Get the max waiting time
+                
+                #get approach leg to be scheduled - having the vehicle with the longest waiting time
+                appLeg = self.trafficData.loc[scheduleIdx]['approachleg']
+                
+                #print('self.nextFlow: ', self.nextFlow)
+                #print('appLeg', appLeg)
+                
+                #check to see if the next chosen flow to be assigned green wave is the same as the current flow, which has the green signal
+                if appLeg[:3] == self.nextFlow[:3]:
+                    altAppLeg = None
+                    if appLeg[:3] == "NSJ":
+                        altAppLeg = 'SNJ'
+                    elif appLeg[:3] == "SNJ":
+                        altAppLeg = 'NSJ'
+                    elif appLeg[:3] == "WEJ":
+                        altAppLeg = 'EWJ'
+                    elif appLeg[:3] == "EWJ":
+                        altAppLeg = 'WEJ'
+                     
+                    print('appLeg: ', appLeg)
+                    #check to see if there is a vehicle waiting at any the intersection on the other flows
+                    #the is to avoid denial of service for other flows
+                    tmpTfData = self.trafficData[~((self.trafficData['approachleg'].str.contains(appLeg[:3])) | (self.trafficData['approachleg'].str.contains(altAppLeg)))]
+                    print('Traffic Data', tmpTfData)
+                    if len(tmpTfData) > 0:
+                        appLeg = tmpTfData['approachleg'].iloc[0] #set the approach leg to the first element in the temp trafficData
+                        maxWaitingTime = tmpTfData['arrivaltime'].iloc[0] # Reset the waiting to the waiting time of the chosen vehicle
+                print('New appLeg: ', appLeg)        
+                self.nextFlow = appLeg
+                #get compatible flows (other approach legs) that may be scheduled to utilize the intersection 
+                #without (or reduced) risk of collision
+                flowsAndStopLines = self.GetCompatibleFlows(appLeg)
+                
+                for flow in flowsAndStopLines:
+                    #Retrieve vehicles on the same flow as the vehicle with highest waiting time
+                    vehicles = self.trafficData.loc[self.trafficData['approachleg']== flow]
+                    
+                    #determine the furthest vehicle from their stop line on the flow
+                    flowStopLinePoint = flowsAndStopLines[flow]
+                    vehiclePoints = np.array(vehicles['point'].tolist())
+                    
+                    if len(vehiclePoints) > 0:
+                        #print('Vehicle Points: ', vehiclePoints)
+                       # print('flowStopLinePoint : ', flowStopLinePoint)
+                        
+                        speeds = np.array(vehicles['speed'])
+                        #print('speed: ', speeds)
+                        
+                        vehicleSpeeds = np.concatenate((vehicleSpeeds, speeds), axis=0)
+                        #print('vehicleSpeeds: ', vehicleSpeeds)
+                        
+                        distances = cdist(vehiclePoints, np.array([flowStopLinePoint]), 'euclidean')
+                        if maxDistance < max(distances):
+                            maxDistance = max(distances)
+                        
+                        if maxQueueLength < len(distances):
+                            maxQueueLength = len(distances)
+                
+                #wTime, qLength, speed, distance
+                meanSpeed = 0
+                if np.all(vehicleSpeeds > 0):
+                    meanSpeed = hmean(vehicleSpeeds)
+                else:
+                    meanSpeed = max(vehicleSpeeds)
+                    
+                maxWaitingTime = time.time() - maxWaitingTime
+                self.nextSignalDuration, self.nextRecommendedSpeed = self.fiscontroller.EvaluateFis(maxWaitingTime, maxQueueLength, meanSpeed, maxDistance[0])
+                #print('Next Flow: ', self.nextFlow, ' Wait Time: ', maxArivalTime, ' Queue Len: ', maxQueueLength, ' Phase Dur: ', self.nextSignalDuration)
+            else:
+                #print('len(self.trafficData) <= 0')
+                self.nextRecommendedSpeed = 1.0
+                self.nextSignalDuration = 5
+                
+        elif (self.signalDuration - duration) <= 0:  #Switch signals to the next signal duration and next recommended speed 
+            #print(' elif (self.signalDuration - duration) <= 0')
+            if self.nextSignalDuration == 5:
+                #print('self.nextSignalDuration == 5: Restarting From Initial')
+                #create yellow traffic lights for a random flow
+                self.StartFromInitial()
+                self.TrafficLights(self.nextFlow,'yellow')
+            else:
+                self.TrafficLights(self.nextFlow,'green')
+                
+            self.signalDuration = math.floor(self.nextSignalDuration)
+            self.recommendedSpeed = self.nextRecommendedSpeed
+            self.nextSchedulePerformed = False
+            #set traffic lights systems
+            
+            
+            self.startTime = time.time()
+            self.trafficLightPub.publish(self.tlsBulbsSettings)
+        elif  self.startTime == 0.0:
+            #Just starting system
+            #print('(Re)Starting Traffic Lights')
+            self.StartFromInitial()
+        #print('Executing TLSPublisher')
+        #print('Remaining: ', self.signalDuration - duration)
+        self.TLSPublisher()
+        
+    def InsertNewRecord(self, msg):
+        """
+            Insert new traffic data of a given vehicle
+        """
+        self.trafficData.loc[len(self.trafficData)] = {'vehicleid': msg.vehicleid, 
+                                                        'junctionid': msg.junctionid, 
+                                                        'approachleg': msg.approachleg, 
+                                                        'departleg': msg.departleg,
+                                                        'vehicletype': msg.vehicletype, 
+                                                        'distfromstopline':msg.distfromstopline, 
+                                                        'point':tuple(msg.point), 
+                                                        'arrivaltime': msg.arrivaltime, 
+                                                        'speed': msg.speed, 
+                                                        'priority': msg.priority
+                                                    }
+                                                    
+    def RecordTrafficData(self, msg): 
+        """
+            This function receives a DSRC Message from vehicl(s), checks if the vehicle already exist in trafficData for the present intersection
+            If the vehicle has already been added, it updates location/point, speed, distancetostopline
+        """
+        #print('VehicleID: ', msg.vehicleid)
+        idx = None 
+        #check if self.trafficData is not empty
+        if len(self.trafficData) > 0: #There is a record in it
+            try:
+                #try to retrieve the vehicle record nat the current intersection
+                idx = self.trafficData[((self.trafficData['vehicleid'] == msg.vehicleid) & (self.trafficData['approachleg'] == msg.approachleg))].index[0]
+                
+                if msg.distfromstopline > -self.MINSTOPLINEDIST : #vehicle is yet past the intersection, thus, we update its data
+                    #update disttostoline, point, and speed
+                    pointTuple = tuple(msg.point)
+                    #print('Tuple Value: ', pointTuple)
+
+                    # Assign values to 'point' and 'speed' columns separately
+                    self.trafficData.at[idx, 'point'] = pointTuple
+                    self.trafficData.at[idx, 'speed'] = msg.speed
+                    self.trafficData.at[idx, 'distfromstopline'] = msg.distfromstopline
+                else: #Vehicle has gone past the intersection, thus we remove it from the record
+                    #delete vehicle record from dataframe
+                    self.trafficData = self.trafficData[~((self.trafficData['vehicleid'] == msg.vehicleid) & (self.trafficData['approachleg'] == msg.approachleg))]
+            
+            except IndexError as e:
+                if idx is None: #Just to confirm that generated the error that hindered updates, which means vehicle is not in the dataframe
+                    #When it fails to retrieve idx, it means record for the vehicle at the current intersection does not exist.
+                    #We add it as a new record
+                    self.InsertNewRecord(msg)
+                
+        else: #this is the first record to be inserted                                            
+            self.InsertNewRecord(msg)
+                
+def main(args=None):
+    rclpy.init(args=args)
+    print("Fuzzy Logic Based controller of Hybrid CIM and Traffic Lights System Node")
+    tls = FISCentralizedCIMTLS()
+    rclpy.spin(tls)
+    
+    tls.destroy_node()
+    rclpy.shutdown()
+    
+if __name__ == "main":
+    main()

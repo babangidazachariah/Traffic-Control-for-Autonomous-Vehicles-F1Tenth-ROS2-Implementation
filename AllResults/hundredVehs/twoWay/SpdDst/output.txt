@@ -1,0 +1,3 @@
+Created: 484
+Removed: 438
+Throughput Performance: 90.49586776859503

@@ -1,0 +1,7 @@
+{
+  "package_name": "trafficrecord",
+  "non_idl_tuples": [
+    "/home/babangida/ros_ws/src/trafficrecord:action/VehWaitTime.action",
+    "/home/babangida/ros_ws/src/trafficrecord:action/HybridCIM.action"
+  ]
+}

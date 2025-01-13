@@ -1,0 +1,4 @@
+Invoking command in '/home/babangida/ros_ws/build/trafficrecord': /usr/bin/cmake --build /home/babangida/ros_ws/build/trafficrecord -- -j8 -l8
+Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': /usr/bin/cmake --build /home/babangida/ros_ws/build/trafficrecord -- -j8 -l8
+Invoking command in '/home/babangida/ros_ws/build/trafficrecord': /usr/bin/cmake --install /home/babangida/ros_ws/build/trafficrecord
+Invoked command in '/home/babangida/ros_ws/build/trafficrecord' returned '0': /usr/bin/cmake --install /home/babangida/ros_ws/build/trafficrecord

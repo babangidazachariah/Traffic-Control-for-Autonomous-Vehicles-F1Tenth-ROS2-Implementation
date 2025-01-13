@@ -1,0 +1,21 @@
+[0.208s] Invoking command in '/home/babangida/ros_ws/build/dsrcmsg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --build /home/babangida/ros_ws/build/dsrcmsg -- -j8 -l8
+[0.233s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.261s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.450s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.456s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.745s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.748s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[9.291s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.322s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[9.334s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[9.334s]   rosidl_generate_interfaces() the passed file 'msg/OneCIMKeypoints.msg'
+[9.334s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[9.334s]   '/home/babangida/ros_ws/src/dsrcmsg'
+[9.334s] Call Stack (most recent call first):
+[9.334s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[9.335s] 
+[9.335s] 
+[9.335s] -- Configuring incomplete, errors occurred!
+[9.336s] See also "/home/babangida/ros_ws/build/dsrcmsg/CMakeFiles/CMakeOutput.log".
+[9.344s] make: *** [Makefile:1468: cmake_check_build_system] Error 1
+[9.346s] Invoked command in '/home/babangida/ros_ws/build/dsrcmsg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy /usr/bin/cmake --build /home/babangida/ros_ws/build/dsrcmsg -- -j8 -l8

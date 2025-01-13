@@ -1,0 +1,36 @@
+[3.431s] Invoking command in '/home/babangida/ros_ws/src/onecim': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/onecim build --build-base /home/babangida/ros_ws/build/onecim/build install --record /home/babangida/ros_ws/build/onecim/install.log --install-scripts $base/lib/onecim --single-version-externally-managed
+[3.620s] running egg_info
+[3.620s] creating ../../build/onecim/onecim.egg-info
+[3.620s] writing ../../build/onecim/onecim.egg-info/PKG-INFO
+[3.621s] writing dependency_links to ../../build/onecim/onecim.egg-info/dependency_links.txt
+[3.621s] writing entry points to ../../build/onecim/onecim.egg-info/entry_points.txt
+[3.621s] writing requirements to ../../build/onecim/onecim.egg-info/requires.txt
+[3.621s] writing top-level names to ../../build/onecim/onecim.egg-info/top_level.txt
+[3.690s] writing manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+[3.731s] reading manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+[3.732s] writing manifest file '../../build/onecim/onecim.egg-info/SOURCES.txt'
+[3.732s] running build
+[3.732s] running build_py
+[3.732s] creating /home/babangida/ros_ws/build/onecim/build
+[3.732s] creating /home/babangida/ros_ws/build/onecim/build/lib
+[3.733s] creating /home/babangida/ros_ws/build/onecim/build/lib/onecim
+[3.733s] copying onecim/__init__.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+[3.733s] copying onecim/onecimtls.py -> /home/babangida/ros_ws/build/onecim/build/lib/onecim
+[3.733s] running install
+[3.733s] running install_lib
+[3.734s] creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+[3.734s] copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/__init__.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+[3.735s] copying /home/babangida/ros_ws/build/onecim/build/lib/onecim/onecimtls.py -> /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim
+[3.735s] byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/__init__.py to __init__.cpython-38.pyc
+[3.736s] byte-compiling /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim/onecimtls.py to onecimtls.cpython-38.pyc
+[3.738s] running install_data
+[3.738s] creating /home/babangida/ros_ws/install/onecim/share/ament_index
+[3.739s] creating /home/babangida/ros_ws/install/onecim/share/ament_index/resource_index
+[3.739s] creating /home/babangida/ros_ws/install/onecim/share/ament_index/resource_index/packages
+[3.739s] copying resource/onecim -> /home/babangida/ros_ws/install/onecim/share/ament_index/resource_index/packages
+[3.739s] copying package.xml -> /home/babangida/ros_ws/install/onecim/share/onecim
+[3.740s] running install_egg_info
+[3.741s] Copying ../../build/onecim/onecim.egg-info to /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim-0.0.0-py3.8.egg-info
+[3.742s] running install_scripts
+[3.755s] writing list of installed files to '/home/babangida/ros_ws/build/onecim/install.log'
+[3.771s] Invoked command in '/home/babangida/ros_ws/src/onecim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/onecim build --build-base /home/babangida/ros_ws/build/onecim/build install --record /home/babangida/ros_ws/build/onecim/install.log --install-scripts $base/lib/onecim --single-version-externally-managed

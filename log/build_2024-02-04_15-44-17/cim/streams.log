@@ -1,0 +1,36 @@
+[3.048s] Invoking command in '/home/babangida/ros_ws/build/cim': PYTHONPATH=/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/cim/build --no-deps install_data
+[3.401s] running develop
+[3.624s] running egg_info
+[3.624s] writing cim.egg-info/PKG-INFO
+[3.624s] writing dependency_links to cim.egg-info/dependency_links.txt
+[3.625s] writing entry points to cim.egg-info/entry_points.txt
+[3.625s] writing requirements to cim.egg-info/requires.txt
+[3.625s] writing top-level names to cim.egg-info/top_level.txt
+[3.678s] reading manifest file 'cim.egg-info/SOURCES.txt'
+[3.679s] writing manifest file 'cim.egg-info/SOURCES.txt'
+[3.729s] running build_ext
+[3.729s] Creating /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim.egg-link (link to .)
+[3.730s] Installing cimnode script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.731s] Installing debugewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.731s] Installing dsrcsimplecim script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.731s] Installing ewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.732s] Installing fhcim script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.732s] Installing fiscim script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.732s] Installing fisewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.732s] Installing fissnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.732s] Installing playde script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.733s] Installing playpp script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.733s] Installing plotpoint script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.733s] Installing recanalysis script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.733s] Installing recanalysisserver script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.733s] Installing snagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.734s] Installing statictls script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.734s] Installing stlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.734s] Installing stlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.734s] Installing test script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.735s] Installing tlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.735s] Installing tlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[3.735s] 
+[3.736s] Installed /home/babangida/ros_ws/build/cim
+[3.736s] running install_data
+[3.776s] Invoked command in '/home/babangida/ros_ws/build/cim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/cim/build --no-deps install_data

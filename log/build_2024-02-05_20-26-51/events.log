@@ -1,0 +1,552 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (dsrcmsg) JobQueued: {'identifier': 'dsrcmsg', 'dependencies': OrderedDict()}
+[0.000258] (trafficrecord) JobQueued: {'identifier': 'trafficrecord', 'dependencies': OrderedDict()}
+[0.000289] (cim) JobQueued: {'identifier': 'cim', 'dependencies': OrderedDict([('dsrcmsg', '/home/babangida/ros_ws/install/dsrcmsg'), ('trafficrecord', '/home/babangida/ros_ws/install/trafficrecord')])}
+[0.000377] (reactivemethods) JobQueued: {'identifier': 'reactivemethods', 'dependencies': OrderedDict([('dsrcmsg', '/home/babangida/ros_ws/install/dsrcmsg')])}
+[0.000437] (dsrcmsg) JobStarted: {'identifier': 'dsrcmsg'}
+[0.098654] (-) TimerEvent: {}
+[0.201783] (-) TimerEvent: {}
+[0.238199] (trafficrecord) JobStarted: {'identifier': 'trafficrecord'}
+[0.302609] (-) TimerEvent: {}
+[0.379212] (dsrcmsg) JobProgress: {'identifier': 'dsrcmsg', 'progress': 'cmake'}
+[0.402794] (-) TimerEvent: {}
+[0.433298] (dsrcmsg) JobProgress: {'identifier': 'dsrcmsg', 'progress': 'build'}
+[0.434400] (dsrcmsg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/babangida/ros_ws/build/dsrcmsg', '--', '-j8', '-l8'], 'cwd': '/home/babangida/ros_ws/build/dsrcmsg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'babangida'), ('SHLVL', '1'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/babangida'), ('OLDPWD', '/home/babangida'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'babangida'), ('NAME', 'DeBangis'), ('WSL_INTEROP', '/run/WSL/576_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '5de46942-5ab8-426a-8956-553d5c280058'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/babangida/ros_ws/build/dsrcmsg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.464915] (trafficrecord) JobProgress: {'identifier': 'trafficrecord', 'progress': 'cmake'}
+[0.502922] (-) TimerEvent: {}
+[0.518135] (trafficrecord) JobProgress: {'identifier': 'trafficrecord', 'progress': 'build'}
+[0.518227] (trafficrecord) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/babangida/ros_ws/build/trafficrecord', '--', '-j8', '-l8'], 'cwd': '/home/babangida/ros_ws/build/trafficrecord', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'babangida'), ('SHLVL', '1'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/babangida'), ('OLDPWD', '/home/babangida'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'babangida'), ('NAME', 'DeBangis'), ('WSL_INTEROP', '/run/WSL/576_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '5de46942-5ab8-426a-8956-553d5c280058'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/babangida/ros_ws/build/trafficrecord'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.603148] (-) TimerEvent: {}
+[0.703607] (-) TimerEvent: {}
+[0.803937] (-) TimerEvent: {}
+[0.904197] (-) TimerEvent: {}
+[1.004480] (-) TimerEvent: {}
+[1.104839] (-) TimerEvent: {}
+[1.205214] (-) TimerEvent: {}
+[1.305531] (-) TimerEvent: {}
+[1.405894] (-) TimerEvent: {}
+[1.506355] (-) TimerEvent: {}
+[1.606655] (-) TimerEvent: {}
+[1.706947] (-) TimerEvent: {}
+[1.807207] (-) TimerEvent: {}
+[1.907554] (-) TimerEvent: {}
+[2.007920] (-) TimerEvent: {}
+[2.108271] (-) TimerEvent: {}
+[2.208667] (-) TimerEvent: {}
+[2.309085] (-) TimerEvent: {}
+[2.398833] (dsrcmsg) StdoutLine: {'line': b'[  2%] Built target dsrcmsg__cpp\n'}
+[2.409392] (-) TimerEvent: {}
+[2.509817] (-) TimerEvent: {}
+[2.592947] (trafficrecord) StdoutLine: {'line': b'[  2%] Built target trafficrecord__cpp\n'}
+[2.609938] (-) TimerEvent: {}
+[2.710285] (-) TimerEvent: {}
+[2.810711] (-) TimerEvent: {}
+[2.911064] (-) TimerEvent: {}
+[3.011373] (-) TimerEvent: {}
+[3.060850] (dsrcmsg) StdoutLine: {'line': b'[ 23%] Built target dsrcmsg__rosidl_typesupport_cpp\n'}
+[3.061131] (dsrcmsg) StdoutLine: {'line': b'[ 23%] Built target dsrcmsg__rosidl_generator_c\n'}
+[3.062010] (trafficrecord) StdoutLine: {'line': b'[ 12%] Built target trafficrecord__rosidl_generator_c\n'}
+[3.069876] (dsrcmsg) StdoutLine: {'line': b'[ 34%] Built target dsrcmsg__rosidl_typesupport_introspection_cpp\n'}
+[3.070521] (trafficrecord) StdoutLine: {'line': b'[ 23%] Built target trafficrecord__rosidl_typesupport_cpp\n'}
+[3.111476] (-) TimerEvent: {}
+[3.126497] (dsrcmsg) StdoutLine: {'line': b'[ 44%] Built target dsrcmsg__rosidl_typesupport_fastrtps_cpp\n'}
+[3.211814] (-) TimerEvent: {}
+[3.230470] (trafficrecord) StdoutLine: {'line': b'[ 33%] Built target trafficrecord__rosidl_typesupport_introspection_cpp\n'}
+[3.237562] (dsrcmsg) StdoutLine: {'line': b'[ 55%] Built target dsrcmsg__rosidl_typesupport_introspection_c\n'}
+[3.237921] (dsrcmsg) StdoutLine: {'line': b'[ 65%] Built target dsrcmsg__rosidl_typesupport_c\n'}
+[3.272482] (trafficrecord) StdoutLine: {'line': b'[ 43%] Built target trafficrecord__rosidl_typesupport_fastrtps_cpp\n'}
+[3.276122] (dsrcmsg) StdoutLine: {'line': b'[ 76%] Built target dsrcmsg__rosidl_typesupport_fastrtps_c\n'}
+[3.285292] (trafficrecord) StdoutLine: {'line': b'[ 53%] Built target trafficrecord__rosidl_typesupport_introspection_c\n'}
+[3.289322] (trafficrecord) StdoutLine: {'line': b'[ 64%] Built target trafficrecord__rosidl_typesupport_c\n'}
+[3.311960] (-) TimerEvent: {}
+[3.327590] (dsrcmsg) StdoutLine: {'line': b'[ 76%] Built target dsrcmsg\n'}
+[3.412084] (-) TimerEvent: {}
+[3.443403] (dsrcmsg) StdoutLine: {'line': b'[ 78%] Built target dsrcmsg__py\n'}
+[3.450417] (trafficrecord) StdoutLine: {'line': b'[ 74%] Built target trafficrecord__rosidl_typesupport_fastrtps_c\n'}
+[3.486929] (trafficrecord) StdoutLine: {'line': b'[ 74%] Built target trafficrecord\n'}
+[3.512191] (-) TimerEvent: {}
+[3.578838] (trafficrecord) StdoutLine: {'line': b'[ 76%] Built target trafficrecord__py\n'}
+[3.612664] (-) TimerEvent: {}
+[3.637758] (dsrcmsg) StdoutLine: {'line': b'[ 87%] Built target dsrcmsg__python\n'}
+[3.692763] (trafficrecord) StdoutLine: {'line': b'[ 84%] Built target trafficrecord__python\n'}
+[3.712812] (-) TimerEvent: {}
+[3.731221] (dsrcmsg) StdoutLine: {'line': b'[ 91%] Built target dsrcmsg__rosidl_typesupport_introspection_c__pyext\n'}
+[3.779192] (dsrcmsg) StdoutLine: {'line': b'[ 95%] Built target dsrcmsg__rosidl_typesupport_c__pyext\n'}
+[3.785746] (dsrcmsg) StdoutLine: {'line': b'[100%] Built target dsrcmsg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.797248] (dsrcmsg) CommandEnded: {'returncode': 0}
+[3.813019] (-) TimerEvent: {}
+[3.827894] (trafficrecord) StdoutLine: {'line': b'[ 94%] Built target trafficrecord__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.832576] (trafficrecord) StdoutLine: {'line': b'[ 94%] Built target trafficrecord__rosidl_typesupport_introspection_c__pyext\n'}
+[3.856066] (trafficrecord) StdoutLine: {'line': b'[100%] Built target trafficrecord__rosidl_typesupport_c__pyext\n'}
+[3.869115] (trafficrecord) CommandEnded: {'returncode': 0}
+[3.873724] (dsrcmsg) JobProgress: {'identifier': 'dsrcmsg', 'progress': 'install'}
+[3.882290] (dsrcmsg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/babangida/ros_ws/build/dsrcmsg'], 'cwd': '/home/babangida/ros_ws/build/dsrcmsg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'babangida'), ('SHLVL', '1'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/babangida'), ('OLDPWD', '/home/babangida'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'babangida'), ('NAME', 'DeBangis'), ('WSL_INTEROP', '/run/WSL/576_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '5de46942-5ab8-426a-8956-553d5c280058'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/babangida/ros_ws/build/dsrcmsg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[3.891546] (dsrcmsg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.913097] (-) TimerEvent: {}
+[3.917253] (dsrcmsg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.927767] (trafficrecord) JobProgress: {'identifier': 'trafficrecord', 'progress': 'install'}
+[3.928420] (trafficrecord) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/babangida/ros_ws/build/trafficrecord'], 'cwd': '/home/babangida/ros_ws/build/trafficrecord', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'babangida'), ('SHLVL', '1'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/babangida'), ('OLDPWD', '/home/babangida'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'babangida'), ('NAME', 'DeBangis'), ('WSL_INTEROP', '/run/WSL/576_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '5de46942-5ab8-426a-8956-553d5c280058'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/babangida/ros_ws/build/trafficrecord'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[3.941997] (trafficrecord) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.942706] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/rosidl_interfaces/dsrcmsg\n'}
+[3.943299] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/rosidl_interfaces/trafficrecord\n'}
+[3.943589] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord\n'}
+[3.943827] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action\n'}
+[3.944083] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/veh_wait_time.h\n'}
+[3.944326] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail\n'}
+[3.944640] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__struct.h\n'}
+[3.944713] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__struct.h\n'}
+[3.944768] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.h\n'}
+[3.944820] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__functions.c\n'}
+[3.944871] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.h\n'}
+[3.944922] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__functions.c\n'}
+[3.944972] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__functions.h\n'}
+[3.945051] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__functions.h\n'}
+[3.945105] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/hybrid_cim.h\n'}
+[3.945155] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg\n'}
+[3.962283] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.013401] (-) TimerEvent: {}
+[4.015637] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/library_path.sh\n'}
+[4.017138] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/library_path.dsv\n'}
+[4.053007] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_generator_c.so\n'}
+[4.054130] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord\n'}
+[4.054389] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action\n'}
+[4.054574] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail\n'}
+[4.054734] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_fastrtps_c.h\n'}
+[4.054878] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_fastrtps_c.h\n'}
+[4.055075] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg\n'}
+[4.055215] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.080754] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__functions.h\n'}
+[4.106192] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__struct.h\n'}
+[4.106371] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_fastrtps_c.so\n'}
+[4.106692] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord\n'}
+[4.106963] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action\n'}
+[4.107042] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail\n'}
+[4.107129] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/dds_fastrtps\n'}
+[4.107190] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.107243] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.107294] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg\n'}
+[4.107343] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.112045] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__type_support.h\n'}
+[4.113467] (-) TimerEvent: {}
+[4.138107] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__functions.h\n'}
+[4.138536] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__struct.h\n'}
+[4.139009] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__type_support.h\n'}
+[4.139410] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__functions.h\n'}
+[4.139790] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__struct.h\n'}
+[4.140178] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__type_support.h\n'}
+[4.140539] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/dsrc_message.h\n'}
+[4.153278] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.153732] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord\n'}
+[4.153866] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action\n'}
+[4.153931] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail\n'}
+[4.153988] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_introspection_c.h\n'}
+[4.154043] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.c\n'}
+[4.154097] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.c\n'}
+[4.154155] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_introspection_c.h\n'}
+[4.154207] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg\n'}
+[4.154259] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.167951] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/intersection_bsm.h\n'}
+[4.181230] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.181896] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_introspection_c.so\n'}
+[4.183309] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_c.so\n'}
+[4.183605] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord\n'}
+[4.183756] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action\n'}
+[4.184109] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail\n'}
+[4.184424] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.hpp\n'}
+[4.184626] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__struct.hpp\n'}
+[4.184807] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__builder.hpp\n'}
+[4.184948] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__traits.hpp\n'}
+[4.185085] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__struct.hpp\n'}
+[4.185188] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__builder.hpp\n'}
+[4.185284] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__traits.hpp\n'}
+[4.185492] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.hpp\n'}
+[4.185576] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/hybrid_cim.hpp\n'}
+[4.185635] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/veh_wait_time.hpp\n'}
+[4.185689] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg\n'}
+[4.185741] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.185790] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord\n'}
+[4.185840] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action\n'}
+[4.185894] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail\n'}
+[4.185943] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__type_support.cpp\n'}
+[4.185992] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.186047] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/hybrid_cim__type_support.cpp\n'}
+[4.186096] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/include/trafficrecord/action/detail/veh_wait_time__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.203818] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/traffic_lights_message.h\n'}
+[4.205072] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/library_path.sh\n'}
+[4.205468] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/library_path.dsv\n'}
+[4.213597] (-) TimerEvent: {}
+[4.228947] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_fastrtps_c.h\n'}
+[4.251368] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_introspection_cpp.so\n'}
+[4.251808] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_fastrtps_c.h\n'}
+[4.252096] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_fastrtps_c.h\n'}
+[4.265983] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.266625] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__rosidl_typesupport_cpp.so\n'}
+[4.266924] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/pythonpath.sh\n'}
+[4.267013] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/pythonpath.dsv\n'}
+[4.298874] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/__init__.py\n'}
+[4.299032] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_fastrtps_c.so\n'}
+[4.300029] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.300627] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.301213] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.301828] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.302883] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.303958] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_introspection_c.h\n'}
+[4.304528] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_introspection_c.h\n'}
+[4.305033] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_introspection_c.h\n'}
+[4.305633] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.307010] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__builder.hpp\n'}
+[4.308558] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__struct.hpp\n'}
+[4.309263] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__traits.hpp\n'}
+[4.309920] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__type_support.hpp\n'}
+[4.311496] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__builder.hpp\n'}
+[4.312219] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__struct.hpp\n'}
+[4.312726] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__traits.hpp\n'}
+[4.313564] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__type_support.hpp\n'}
+[4.313736] (-) TimerEvent: {}
+[4.314559] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__builder.hpp\n'}
+[4.315351] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__struct.hpp\n'}
+[4.316136] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__traits.hpp\n'}
+[4.316726] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__type_support.hpp\n'}
+[4.317572] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/dsrc_message.hpp\n'}
+[4.318102] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/intersection_bsm.hpp\n'}
+[4.318521] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.318958] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/traffic_lights_message.hpp\n'}
+[4.320014] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.356283] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.356753] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.392990] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/pythonpath.sh\n'}
+[4.406513] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/pythonpath.dsv\n'}
+[4.411749] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action\n'}
+[4.413911] (-) TimerEvent: {}
+[4.442884] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/__init__.py\n'}
+[4.443377] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_veh_wait_time.py\n'}
+[4.443466] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_hybrid_cim.py\n'}
+[4.443524] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_hybrid_cim_s.c\n'}
+[4.443577] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/action/_veh_wait_time_s.c\n'}
+[4.480920] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/__init__.py\n'}
+[4.481745] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/trafficrecord_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.482025] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/__init__.py\n'}
+[4.482916] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/trafficrecord_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.483918] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages/trafficrecord/trafficrecord_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.500614] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_dsrc_message.py\n'}
+[4.507833] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_intersection_bsm.py\n'}
+[4.508157] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/lib/libtrafficrecord__python.so\n'}
+[4.508580] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/VehWaitTime.idl\n'}
+[4.508697] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/HybridCIM.idl\n'}
+[4.508970] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/VehWaitTime.action\n'}
+[4.509069] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/action/HybridCIM.action\n'}
+[4.509358] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/package_run_dependencies/trafficrecord\n'}
+[4.509501] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/parent_prefix_path/trafficrecord\n'}
+[4.509796] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/ament_prefix_path.sh\n'}
+[4.510037] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/ament_prefix_path.dsv\n'}
+[4.510326] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/path.sh\n'}
+[4.510392] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/environment/path.dsv\n'}
+[4.510446] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.bash\n'}
+[4.510496] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.sh\n'}
+[4.510546] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.zsh\n'}
+[4.510596] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/local_setup.dsv\n'}
+[4.510645] (trafficrecord) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.dsv\n'}
+[4.514079] (-) TimerEvent: {}
+[4.533753] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_traffic_lights_message.py\n'}
+[4.544497] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/ament_index/resource_index/packages/trafficrecord\n'}
+[4.544794] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/dsrcmsg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.556378] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/dsrcmsg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.557319] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/dsrcmsg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.557409] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_generator_cExport.cmake\n'}
+[4.557478] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.558269] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.558449] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.558568] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__python.so\n'}
+[4.559088] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cExport.cmake\n'}
+[4.559384] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.567799] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/DSRCMessage.idl\n'}
+[4.568264] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_generator_cppExport.cmake\n'}
+[4.579125] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/IntersectionBSM.idl\n'}
+[4.579621] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.579824] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.580146] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/TrafficLightsMessage.idl\n'}
+[4.580261] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/DSRCMessage.msg\n'}
+[4.580550] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/IntersectionBSM.msg\n'}
+[4.580752] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cppExport.cmake\n'}
+[4.580875] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecord__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.580966] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/rosidl_cmake-extras.cmake\n'}
+[4.581114] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.581466] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.581896] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.582071] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.582227] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.582397] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.582601] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecordConfig.cmake\n'}
+[4.582950] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/cmake/trafficrecordConfig-version.cmake\n'}
+[4.583471] (trafficrecord) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/trafficrecord/share/trafficrecord/package.xml\n'}
+[4.584316] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/TrafficLightsMessage.msg\n'}
+[4.584641] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/package_run_dependencies/dsrcmsg\n'}
+[4.584814] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/parent_prefix_path/dsrcmsg\n'}
+[4.585092] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/ament_prefix_path.sh\n'}
+[4.585612] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/ament_prefix_path.dsv\n'}
+[4.586646] (trafficrecord) CommandEnded: {'returncode': 0}
+[4.587069] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/path.sh\n'}
+[4.587244] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/path.dsv\n'}
+[4.587501] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.bash\n'}
+[4.587725] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.sh\n'}
+[4.587847] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.zsh\n'}
+[4.588082] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.dsv\n'}
+[4.588261] (dsrcmsg) StdoutLine: {'line': b'-- Symlinking: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.dsv\n'}
+[4.615018] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/packages/dsrcmsg\n'}
+[4.615989] (-) TimerEvent: {}
+[4.620172] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/rosidl_cmake-extras.cmake\n'}
+[4.620412] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.621568] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.621753] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.621918] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.622075] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.622241] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.641856] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsgConfig.cmake\n'}
+[4.654335] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsgConfig-version.cmake\n'}
+[4.654650] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.xml\n'}
+[4.655765] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_generator_c.so\n'}
+[4.657103] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_introspection_c.so\n'}
+[4.657938] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_c.so\n'}
+[4.674200] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_introspection_cpp.so\n'}
+[4.680135] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_cpp.so\n'}
+[4.716286] (-) TimerEvent: {}
+[4.776197] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_generator_cExport.cmake\n'}
+[4.776498] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.796262] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.796414] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.797195] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cExport.cmake\n'}
+[4.797316] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.811866] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_generator_cppExport.cmake\n'}
+[4.812590] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.812790] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.816376] (-) TimerEvent: {}
+[4.816989] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cppExport.cmake\n'}
+[4.817440] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.917866] (-) TimerEvent: {}
+[5.026915] (-) TimerEvent: {}
+[5.127274] (-) TimerEvent: {}
+[5.230685] (-) TimerEvent: {}
+[5.310121] (dsrcmsg) CommandEnded: {'returncode': 0}
+[5.331917] (-) TimerEvent: {}
+[5.437349] (-) TimerEvent: {}
+[5.539102] (-) TimerEvent: {}
+[5.644196] (-) TimerEvent: {}
+[5.693801] (trafficrecord) JobEnded: {'identifier': 'trafficrecord', 'rc': 0}
+[5.746466] (-) TimerEvent: {}
+[5.848134] (-) TimerEvent: {}
+[5.894080] (dsrcmsg) JobEnded: {'identifier': 'dsrcmsg', 'rc': 0}
+[5.894580] (cim) JobStarted: {'identifier': 'cim'}
+[5.950808] (-) TimerEvent: {}
+[6.007403] (reactivemethods) JobStarted: {'identifier': 'reactivemethods'}
+[6.053798] (-) TimerEvent: {}
+[6.156523] (-) TimerEvent: {}
+[6.258089] (-) TimerEvent: {}
+[6.358453] (-) TimerEvent: {}
+[6.458854] (-) TimerEvent: {}
+[6.559302] (-) TimerEvent: {}
+[6.660033] (-) TimerEvent: {}
+[6.760389] (-) TimerEvent: {}
+[6.860791] (-) TimerEvent: {}
+[6.961283] (-) TimerEvent: {}
+[7.061736] (-) TimerEvent: {}
+[7.162104] (-) TimerEvent: {}
+[7.262466] (-) TimerEvent: {}
+[7.362848] (-) TimerEvent: {}
+[7.463798] (-) TimerEvent: {}
+[7.564280] (-) TimerEvent: {}
+[7.664629] (-) TimerEvent: {}
+[7.764991] (-) TimerEvent: {}
+[7.865354] (-) TimerEvent: {}
+[7.965780] (-) TimerEvent: {}
+[8.066203] (-) TimerEvent: {}
+[8.166638] (-) TimerEvent: {}
+[8.266948] (-) TimerEvent: {}
+[8.367296] (-) TimerEvent: {}
+[8.467615] (-) TimerEvent: {}
+[8.567999] (-) TimerEvent: {}
+[8.668537] (-) TimerEvent: {}
+[8.769191] (-) TimerEvent: {}
+[8.869549] (-) TimerEvent: {}
+[8.895769] (cim) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/babangida/ros_ws/build/cim/build'], 'cwd': '/home/babangida/ros_ws/build/cim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'babangida', 'SHLVL': '1', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'LD_LIBRARY_PATH': '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib', 'HOME': '/home/babangida', 'OLDPWD': '/home/babangida', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'babangida', 'NAME': 'DeBangis', 'WSL_INTEROP': '/run/WSL/576_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '5de46942-5ab8-426a-8956-553d5c280058', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/babangida/ros_ws/build/cim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg'}, 'shell': False}
+[8.902715] (reactivemethods) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/reactivemethods', 'build', '--build-base', '/home/babangida/ros_ws/build/reactivemethods/build', 'install', '--record', '/home/babangida/ros_ws/build/reactivemethods/install.log', '--install-scripts', '$base/lib/reactivemethods', '--single-version-externally-managed'], 'cwd': '/home/babangida/ros_ws/src/reactivemethods', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'babangida', 'SHLVL': '1', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'LD_LIBRARY_PATH': '/home/babangida/ros_ws/install/dsrcmsg/lib', 'HOME': '/home/babangida', 'OLDPWD': '/home/babangida', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'babangida', 'NAME': 'DeBangis', 'WSL_INTEROP': '/run/WSL/576_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '5de46942-5ab8-426a-8956-553d5c280058', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/babangida/ros_ws/install/dsrcmsg', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/babangida/ros_ws/build/reactivemethods', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/babangida/ros_ws/build/reactivemethods/prefix_override:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/home/babangida/ros_ws/install/dsrcmsg'}, 'shell': False}
+[8.969697] (-) TimerEvent: {}
+[9.070023] (-) TimerEvent: {}
+[9.166134] (reactivemethods) StdoutLine: {'line': b'running egg_info\n'}
+[9.166698] (reactivemethods) StdoutLine: {'line': b'writing ../../build/reactivemethods/reactivemethods.egg-info/PKG-INFO\n'}
+[9.167328] (reactivemethods) StdoutLine: {'line': b'writing dependency_links to ../../build/reactivemethods/reactivemethods.egg-info/dependency_links.txt\n'}
+[9.167637] (reactivemethods) StdoutLine: {'line': b'writing entry points to ../../build/reactivemethods/reactivemethods.egg-info/entry_points.txt\n'}
+[9.167995] (reactivemethods) StdoutLine: {'line': b'writing requirements to ../../build/reactivemethods/reactivemethods.egg-info/requires.txt\n'}
+[9.168110] (reactivemethods) StdoutLine: {'line': b'writing top-level names to ../../build/reactivemethods/reactivemethods.egg-info/top_level.txt\n'}
+[9.170127] (-) TimerEvent: {}
+[9.270424] (-) TimerEvent: {}
+[9.273916] (cim) StdoutLine: {'line': b'running develop\n'}
+[9.370553] (-) TimerEvent: {}
+[9.383817] (reactivemethods) StdoutLine: {'line': b"reading manifest file '../../build/reactivemethods/reactivemethods.egg-info/SOURCES.txt'\n"}
+[9.406452] (reactivemethods) StdoutLine: {'line': b"writing manifest file '../../build/reactivemethods/reactivemethods.egg-info/SOURCES.txt'\n"}
+[9.406934] (reactivemethods) StdoutLine: {'line': b'running build\n'}
+[9.407110] (reactivemethods) StdoutLine: {'line': b'running build_py\n'}
+[9.436561] (reactivemethods) StdoutLine: {'line': b'running install\n'}
+[9.438126] (reactivemethods) StdoutLine: {'line': b'running install_lib\n'}
+[9.443095] (reactivemethods) StdoutLine: {'line': b'running install_data\n'}
+[9.469469] (reactivemethods) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.470662] (-) TimerEvent: {}
+[9.474085] (reactivemethods) StdoutLine: {'line': b"removing '/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.474878] (reactivemethods) StdoutLine: {'line': b'Copying ../../build/reactivemethods/reactivemethods.egg-info to /home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods-0.0.0-py3.8.egg-info\n'}
+[9.477975] (reactivemethods) StdoutLine: {'line': b'running install_scripts\n'}
+[9.519839] (reactivemethods) StdoutLine: {'line': b'Installing agapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.530983] (reactivemethods) StdoutLine: {'line': b'Installing agent1purepursuit script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.531830] (reactivemethods) StdoutLine: {'line': b'Installing degapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.532331] (reactivemethods) StdoutLine: {'line': b'Installing emergencybreaking script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.532798] (reactivemethods) StdoutLine: {'line': b'Installing followgap script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.533168] (reactivemethods) StdoutLine: {'line': b'Installing gapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.533586] (reactivemethods) StdoutLine: {'line': b'Installing leftwallfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.534092] (reactivemethods) StdoutLine: {'line': b'Installing northsouthagent script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.534422] (reactivemethods) StdoutLine: {'line': b'Installing play script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.534585] (reactivemethods) StdoutLine: {'line': b'Installing publishwaypoints script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.535919] (reactivemethods) StdoutLine: {'line': b'Installing purepursuit script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.536181] (reactivemethods) StdoutLine: {'line': b'Installing waypointfollow script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.536408] (reactivemethods) StdoutLine: {'line': b'Installing waypointsgenerator script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.536623] (reactivemethods) StdoutLine: {'line': b'Installing westeastagent script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.536825] (reactivemethods) StdoutLine: {'line': b'Installing wptflw script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods\n'}
+[9.537167] (reactivemethods) StdoutLine: {'line': b"writing list of installed files to '/home/babangida/ros_ws/build/reactivemethods/install.log'\n"}
+[9.547502] (cim) StdoutLine: {'line': b'Removing /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim.egg-link (link to .)\n'}
+[9.570033] (reactivemethods) CommandEnded: {'returncode': 0}
+[9.570715] (-) TimerEvent: {}
+[9.671498] (-) TimerEvent: {}
+[9.743356] (reactivemethods) JobEnded: {'identifier': 'reactivemethods', 'rc': 0}
+[9.745389] (cim) CommandEnded: {'returncode': 0}
+[9.748935] (cim) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/cim', 'build', '--build-base', '/home/babangida/ros_ws/build/cim/build', 'install', '--record', '/home/babangida/ros_ws/build/cim/install.log', '--install-scripts', '$base/lib/cim', '--single-version-externally-managed'], 'cwd': '/home/babangida/ros_ws/src/cim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'babangida', 'SHLVL': '1', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'LD_LIBRARY_PATH': '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib', 'HOME': '/home/babangida', 'OLDPWD': '/home/babangida', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'babangida', 'NAME': 'DeBangis', 'WSL_INTEROP': '/run/WSL/576_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin', 'WT_SESSION': '5de46942-5ab8-426a-8956-553d5c280058', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/babangida/ros_ws/build/cim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg'}, 'shell': False}
+[9.771663] (-) TimerEvent: {}
+[9.872004] (-) TimerEvent: {}
+[9.972308] (-) TimerEvent: {}
+[10.003891] (cim) StdoutLine: {'line': b'running egg_info\n'}
+[10.022782] (cim) StdoutLine: {'line': b'writing ../../build/cim/cim.egg-info/PKG-INFO\n'}
+[10.023098] (cim) StdoutLine: {'line': b'writing dependency_links to ../../build/cim/cim.egg-info/dependency_links.txt\n'}
+[10.023541] (cim) StdoutLine: {'line': b'writing entry points to ../../build/cim/cim.egg-info/entry_points.txt\n'}
+[10.023742] (cim) StdoutLine: {'line': b'writing requirements to ../../build/cim/cim.egg-info/requires.txt\n'}
+[10.024045] (cim) StdoutLine: {'line': b'writing top-level names to ../../build/cim/cim.egg-info/top_level.txt\n'}
+[10.072639] (-) TimerEvent: {}
+[10.173608] (-) TimerEvent: {}
+[10.274031] (-) TimerEvent: {}
+[10.279569] (cim) StdoutLine: {'line': b"reading manifest file '../../build/cim/cim.egg-info/SOURCES.txt'\n"}
+[10.281112] (cim) StdoutLine: {'line': b"writing manifest file '../../build/cim/cim.egg-info/SOURCES.txt'\n"}
+[10.281314] (cim) StdoutLine: {'line': b'running build\n'}
+[10.281449] (cim) StdoutLine: {'line': b'running build_py\n'}
+[10.321241] (cim) StdoutLine: {'line': b'copying cim/FISTrafficSignalOptimizer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.321531] (cim) StdoutLine: {'line': b'copying cim/FISBasedDecentralizedCIM.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.321743] (cim) StdoutLine: {'line': b'copying cim/tlsewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.322007] (cim) StdoutLine: {'line': b'copying cim/fisewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.322357] (cim) StdoutLine: {'line': b'copying cim/FISBasedCIM.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.322545] (cim) StdoutLine: {'line': b'copying cim/debugdsrcmsg.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.322803] (cim) StdoutLine: {'line': b'copying cim/ResultAnalysis.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.322958] (cim) StdoutLine: {'line': b'copying cim/StaticTrafficLights.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.323356] (cim) StdoutLine: {'line': b'copying cim/tlssnagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.323496] (cim) StdoutLine: {'line': b'copying cim/FISCentralizedIntersectionController.py -> /home/babangida/ros_ws/build/cim/build/lib/cim\n'}
+[10.346102] (cim) StdoutLine: {'line': b'running install\n'}
+[10.346906] (cim) StdoutLine: {'line': b'running install_lib\n'}
+[10.347759] (cim) StdoutLine: {'line': b'creating /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.348009] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.348218] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/cimnode.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.374191] (-) TimerEvent: {}
+[10.386852] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/GlpkTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.388147] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/debugewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.388677] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISBasedDecentralizedCIM.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.388902] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/stlssnagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.389324] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/tlsewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.389483] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/__init__.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.389746] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/TrafficRecordingAnalysisServer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.390131] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/fisewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.390424] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/plotPoint.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.390945] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/fisnsagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.391644] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/fibonacci_action_client.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.392017] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/WePurePursuit.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.392501] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/ewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.393280] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/snagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.393902] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/simplemodel.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.394387] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/GeneralFunctions.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.394864] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/TrafficRecordingAnalysis.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.395324] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/PurePursuit.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.395861] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/HybridCentralizedTLSController.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.396396] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/stlsewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.397015] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/fibonacci_action_server.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.397615] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISBasedCIM.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.397711] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/gen.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.398244] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/GurobiTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.398721] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/DsrcBasedSimpleCIM.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.399139] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/testStop.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.399842] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/debugdsrcmsg.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.400217] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/ResultAnalysis.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.400330] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/CplexTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.400641] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/StaticTrafficLights.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.400963] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/tlssnagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.401045] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/DisparityExtenderObstacleAvoidance.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.401389] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.401817] (cim) StdoutLine: {'line': b'copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISCentralizedIntersectionController.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim\n'}
+[10.402653] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISTrafficSignalOptimizer.py to FISTrafficSignalOptimizer.cpython-38.pyc\n'}
+[10.406915] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/cimnode.py to cimnode.cpython-38.pyc\n'}
+[10.408398] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/GlpkTrafficSignalOptimizer.py to GlpkTrafficSignalOptimizer.cpython-38.pyc\n'}
+[10.409105] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/debugewagent.py to debugewagent.cpython-38.pyc\n'}
+[10.411143] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISBasedDecentralizedCIM.py to FISBasedDecentralizedCIM.cpython-38.pyc\n'}
+[10.411915] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/stlssnagent.py to stlssnagent.cpython-38.pyc\n'}
+[10.413459] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/tlsewagent.py to tlsewagent.cpython-38.pyc\n'}
+[10.415480] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/__init__.py to __init__.cpython-38.pyc\n'}
+[10.415675] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/TrafficRecordingAnalysisServer.py to TrafficRecordingAnalysisServer.cpython-38.pyc\n'}
+[10.416201] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fisewagent.py to fisewagent.cpython-38.pyc\n'}
+[10.418590] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/plotPoint.py to plotPoint.cpython-38.pyc\n'}
+[10.419379] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fisnsagent.py to fisnsagent.cpython-38.pyc\n'}
+[10.422958] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fibonacci_action_client.py to fibonacci_action_client.cpython-38.pyc\n'}
+[10.423339] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/WePurePursuit.py to WePurePursuit.cpython-38.pyc\n'}
+[10.426084] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/ewagent.py to ewagent.cpython-38.pyc\n'}
+[10.428183] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/snagent.py to snagent.cpython-38.pyc\n'}
+[10.429816] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/simplemodel.py to simplemodel.cpython-38.pyc\n'}
+[10.430448] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/GeneralFunctions.py to GeneralFunctions.cpython-38.pyc\n'}
+[10.431577] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/TrafficRecordingAnalysis.py to TrafficRecordingAnalysis.cpython-38.pyc\n'}
+[10.432142] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/PurePursuit.py to PurePursuit.cpython-38.pyc\n'}
+[10.433797] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/HybridCentralizedTLSController.py to HybridCentralizedTLSController.cpython-38.pyc\n'}
+[10.435211] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/stlsewagent.py to stlsewagent.cpython-38.pyc\n'}
+[10.436798] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fibonacci_action_server.py to fibonacci_action_server.cpython-38.pyc\n'}
+[10.437148] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISBasedCIM.py to FISBasedCIM.cpython-38.pyc\n'}
+[10.439170] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/gen.py to gen.cpython-38.pyc\n'}
+[10.439642] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/GurobiTrafficSignalOptimizer.py to GurobiTrafficSignalOptimizer.cpython-38.pyc\n'}
+[10.440596] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/DsrcBasedSimpleCIM.py to DsrcBasedSimpleCIM.cpython-38.pyc\n'}
+[10.441041] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/testStop.py to testStop.cpython-38.pyc\n'}
+[10.442805] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/debugdsrcmsg.py to debugdsrcmsg.cpython-38.pyc\n'}
+[10.443272] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/ResultAnalysis.py to ResultAnalysis.cpython-38.pyc\n'}
+[10.443963] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/CplexTrafficSignalOptimizer.py to CplexTrafficSignalOptimizer.cpython-38.pyc\n'}
+[10.445263] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/StaticTrafficLights.py to StaticTrafficLights.cpython-38.pyc\n'}
+[10.446089] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/tlssnagent.py to tlssnagent.cpython-38.pyc\n'}
+[10.448297] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/DisparityExtenderObstacleAvoidance.py to DisparityExtenderObstacleAvoidance.cpython-38.pyc\n'}
+[10.449128] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISOptimizer.py to FISOptimizer.cpython-38.pyc\n'}
+[10.450294] (cim) StdoutLine: {'line': b'byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISCentralizedIntersectionController.py to FISCentralizedIntersectionController.cpython-38.pyc\n'}
+[10.453413] (cim) StdoutLine: {'line': b'running install_data\n'}
+[10.474339] (-) TimerEvent: {}
+[10.499237] (cim) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.500565] (cim) StdoutLine: {'line': b'Copying ../../build/cim/cim.egg-info to /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim-0.0.0-py3.8.egg-info\n'}
+[10.501854] (cim) StdoutLine: {'line': b'running install_scripts\n'}
+[10.519196] (cim) StdoutLine: {'line': b'Installing cimnode script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.519541] (cim) StdoutLine: {'line': b'Installing debugdsrcmsg script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.519734] (cim) StdoutLine: {'line': b'Installing debugewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.520084] (cim) StdoutLine: {'line': b'Installing dsrcsimplecim script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.520291] (cim) StdoutLine: {'line': b'Installing ewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.520470] (cim) StdoutLine: {'line': b'Installing fhcim script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.520589] (cim) StdoutLine: {'line': b'Installing fiscim script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.520701] (cim) StdoutLine: {'line': b'Installing fisewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.521130] (cim) StdoutLine: {'line': b'Installing fissnagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.521257] (cim) StdoutLine: {'line': b'Installing playde script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.521634] (cim) StdoutLine: {'line': b'Installing playpp script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.521743] (cim) StdoutLine: {'line': b'Installing plotpoint script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.521842] (cim) StdoutLine: {'line': b'Installing recanalysis script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.521942] (cim) StdoutLine: {'line': b'Installing recanalysisserver script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.522056] (cim) StdoutLine: {'line': b'Installing snagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.522182] (cim) StdoutLine: {'line': b'Installing statictls script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.522295] (cim) StdoutLine: {'line': b'Installing stlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.522631] (cim) StdoutLine: {'line': b'Installing stlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.522901] (cim) StdoutLine: {'line': b'Installing test script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.523008] (cim) StdoutLine: {'line': b'Installing tlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.523235] (cim) StdoutLine: {'line': b'Installing tlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim\n'}
+[10.523486] (cim) StdoutLine: {'line': b"writing list of installed files to '/home/babangida/ros_ws/build/cim/install.log'\n"}
+[10.541634] (cim) CommandEnded: {'returncode': 0}
+[10.576809] (-) TimerEvent: {}
+[10.677420] (-) TimerEvent: {}
+[10.689993] (cim) JobEnded: {'identifier': 'cim', 'rc': 0}
+[10.690561] (-) EventReactorShutdown: {}

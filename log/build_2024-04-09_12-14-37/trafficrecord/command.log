@@ -1,0 +1,2 @@
+Invoking command in '/home/debangis/ros_ws/build/trafficrecord': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/debangis/ros_ws/build/trafficrecord -- -j8 -l8
+Invoked command in '/home/debangis/ros_ws/build/trafficrecord' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/debangis/ros_ws/build/trafficrecord -- -j8 -l8

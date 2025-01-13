@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.001045] (-) JobUnselected: {'identifier': 'cim'}
+[0.001118] (-) JobUnselected: {'identifier': 'dsrcmsg'}
+[0.001271] (-) JobUnselected: {'identifier': 'reactivemethods'}
+[0.001332] (-) JobUnselected: {'identifier': 'trafficrecord'}
+[0.001397] (onecim) JobQueued: {'identifier': 'onecim', 'dependencies': OrderedDict([('dsrcmsg', '/home/babangida/ros_ws/install/dsrcmsg'), ('trafficrecord', '/home/babangida/ros_ws/install/trafficrecord')])}
+[0.001488] (onecim) JobStarted: {'identifier': 'onecim'}
+[0.099656] (-) TimerEvent: {}
+[0.200647] (-) TimerEvent: {}
+[0.301304] (-) TimerEvent: {}
+[0.402201] (-) TimerEvent: {}
+[0.502721] (-) TimerEvent: {}
+[0.603265] (-) TimerEvent: {}
+[0.703941] (-) TimerEvent: {}
+[0.804398] (-) TimerEvent: {}
+[0.904853] (-) TimerEvent: {}
+[1.005391] (-) TimerEvent: {}
+[1.105765] (-) TimerEvent: {}
+[1.206145] (-) TimerEvent: {}
+[1.306566] (-) TimerEvent: {}
+[1.406975] (-) TimerEvent: {}
+[1.507347] (-) TimerEvent: {}
+[1.607778] (-) TimerEvent: {}
+[1.708218] (-) TimerEvent: {}
+[1.808584] (-) TimerEvent: {}
+[1.908917] (-) TimerEvent: {}
+[2.009363] (-) TimerEvent: {}
+[2.110846] (-) TimerEvent: {}
+[2.212043] (-) TimerEvent: {}
+[2.314294] (-) TimerEvent: {}
+[2.414940] (-) TimerEvent: {}
+[2.515382] (-) TimerEvent: {}
+[2.615791] (-) TimerEvent: {}
+[2.716227] (-) TimerEvent: {}
+[2.816716] (-) TimerEvent: {}
+[2.917156] (-) TimerEvent: {}
+[3.017600] (-) TimerEvent: {}
+[3.118096] (-) TimerEvent: {}
+[3.218415] (-) TimerEvent: {}
+[3.318738] (-) TimerEvent: {}
+[3.419103] (-) TimerEvent: {}
+[3.519485] (-) TimerEvent: {}
+[3.619946] (-) TimerEvent: {}
+[3.720233] (-) TimerEvent: {}
+[3.820540] (-) TimerEvent: {}
+[3.920856] (-) TimerEvent: {}
+[4.021230] (-) TimerEvent: {}
+[4.121635] (-) TimerEvent: {}
+[4.221977] (-) TimerEvent: {}
+[4.322353] (-) TimerEvent: {}
+[4.422721] (-) TimerEvent: {}
+[4.523147] (-) TimerEvent: {}
+[4.574651] (onecim) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/babangida/ros_ws/build/onecim/build', '--no-deps', 'install_data'], 'cwd': '/home/babangida/ros_ws/build/onecim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'babangida', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/babangida', 'OLDPWD': '/home/babangida', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/babangida/ros_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'babangida', 'NAME': 'DeBangis', 'WSL_INTEROP': '/run/WSL/2361_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/V2X/sumo/bin/:/mnt/c/V2X/sumo/tools/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Daddy/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin', 'WT_SESSION': '27892549-1450-42a1-bdaf-9c4a16e7a13f', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/reactivemethods:/home/babangida/ros_ws/install/dsrcmsg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/babangida/ros_ws/build/onecim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/onecim:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[4.623300] (-) TimerEvent: {}
+[4.724351] (-) TimerEvent: {}
+[4.824671] (-) TimerEvent: {}
+[4.869399] (onecim) StdoutLine: {'line': b'running develop\n'}
+[4.924861] (-) TimerEvent: {}
+[5.025238] (-) TimerEvent: {}
+[5.125565] (-) TimerEvent: {}
+[5.138085] (onecim) StdoutLine: {'line': b'running egg_info\n'}
+[5.138489] (onecim) StdoutLine: {'line': b'writing onecim.egg-info/PKG-INFO\n'}
+[5.138729] (onecim) StdoutLine: {'line': b'writing dependency_links to onecim.egg-info/dependency_links.txt\n'}
+[5.139178] (onecim) StdoutLine: {'line': b'writing entry points to onecim.egg-info/entry_points.txt\n'}
+[5.140050] (onecim) StdoutLine: {'line': b'writing requirements to onecim.egg-info/requires.txt\n'}
+[5.140327] (onecim) StdoutLine: {'line': b'writing top-level names to onecim.egg-info/top_level.txt\n'}
+[5.218874] (onecim) StdoutLine: {'line': b"reading manifest file 'onecim.egg-info/SOURCES.txt'\n"}
+[5.225715] (-) TimerEvent: {}
+[5.240625] (onecim) StdoutLine: {'line': b"writing manifest file 'onecim.egg-info/SOURCES.txt'\n"}
+[5.281651] (onecim) StdoutLine: {'line': b'running build_ext\n'}
+[5.303011] (onecim) StdoutLine: {'line': b'Creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim.egg-link (link to .)\n'}
+[5.304339] (onecim) StdoutLine: {'line': b'Installing ewfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.305315] (onecim) StdoutLine: {'line': b'Installing fisonecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.305512] (onecim) StdoutLine: {'line': b'Installing fisonecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.305637] (onecim) StdoutLine: {'line': b'Installing genveh script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.305885] (onecim) StdoutLine: {'line': b'Installing onecimew script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.306332] (onecim) StdoutLine: {'line': b'Installing onecimloopew script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.306583] (onecim) StdoutLine: {'line': b'Installing onecimloopsn script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.306984] (onecim) StdoutLine: {'line': b'Installing onecimloopstatictls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.307302] (onecim) StdoutLine: {'line': b'Installing onecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.307436] (onecim) StdoutLine: {'line': b'Installing onecimsn script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.307647] (onecim) StdoutLine: {'line': b'Installing onecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.307855] (onecim) StdoutLine: {'line': b'Installing playde script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.308092] (onecim) StdoutLine: {'line': b'Installing playpp script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.308520] (onecim) StdoutLine: {'line': b'Installing simspeed script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.308729] (onecim) StdoutLine: {'line': b'Installing snfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.308985] (onecim) StdoutLine: {'line': b'Installing veh script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.309225] (onecim) StdoutLine: {'line': b'Installing wypts script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[5.309811] (onecim) StdoutLine: {'line': b'\n'}
+[5.310050] (onecim) StdoutLine: {'line': b'Installed /home/babangida/ros_ws/build/onecim\n'}
+[5.310209] (onecim) StdoutLine: {'line': b'running install_data\n'}
+[5.325869] (-) TimerEvent: {}
+[5.351489] (onecim) CommandEnded: {'returncode': 0}
+[5.426829] (-) TimerEvent: {}
+[5.527295] (-) TimerEvent: {}
+[5.627678] (-) TimerEvent: {}
+[5.732053] (-) TimerEvent: {}
+[5.836228] (-) TimerEvent: {}
+[5.842761] (onecim) JobEnded: {'identifier': 'onecim', 'rc': 0}
+[5.844507] (-) EventReactorShutdown: {}

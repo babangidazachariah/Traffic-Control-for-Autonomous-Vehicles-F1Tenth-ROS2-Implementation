@@ -1,0 +1,4 @@
+11th Dec. 2023
+PurePursuit.py in ReactiveMethods directory works with optimized track
+if i can optimize my track using global_trajectory planning: https://github.com/TUMFTM/global_racetrajectory_optimization.git
+

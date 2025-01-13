@@ -1,0 +1,30 @@
+[
+  {
+    "Vehicle ID": "123KRJA",
+    "Junction ID": "ABCJ",
+    "Approach Leg": "North0",
+    "Departure Leg": "East0",
+    "Vehicle Type": 1,
+    "DistFromStop": 100,
+    "Location (Point)": {"x": 40.7128, "y": -74.0060},
+    "Arrival Time": "2024-02-29T08:00:00",
+    "Speed": 30,
+    "Priority": 0,
+    "Stopped Time": null,
+    "Waiting Time": null
+  },
+  {
+    "Vehicle ID": "321AJRK",
+    "Junction ID": "ABCJ",
+    "Approach Leg": "West1",
+    "Departure Leg": "South1",
+    "Vehicle Type": 1,
+    "DistFromStop": 50,
+    "Location (Point)": {"x": 34.0522, "y": -118.2437},
+    "Arrival Time": "2024-02-29T08:05:00",
+    "Speed": 0,
+    "Priority": 1,
+    "Stopped Time": "2024-02-29T08:05:05",
+    "Waiting Time": null
+  }
+]

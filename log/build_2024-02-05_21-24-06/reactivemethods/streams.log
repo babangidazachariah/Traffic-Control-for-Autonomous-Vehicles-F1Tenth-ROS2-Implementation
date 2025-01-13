@@ -1,0 +1,38 @@
+[1.921s] Invoking command in '/home/babangida/ros_ws/src/reactivemethods': CMAKE_PREFIX_PATH=/home/babangida/ros_ws/install/dsrcmsg:/home/babangida/ros_ws/install/trafficrecord LD_LIBRARY_PATH=/home/babangida/ros_ws/install/dsrcmsg/lib:/home/babangida/ros_ws/install/trafficrecord/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/babangida/ros_ws/build/reactivemethods/prefix_override:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/reactivemethods build --build-base /home/babangida/ros_ws/build/reactivemethods/build install --record /home/babangida/ros_ws/build/reactivemethods/install.log --install-scripts $base/lib/reactivemethods --single-version-externally-managed
+[2.129s] running egg_info
+[2.130s] writing ../../build/reactivemethods/reactivemethods.egg-info/PKG-INFO
+[2.130s] writing dependency_links to ../../build/reactivemethods/reactivemethods.egg-info/dependency_links.txt
+[2.130s] writing entry points to ../../build/reactivemethods/reactivemethods.egg-info/entry_points.txt
+[2.130s] writing requirements to ../../build/reactivemethods/reactivemethods.egg-info/requires.txt
+[2.131s] writing top-level names to ../../build/reactivemethods/reactivemethods.egg-info/top_level.txt
+[2.164s] reading manifest file '../../build/reactivemethods/reactivemethods.egg-info/SOURCES.txt'
+[2.165s] writing manifest file '../../build/reactivemethods/reactivemethods.egg-info/SOURCES.txt'
+[2.165s] running build
+[2.165s] running build_py
+[2.166s] copying reactivemethods/posebasewaypointgenerator.py -> /home/babangida/ros_ws/build/reactivemethods/build/lib/reactivemethods
+[2.167s] running install
+[2.168s] running install_lib
+[2.170s] copying /home/babangida/ros_ws/build/reactivemethods/build/lib/reactivemethods/posebasewaypointgenerator.py -> /home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods
+[2.171s] byte-compiling /home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods/posebasewaypointgenerator.py to posebasewaypointgenerator.cpython-38.pyc
+[2.173s] running install_data
+[2.174s] running install_egg_info
+[2.175s] removing '/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods-0.0.0-py3.8.egg-info' (and everything under it)
+[2.176s] Copying ../../build/reactivemethods/reactivemethods.egg-info to /home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages/reactivemethods-0.0.0-py3.8.egg-info
+[2.177s] running install_scripts
+[2.191s] Installing agapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.192s] Installing agent1purepursuit script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.192s] Installing degapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing emergencybreaking script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing followgap script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing gapfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing leftwallfollowing script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing northsouthagent script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing play script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.193s] Installing publishwaypoints script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.194s] Installing purepursuit script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.194s] Installing waypointfollow script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.194s] Installing waypointsgenerator script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.194s] Installing westeastagent script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.194s] Installing wptflw script to /home/babangida/ros_ws/install/reactivemethods/lib/reactivemethods
+[2.194s] writing list of installed files to '/home/babangida/ros_ws/build/reactivemethods/install.log'
+[2.216s] Invoked command in '/home/babangida/ros_ws/src/reactivemethods' returned '0': CMAKE_PREFIX_PATH=/home/babangida/ros_ws/install/dsrcmsg:/home/babangida/ros_ws/install/trafficrecord LD_LIBRARY_PATH=/home/babangida/ros_ws/install/dsrcmsg/lib:/home/babangida/ros_ws/install/trafficrecord/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/babangida/ros_ws/build/reactivemethods/prefix_override:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/reactivemethods build --build-base /home/babangida/ros_ws/build/reactivemethods/build install --record /home/babangida/ros_ws/build/reactivemethods/install.log --install-scripts $base/lib/reactivemethods --single-version-externally-managed

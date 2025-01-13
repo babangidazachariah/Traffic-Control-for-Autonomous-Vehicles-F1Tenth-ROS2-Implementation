@@ -1,0 +1,33 @@
+# This action interface file is used by autonomous vehicles for the purpose of ensuring that
+# traffic information of a vehicle is recorded by the traffic recording unit (node)
+# For now, it only provides and records the approachleg and waiting time
+# This ensures that waiting time of a vehicle is recorded only once.
+
+
+
+# The identification of the approach leg
+
+string approachleg 
+
+
+
+# The waiting time of the vehicle: difference between when the vehicle enters and exits an
+# intersection's area
+
+float32 waittime
+
+
+---
+
+# The returned value to indicate whether the traffic information was successfully record 
+# by the traffic recording unit (node)
+
+bool recorded
+
+
+---
+
+# Should the process take longer than necessary, this provides feedback. 
+# However, for the purpose of this simulation, it not used.
+
+bool partiallyrecorded

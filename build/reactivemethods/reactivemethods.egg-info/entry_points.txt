@@ -1,0 +1,17 @@
+[console_scripts]
+agapfollowing = reactivemethods.agapfollowing:main
+agent1purepursuit = reactivemethods.agent1purepursuit:main
+degapfollowing = reactivemethods.disparityextendergapfollowing:main
+emergencybreaking = reactivemethods.emergencybreaking:main
+followgap = reactivemethods.followgap:main
+gapfollowing = reactivemethods.gapfollowing:main
+leftwallfollowing = reactivemethods.leftwallfollowing:main
+northsouthagent = reactivemethods.northsouthagent:main
+play = reactivemethods.autotrafficplayground:main
+publishwaypoints = reactivemethods.publishwaypoints:main
+purepursuit = reactivemethods.PurePursuit:main
+waypointfollow = reactivemethods.waypointfollow:main
+waypointsgenerator = reactivemethods.posebasewaypointgenerator:main
+westeastagent = reactivemethods.westeastagent:main
+wptflw = reactivemethods.simplewptflw:main
+

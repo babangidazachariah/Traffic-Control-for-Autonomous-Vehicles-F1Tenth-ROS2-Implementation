@@ -1,0 +1,428 @@
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist, PoseStamped
+from nav_msgs.msg import Odometry, Path
+from sensor_msgs.msg import LaserScan
+from ackermann_msgs.msg import AckermannDriveStamped
+from visualization_msgs.msg import Marker, MarkerArray
+import geometry_msgs.msg # import the geometry_msgs module for TransformStamped 
+import tf2_ros
+import numpy as np
+import math as mth
+import pandas as pd
+import time
+
+
+class WayPointFollow(Node):
+    def __init__(self):
+        super().__init__('waypoint_follow')
+        self.cmdDrive = self.create_publisher(AckermannDriveStamped, '/drive', 5)
+        self.subscription = self.create_subscription(LaserScan, '/scan', self.ScanCallback, 5)
+        self.subscription_odom = self.create_subscription(Odometry, 'ego_racecar/odom', self.OdomCallback, 5)
+        self.pubpath = self.create_publisher(MarkerArray, '/agentpath', 10)
+        self.pubpoint = self.create_publisher(Marker, '/agentpoint', 10) # create a publisher object that can send Marker messages to the 'marker' topic
+        
+        self.tf_buffer = tf2_ros.Buffer() 
+        self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self) 
+        
+        self. waypoints = None #Store waypoints as a dataframe
+        self.waypointsCount = 0
+        self.waypointIndex = 0
+        
+        self.getWaypointTimer = 1
+        
+        self.minLookahead = 0.5
+        self.maxLookahead = 1.0
+        self.lookaheadRatio = 8.0
+        
+        self.Kp = 0.5 # Proportional gain
+        self.steeringLimit = 25.0
+        self.steeringAngle = 0.0
+        
+        self.velocity = 2.0 #Arbitrarily chosen
+        self.curVelocity = 0.5
+        self.velocityPercentage = 0.6
+        self.velocityIndex = 0 #
+        
+        self.safety_threshold = 0.3  # Adjust as needed
+        
+        
+        self.xCarWorld = None
+        self.yCarWorld = None
+        self.pointForCar = None
+        
+        self.ranges = None #To be used when needed
+        
+        self.PI = 3.142857
+        self.LoadWaypoints("/home/babangida/ros_ws/northsouth.csv") #Spielberg_centerline  northsouth
+        
+        
+        
+    def ToRadians(self, degrees):
+        return degrees * self.PI/180.0
+        
+        
+        
+    def ToDegrees(self, radians):
+        return radians * 180.0/self.PI
+        
+        
+    def Distance(self, x1, x2, y1, y2):
+        return mth.sqrt((mth.pow((x2-x1), 2)) + (mth.pow((y2-y1),2)))
+        
+        
+    def AltGetWayPoint(self):
+        
+        min_dist = float('inf') 
+        min_point = None 
+
+        try:
+            trans = self.tf_buffer.lookup_transform('ego_racecar/base_link', 'map', rclpy.time.Time()) 
+        except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
+            self.get_logger().error('TF2 exception') 
+            return None
+        
+        vehicle_pos = trans.transform.translation 
+        vehicle_yaw = mth.atan2(trans.transform.rotation.z, trans.transform.rotation.w) * 2.0 
+        #print('vx', vehicle_pos.x ,', vy', vehicle_pos.y)
+        ang = 0
+        vyaw = 0
+        angdiff = 0
+        startFrom = 0
+        if self.waypointIndex < self.waypointsCount - 30: 
+            startFrom = self.waypointIndex + 1
+        else:
+            startFrom = 0
+           
+        #for i in range(startFrom, self.waypointsCount): 
+        for i in range(startFrom, (startFrom + 30)): 
+            x = self.waypoints.loc[i, 'x']
+            y = self.waypoints.loc[i, 'y']
+            dist = mth.sqrt((vehicle_pos.x - x)**2 + (vehicle_pos.y - y)**2)
+            angle = mth.atan2(y - vehicle_pos.y, x - vehicle_pos.x) 
+            angle_diff = mth.atan2(mth.sin(angle - vehicle_yaw), mth.cos(angle - vehicle_yaw))
+            
+            #if dist < min_dist and dist > self.lookahead_dist and angle > vehicle_yaw: 
+            if dist < min_dist and dist > self.maxLookahead and abs(angle_diff) < mth.pi/2:
+
+                min_dist = dist 
+                self.waypointIndex = i 
+                print("Waypoint Index: ", i)
+                #break
+        
+        self.PublishWaypoint(self.waypoints.loc[self.waypointIndex,'x'], self.waypoints.loc[self.waypointIndex,'y'])
+
+
+    def GetWayPoint(self):
+        longestDistance = 0
+        finalIndex = -1
+        prevIndex = self.waypointIndex
+        start = self.waypointIndex
+        end = (self.waypointIndex + 500) % self.waypointsCount
+        lkh = min(max(self.minLookahead, (self.maxLookahead * self.curVelocity/self.lookaheadRatio)), self.maxLookahead)
+        #print("lkh", lkh)
+        #print("car_x: ", self.xCarWorld, " car_y: ", self.yCarWorld)
+        if end < start: # If we need to loop around
+            for i in range(start, self.waypointsCount):
+                x = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+                y = self.waypoints.loc[i, 'y'] # get the y coordinate of the current point
+                dist = self.Distance(x, self.xCarWorld, y, self.yCarWorld)
+                #print("Distance: ",dist)
+                if dist <= lkh and dist >= longestDistance:
+                    longestDistance = dist
+                    finalIndex = i
+                    #print("Distance es: ",dist)
+                    #print("esx: ", self.waypoints.loc[i, 'x'], "esy: ", self.waypoints.loc[i, 'y'])
+                    
+            for i in range(0, end):
+                x = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+                y = self.waypoints.loc[i, 'y'] # get the y coordinate of the current point
+                dist = self.Distance(x, self.xCarWorld, y, self.yCarWorld)
+                #print("Distance oex: ",dist)
+                if dist <= lkh and dist >= longestDistance:
+                    longestDistance = dist
+                    finalIndex = i   
+                    #print("Distance oe: ",dist)
+                    #print("oex: ", self.waypoints.loc[i, 'x'], "oey: ", self.waypoints.loc[i, 'y'])
+        else:
+            for i in range(start, end):
+                x = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+                y = self.waypoints.loc[i, 'y'] # get the y coordinate of the current point
+                dist = self.Distance(x, self.xCarWorld, y, self.yCarWorld)
+                #print("Distance sexy: ",dist)
+                if dist <= lkh and dist >= longestDistance:
+                    longestDistance = dist
+                    finalIndex = i
+                    #print("Distance se: ",dist)
+                    #print("sex: ", self.waypoints.loc[i, 'x'], "sey: ", self.waypoints.loc[i, 'y'])
+        
+        
+        # if we haven't found anything, search from the beginning
+        if finalIndex == -1:
+            finalIndex = 0
+            for i in range(0, self.waypointsCount):
+                x = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+                y = self.waypoints.loc[i, 'y'] # get the y coordinate of the current point
+                dist = self.Distance(x, self.xCarWorld, y, self.yCarWorld)
+                
+                if dist <= lkh and dist >= longestDistance:
+                    longestDistance = dist
+                    finalIndex = i
+                    #print("Distance a: ",dist)
+                    #print("ax: ", self.waypoints.loc[i, 'x'], "ay: ", self.waypoints.loc[i, 'y'])
+        """
+        if finalIndex == -1 and prevIndex < (self.waypointsCount - 2):
+            finalIndex = prevIndex + 2
+        else:
+            finalIndex = 0
+        """   
+        # Find the closest point to the car, and use the velocity index for that
+        shortestDistance = 0
+        vIndex = 0
+        for i in range(0, self.waypointsCount):
+            x = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+            y = self.waypoints.loc[i, 'y'] # get the y coordinate of the current point
+            dist = self.Distance(x, self.xCarWorld, y, self.yCarWorld)
+            if dist < shortestDistance:
+                shortestDistance = dist
+                vIndex = i
+        
+        self.PublishWaypoint(self.waypoints.loc[finalIndex,'x'], self.waypoints.loc[finalIndex,'y'])
+        print("Waypoint Index: ", finalIndex)
+        self.waypointIndex = finalIndex
+        self.velocityIndex = vIndex
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        
+        
+    def GetWaypointObstacleAvoidance(self):
+        """
+        TO CONSIDER: Edge cases where there are walls. The thing with RRT 
+        
+        1. Fetch next coordinate for the current lane
+        2. Run local occupancy grid, and check if there is anything on the current path. If not, RETURN coordinate
+        3. Change lane, and then run step 1 again. 
+        
+        This is where 
+        """
+    
+     # define a function that takes four parameters
+    def QuatToRot(self, q0, q1, q2, q3):
+        # w,x,y,z -> q0,q1,q2,q3
+        # calculate the elements of the rotation matrix using the quaternion components
+        r00 = 2.0 * (q0 * q0 + q1 * q1) - 1.0
+        r01 = 2.0 * (q1 * q2 - q0 * q3)
+        r02 = 2.0 * (q1 * q3 + q0 * q2)
+         
+        r10 = 2.0 * (q1 * q2 + q0 * q3)
+        r11 = 2.0 * (q0 * q0 + q2 * q2) - 1.0
+        r12 = 2.0 * (q2 * q3 - q0 * q1)
+         
+        r20 = 2.0 * (q1 * q3 - q0 * q2)
+        r21 = 2.0 * (q2 * q3 + q0 * q1)
+        r22 = 2.0 * (q0 * q0 + q3 * q3) - 1.0
+
+        # create a numpy array from the matrix elements
+        rotationM = np.array([[r00, r01, r02], [r10, r11, r12], [r20, r21, r22]])
+        
+        # return the rotation matrix
+        return rotationM
+        
+        
+        
+    def TransformAndInterpolateWaypoint(self):
+        
+        # initialise vectors  x1 = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+        pointInworld = [self.waypoints.loc[self.waypointIndex,'x'], self.waypoints.loc[self.waypointIndex, 'y'], 0.0]
+        # rviz publish way point
+        #visualize_points(pointInworld)
+        trans = geometry_msgs.msg.TransformStamped()
+        try:
+            trans = self.tf_buffer.lookup_transform('ego_racecar/base_link', 'map', rclpy.time.Time()) 
+        except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
+            self.get_logger().error('TF2 exception') 
+            self.pointForCar = None
+        
+        # transform points (rotate first and then translate)
+        translationV = [trans.transform.translation.x, trans.transform.translation.y, trans.transform.translation.z]
+        rotationM = self.QuatToRot(trans.transform.rotation.w, trans.transform.rotation.x, trans.transform.rotation.y, trans.transform.rotation.z)
+        
+        self.pointForCar = np.dot(rotationM, pointInworld) + translationV
+        
+    
+    
+    
+    def GetVelocity(self):
+        velocity = 0
+        """
+        # Uncomment this part if velocity profile is provided in the csv file.
+        if self.waypoints.loc[self.velocityIndex, 'v'] :
+            velocity = self.waypoints[self.velocityIndex]
+        else:
+        """
+        steeringAngle = abs(self.steeringAngle)
+        if steeringAngle >= self.ToRadians(0.0) and steeringAngle < self.ToRadians(10.0) :
+            velocity = self.velocity * self.velocityPercentage
+        elif steeringAngle >= self.ToRadians(10.0) and steeringAngle <= self.ToRadians(20.0) :
+            velocity = self.velocity * self.velocityPercentage/2.5
+        else:
+            velocity = self.velocity * self.velocityPercentage/3.5
+        
+        #print("Velocity: ", velocity)
+        self.curVelocity = velocity
+        #return velocity
+        
+    def PublishPath(self):
+        marker_array = MarkerArray()
+
+        # Add markers to the MarkerArray
+        for i in range(len(self.waypoints)):
+            
+            marker = Marker()
+            marker.header.frame_id = 'map'
+            marker.id = i
+            marker.type = Marker.SPHERE
+            marker.action = Marker.ADD
+            marker.pose.position.x = self.waypoints.loc[i,'x']
+            marker.pose.position.y = self.waypoints.loc[i,'y']
+            marker.pose.position.z = 0.0
+            marker.scale.x = 0.05
+            marker.scale.y = 0.05
+            marker.scale.z = 0.05
+            marker.color.a = 1.0
+            marker.color.r = 0.0 
+            marker.color.g = 1.0 
+            marker.color.b = 0.0
+            marker_array.markers.append(marker)
+
+        self.pubpath.publish(marker_array)  
+
+    
+    def PublishWaypoint(self, x, y):
+        
+        try:
+            marker = Marker() # create a marker object
+            marker.header.frame_id = 'map' # set the frame id of the marker
+            marker.header.stamp = self.get_clock().now().to_msg() # set the timestamp of the marker
+            marker.ns = 'basic_shapes' # set the namespace of the marker
+            marker.id = 0 # set the id of the marker
+            marker.type = Marker.SPHERE # set the type of the marker to be a sphere
+            marker.action = Marker.ADD # set the action of the marker to be add or modify
+            marker.pose.position.x = x #self.pointForCar[0] # set the x position of the marker
+            marker.pose.position.y = y #self.pointForCar[1] # set the y position of the marker
+            marker.pose.position.z = 0.0 # set the z position of the marker
+            #marker.pose.orientation.x = 0.0 # set the x orientation of the marker
+            #marker.pose.orientation.y = 0.0 # set the y orientation of the marker
+            #marker.pose.orientation.z = 0.0 # set the z orientation of the marker
+            #marker.pose.orientation.w = 1.0 # set the w orientation of the marker
+            marker.scale.x = 0.09 # set the x scale of the marker
+            marker.scale.y = 0.09 # set the y scale of the marker
+            marker.scale.z = 0.09 # set the z scale of the marker
+            marker.color.a = 1.0 # set the alpha value of the color of the marker
+            marker.color.r = 1.0 # set the red value of the color of the marker
+            marker.color.g = 0.0 # set the green value of the color of the marker
+            marker.color.b = 1.0 # set the blue value of the color of the marker
+
+            self.pubpoint.publish(marker) # publish the marker
+            #print("Waypoint: x = ", x, " y = ", y)
+        except:
+            return None
+
+    def Controller(self):
+        
+        steeringAngle = 0.0
+        #print("x :", self.pointForCar[0])
+        #print("y :", self.pointForCar[1])
+        
+        r = mth.sqrt(mth.pow(self.pointForCar[0], 2) + mth.pow(self.pointForCar[1], 2)) # r = sqrt(x^2 + y^2)
+        y = self.pointForCar[1]
+        steeringAngle = ((self.Kp * 2 * y) / (mth.pow(r,2)))
+        
+        if mth.isnan(steeringAngle):
+            steeringAngle = 0.0
+            
+        if steeringAngle < 0.0:
+            steeringAngle = max(steeringAngle, -self.ToRadians(self.steeringLimit))
+            
+        else:
+            steeringAngle = min(steeringAngle, self.ToRadians(self.steeringLimit))
+            
+        self.steeringAngle = steeringAngle
+        #return self.steeringAngle
+        
+        
+        
+    def PublishDriveCommand(self):
+        cmdCommand = AckermannDriveStamped() 
+        
+        cmdCommand.header.stamp = self.get_clock().now().to_msg() 
+        cmdCommand.header.frame_id = 'base_link' 
+        cmdCommand.drive.speed = self.curVelocity 
+        cmdCommand.drive.steering_angle = self.steeringAngle 
+        #cmdCommand.drive.steering_angle_velocity = 
+        
+        #print('Steering Angle: ', self.ToDegrees(self.steeringAngle))
+        self.cmdDrive.publish(cmdCommand)
+
+        
+    
+        
+    def LoadWaypoints(self, path):
+        self.waypoints = pd.read_csv(path)
+        distances = []
+        for i in range(len(self.waypoints) - 1): # loop through the points
+            x1 = self.waypoints.loc[i, 'x'] # get the x coordinate of the current point
+            y1 = self.waypoints.loc[i, 'y'] # get the y coordinate of the current point
+            x2 = self.waypoints.loc[i + 1, 'x'] # get the x coordinate of the next point
+            y2 = self.waypoints.loc[i + 1, 'y'] # get the y coordinate of the next point
+            distance = self.Distance(x1, x2, y1, y2) # calculate the distance using sqrt and pow
+            distances.append(distance) # append the distance to a list
+            
+        self.waypointsCount = len(distances)
+        self.PublishPath()
+        #Display (publish) first waypoint
+        self.PublishWaypoint(self.waypoints.loc[self.waypointIndex + 10,'x'], self.waypoints.loc[self.waypointIndex + 10,'y'])
+        print("Average distances between points is : ", (sum(distances)/self.waypointsCount)) 
+        
+        time.sleep(5)
+        
+        
+        
+        
+    def ScanCallback(self, scan_msg):
+        pass
+    
+    def OdomCallback(self, odom_msg):
+        # Retrieve location (point) of car in its world
+        try:
+            trans = self.tf_buffer.lookup_transform('ego_racecar/base_link', 'map', rclpy.time.Time()) 
+        except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
+            self.get_logger().error('TF2 exception') 
+            return
+        
+        # transform points (rotate first and then translate)
+        self.xCarWorld = trans.transform.translation.x
+        self.yCarWorld = trans.transform.translation.y
+        """
+        if self.getWaypointTimer > 10:
+            self.GetWayPoint()
+            #self.AltGetWayPoint()
+            self.getWaypointTimer = 1
+        """
+        self.GetWayPoint()
+        self.getWaypointTimer += 1
+        self.GetWaypointObstacleAvoidance()
+        self.TransformAndInterpolateWaypoint()
+        self.GetVelocity()
+        self.Controller()
+        self.PublishDriveCommand()
+     
+def main(args=None):
+    rclpy.init(args=args) 
+    node = WayPointFollow() 
+    rclpy.spin(node) 
+    rclpy.shutdown() 
+
+if __name__ == '__main__':
+    main() 
+
+

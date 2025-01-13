@@ -1,0 +1,4 @@
+CMake Error: The current CMakeCache.txt directory /home/debangis/ros_ws/build/trafficrecord/CMakeCache.txt is different than the directory /home/babangida/ros_ws/build/trafficrecord where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source directory "/home/babangida/ros_ws/src/trafficrecord" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** [Makefile:988: cmake_check_build_system] Error 1

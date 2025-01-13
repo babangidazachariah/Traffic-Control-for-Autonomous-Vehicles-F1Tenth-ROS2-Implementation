@@ -1,0 +1,1209 @@
+[3.940s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'onecim']
+[3.940s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f03890dff70>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['onecim'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f03890dff70>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f038901d940>)
+[4.082s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.083s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/babangida/ros_ws'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.083s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extensions ['ignore', 'ignore_ament_install']
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'ignore'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'ignore_ament_install'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extensions ['colcon_pkg']
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'colcon_pkg'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extensions ['colcon_meta']
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'colcon_meta'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extensions ['ros']
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'ros'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extensions ['cmake', 'python']
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'cmake'
+[4.099s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'python'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extensions ['python_setup_py']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults) by extension 'python_setup_py'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'ignore'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'ignore_ament_install'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extensions ['colcon_pkg']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'colcon_pkg'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extensions ['colcon_meta']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'colcon_meta'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extensions ['ros']
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'ros'
+[4.100s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extensions ['cmake', 'python']
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'cmake'
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'python'
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extensions ['python_setup_py']
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs) by extension 'python_setup_py'
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extensions ['ignore', 'ignore_ament_install']
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'ignore'
+[4.101s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'ignore_ament_install'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extensions ['colcon_pkg']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'colcon_pkg'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extensions ['colcon_meta']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'colcon_meta'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extensions ['ros']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'ros'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extensions ['cmake', 'python']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'cmake'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'python'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extensions ['python_setup_py']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay) by extension 'python_setup_py'
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.102s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'ignore'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'ignore_ament_install'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extensions ['colcon_pkg']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'colcon_pkg'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extensions ['colcon_meta']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'colcon_meta'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extensions ['ros']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'ros'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extensions ['cmake', 'python']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'cmake'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'python'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extensions ['python_setup_py']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/FIS) by extension 'python_setup_py'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'ignore'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'ignore_ament_install'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extensions ['colcon_pkg']
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'colcon_pkg'
+[4.103s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extensions ['colcon_meta']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'colcon_meta'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extensions ['ros']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'ros'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extensions ['cmake', 'python']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'cmake'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'python'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extensions ['python_setup_py']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/SpdDst) by extension 'python_setup_py'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extensions ['ignore', 'ignore_ament_install']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'ignore'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'ignore_ament_install'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extensions ['colcon_pkg']
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'colcon_pkg'
+[4.104s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extensions ['colcon_meta']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'colcon_meta'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extensions ['ros']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'ros'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extensions ['cmake', 'python']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'cmake'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'python'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extensions ['python_setup_py']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/fourWay/static) by extension 'python_setup_py'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extensions ['ignore', 'ignore_ament_install']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'ignore'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'ignore_ament_install'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extensions ['colcon_pkg']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'colcon_pkg'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extensions ['colcon_meta']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'colcon_meta'
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extensions ['ros']
+[4.105s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'ros'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extensions ['cmake', 'python']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'cmake'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'python'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extensions ['python_setup_py']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay) by extension 'python_setup_py'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'ignore'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'ignore_ament_install'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extensions ['colcon_pkg']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'colcon_pkg'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extensions ['colcon_meta']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'colcon_meta'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extensions ['ros']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'ros'
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extensions ['cmake', 'python']
+[4.106s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'cmake'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'python'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extensions ['python_setup_py']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/FIS) by extension 'python_setup_py'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extensions ['ignore', 'ignore_ament_install']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'ignore'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'ignore_ament_install'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extensions ['colcon_pkg']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'colcon_pkg'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extensions ['colcon_meta']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'colcon_meta'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extensions ['ros']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'ros'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extensions ['cmake', 'python']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'cmake'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'python'
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extensions ['python_setup_py']
+[4.107s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth) by extension 'python_setup_py'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'ignore'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'ignore_ament_install'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extensions ['colcon_pkg']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'colcon_pkg'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extensions ['colcon_meta']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'colcon_meta'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extensions ['ros']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'ros'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extensions ['cmake', 'python']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'cmake'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'python'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extensions ['python_setup_py']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/FIS) by extension 'python_setup_py'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'ignore'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'ignore_ament_install'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extensions ['colcon_pkg']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'colcon_pkg'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extensions ['colcon_meta']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'colcon_meta'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extensions ['ros']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'ros'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extensions ['cmake', 'python']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'cmake'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'python'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extensions ['python_setup_py']
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/SpdDst) by extension 'python_setup_py'
+[4.109s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'ignore'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'ignore_ament_install'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extensions ['colcon_pkg']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'colcon_pkg'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extensions ['colcon_meta']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'colcon_meta'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extensions ['ros']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'ros'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extensions ['cmake', 'python']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'cmake'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'python'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extensions ['python_setup_py']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SouthNorth/Static) by extension 'python_setup_py'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'ignore'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'ignore_ament_install'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extensions ['colcon_pkg']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'colcon_pkg'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extensions ['colcon_meta']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'colcon_meta'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extensions ['ros']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'ros'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extensions ['cmake', 'python']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'cmake'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'python'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extensions ['python_setup_py']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/SpdDst) by extension 'python_setup_py'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'ignore'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'ignore_ament_install'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extensions ['colcon_pkg']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'colcon_pkg'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extensions ['colcon_meta']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'colcon_meta'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extensions ['ros']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'ros'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extensions ['cmake', 'python']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'cmake'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'python'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extensions ['python_setup_py']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/fiftyVehs/twoWay/Static) by extension 'python_setup_py'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'ignore'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'ignore_ament_install'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extensions ['colcon_pkg']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'colcon_pkg'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extensions ['colcon_meta']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'colcon_meta'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extensions ['ros']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'ros'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extensions ['cmake', 'python']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'cmake'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'python'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extensions ['python_setup_py']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs) by extension 'python_setup_py'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extensions ['ignore', 'ignore_ament_install']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'ignore'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'ignore_ament_install'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extensions ['colcon_pkg']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'colcon_pkg'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extensions ['colcon_meta']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'colcon_meta'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extensions ['ros']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'ros'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extensions ['cmake', 'python']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'cmake'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'python'
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extensions ['python_setup_py']
+[4.113s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay) by extension 'python_setup_py'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'ignore'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'ignore_ament_install'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extensions ['colcon_pkg']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'colcon_pkg'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extensions ['colcon_meta']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'colcon_meta'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extensions ['ros']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'ros'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extensions ['cmake', 'python']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'cmake'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'python'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extensions ['python_setup_py']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/FIS) by extension 'python_setup_py'
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.114s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'ignore'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'ignore_ament_install'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extensions ['colcon_pkg']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'colcon_pkg'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extensions ['colcon_meta']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'colcon_meta'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extensions ['ros']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'ros'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extensions ['cmake', 'python']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'cmake'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'python'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extensions ['python_setup_py']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/SpdDst) by extension 'python_setup_py'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'ignore'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'ignore_ament_install'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extensions ['colcon_pkg']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'colcon_pkg'
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extensions ['colcon_meta']
+[4.115s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'colcon_meta'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extensions ['ros']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'ros'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extensions ['cmake', 'python']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'cmake'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'python'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extensions ['python_setup_py']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/fourWay/Static) by extension 'python_setup_py'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extensions ['ignore', 'ignore_ament_install']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'ignore'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'ignore_ament_install'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extensions ['colcon_pkg']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'colcon_pkg'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extensions ['colcon_meta']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'colcon_meta'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extensions ['ros']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'ros'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extensions ['cmake', 'python']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'cmake'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'python'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extensions ['python_setup_py']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay) by extension 'python_setup_py'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'ignore'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'ignore_ament_install'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extensions ['colcon_pkg']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'colcon_pkg'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extensions ['colcon_meta']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'colcon_meta'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extensions ['ros']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'ros'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extensions ['cmake', 'python']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'cmake'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'python'
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extensions ['python_setup_py']
+[4.117s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/FIS) by extension 'python_setup_py'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extensions ['ignore', 'ignore_ament_install']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'ignore'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'ignore_ament_install'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extensions ['colcon_pkg']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'colcon_pkg'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extensions ['colcon_meta']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'colcon_meta'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extensions ['ros']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'ros'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extensions ['cmake', 'python']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'cmake'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'python'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extensions ['python_setup_py']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth) by extension 'python_setup_py'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'ignore'
+[4.118s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'ignore_ament_install'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extensions ['colcon_pkg']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'colcon_pkg'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extensions ['colcon_meta']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'colcon_meta'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extensions ['ros']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'ros'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extensions ['cmake', 'python']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'cmake'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'python'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extensions ['python_setup_py']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/FIS) by extension 'python_setup_py'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'ignore'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'ignore_ament_install'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['colcon_pkg']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'colcon_pkg'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['colcon_meta']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'colcon_meta'
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['ros']
+[4.119s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'ros'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['cmake', 'python']
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'cmake'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'python'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['python_setup_py']
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'python_setup_py'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'ignore'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'ignore_ament_install'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extensions ['colcon_pkg']
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'colcon_pkg'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extensions ['colcon_meta']
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'colcon_meta'
+[4.120s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extensions ['ros']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'ros'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extensions ['cmake', 'python']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'cmake'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'python'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extensions ['python_setup_py']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/NorthSouth/Static) by extension 'python_setup_py'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'ignore'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'ignore_ament_install'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extensions ['colcon_pkg']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'colcon_pkg'
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extensions ['colcon_meta']
+[4.121s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'colcon_meta'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extensions ['ros']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'ros'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extensions ['cmake', 'python']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'cmake'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'python'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extensions ['python_setup_py']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/SpdDst) by extension 'python_setup_py'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'ignore'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'ignore_ament_install'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extensions ['colcon_pkg']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'colcon_pkg'
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extensions ['colcon_meta']
+[4.122s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'colcon_meta'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extensions ['ros']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'ros'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extensions ['cmake', 'python']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'cmake'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'python'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extensions ['python_setup_py']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/hundredVehs/twoWay/Static) by extension 'python_setup_py'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extensions ['ignore', 'ignore_ament_install']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'ignore'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'ignore_ament_install'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extensions ['colcon_pkg']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'colcon_pkg'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extensions ['colcon_meta']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'colcon_meta'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extensions ['ros']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'ros'
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extensions ['cmake', 'python']
+[4.123s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'cmake'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'python'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extensions ['python_setup_py']
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred) by extension 'python_setup_py'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extensions ['ignore', 'ignore_ament_install']
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'ignore'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'ignore_ament_install'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extensions ['colcon_pkg']
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'colcon_pkg'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extensions ['colcon_meta']
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'colcon_meta'
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extensions ['ros']
+[4.124s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'ros'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extensions ['cmake', 'python']
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'cmake'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'python'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extensions ['python_setup_py']
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay) by extension 'python_setup_py'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'ignore'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'ignore_ament_install'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extensions ['colcon_pkg']
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'colcon_pkg'
+[4.125s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extensions ['colcon_meta']
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'colcon_meta'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extensions ['ros']
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'ros'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extensions ['cmake', 'python']
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'cmake'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'python'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extensions ['python_setup_py']
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/FIS) by extension 'python_setup_py'
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.126s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'ignore'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'ignore_ament_install'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extensions ['colcon_pkg']
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'colcon_pkg'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extensions ['colcon_meta']
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'colcon_meta'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extensions ['ros']
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'ros'
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extensions ['cmake', 'python']
+[4.127s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'cmake'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'python'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extensions ['python_setup_py']
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/SpdDst) by extension 'python_setup_py'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'ignore'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'ignore_ament_install'
+[4.128s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extensions ['colcon_pkg']
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'colcon_pkg'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extensions ['colcon_meta']
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'colcon_meta'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extensions ['ros']
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'ros'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extensions ['cmake', 'python']
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'cmake'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'python'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extensions ['python_setup_py']
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/fourWay/Static) by extension 'python_setup_py'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extensions ['ignore', 'ignore_ament_install']
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'ignore'
+[4.129s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'ignore_ament_install'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extensions ['colcon_pkg']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'colcon_pkg'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extensions ['colcon_meta']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'colcon_meta'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extensions ['ros']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'ros'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extensions ['cmake', 'python']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'cmake'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'python'
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extensions ['python_setup_py']
+[4.130s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay) by extension 'python_setup_py'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'ignore'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'ignore_ament_install'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extensions ['colcon_pkg']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'colcon_pkg'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extensions ['colcon_meta']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'colcon_meta'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extensions ['ros']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'ros'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extensions ['cmake', 'python']
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'cmake'
+[4.131s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'python'
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extensions ['python_setup_py']
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/FIS) by extension 'python_setup_py'
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extensions ['ignore', 'ignore_ament_install']
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'ignore'
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'ignore_ament_install'
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extensions ['colcon_pkg']
+[4.132s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'colcon_pkg'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extensions ['colcon_meta']
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'colcon_meta'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extensions ['ros']
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'ros'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extensions ['cmake', 'python']
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'cmake'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'python'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extensions ['python_setup_py']
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth) by extension 'python_setup_py'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'ignore'
+[4.133s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'ignore_ament_install'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extensions ['colcon_pkg']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'colcon_pkg'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extensions ['colcon_meta']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'colcon_meta'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extensions ['ros']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'ros'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extensions ['cmake', 'python']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'cmake'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'python'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extensions ['python_setup_py']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/FIS) by extension 'python_setup_py'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'ignore'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'ignore_ament_install'
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['colcon_pkg']
+[4.134s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'colcon_pkg'
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['colcon_meta']
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'colcon_meta'
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['ros']
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'ros'
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['cmake', 'python']
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'cmake'
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'python'
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['python_setup_py']
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/SpdDst) by extension 'python_setup_py'
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.135s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'ignore'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'ignore_ament_install'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extensions ['colcon_pkg']
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'colcon_pkg'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extensions ['colcon_meta']
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'colcon_meta'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extensions ['ros']
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'ros'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extensions ['cmake', 'python']
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'cmake'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'python'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extensions ['python_setup_py']
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SouthNorth/Static) by extension 'python_setup_py'
+[4.136s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'ignore'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'ignore_ament_install'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extensions ['colcon_pkg']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'colcon_pkg'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extensions ['colcon_meta']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'colcon_meta'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extensions ['ros']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'ros'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extensions ['cmake', 'python']
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'cmake'
+[4.137s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'python'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extensions ['python_setup_py']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/SpdDst) by extension 'python_setup_py'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'ignore'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'ignore_ament_install'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extensions ['colcon_pkg']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'colcon_pkg'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extensions ['colcon_meta']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'colcon_meta'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extensions ['ros']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'ros'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extensions ['cmake', 'python']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'cmake'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'python'
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extensions ['python_setup_py']
+[4.138s] Level 1:colcon.colcon_core.package_identification:_identify(AllResults/twoHundred/twoWay/Static) by extension 'python_setup_py'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extensions ['ignore', 'ignore_ament_install']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'ignore'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'ignore_ament_install'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extensions ['colcon_pkg']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'colcon_pkg'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extensions ['colcon_meta']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'colcon_meta'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extensions ['ros']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'ros'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extensions ['cmake', 'python']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'cmake'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'python'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extensions ['python_setup_py']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim) by extension 'python_setup_py'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extensions ['ignore', 'ignore_ament_install']
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'ignore'
+[4.139s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'ignore_ament_install'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extensions ['colcon_pkg']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'colcon_pkg'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extensions ['colcon_meta']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'colcon_meta'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extensions ['ros']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'ros'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extensions ['cmake', 'python']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'cmake'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'python'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extensions ['python_setup_py']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/Results) by extension 'python_setup_py'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'ignore'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'ignore_ament_install'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extensions ['colcon_pkg']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'colcon_pkg'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extensions ['colcon_meta']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'colcon_meta'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extensions ['ros']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'ros'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extensions ['cmake', 'python']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'cmake'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'python'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extensions ['python_setup_py']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/tenVehs) by extension 'python_setup_py'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'ignore'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'ignore_ament_install'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extensions ['colcon_pkg']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'colcon_pkg'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extensions ['colcon_meta']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'colcon_meta'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extensions ['ros']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'ros'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extensions ['cmake', 'python']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'cmake'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'python'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extensions ['python_setup_py']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/thirtyVehs) by extension 'python_setup_py'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'ignore'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'ignore_ament_install'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extensions ['colcon_pkg']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'colcon_pkg'
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extensions ['colcon_meta']
+[4.142s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'colcon_meta'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extensions ['ros']
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'ros'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extensions ['cmake', 'python']
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'cmake'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'python'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extensions ['python_setup_py']
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(InitialSim/twoVehs) by extension 'python_setup_py'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extensions ['ignore', 'ignore_ament_install']
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'ignore'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'ignore_ament_install'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extensions ['colcon_pkg']
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'colcon_pkg'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extensions ['colcon_meta']
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'colcon_meta'
+[4.143s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extensions ['ros']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'ros'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extensions ['cmake', 'python']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'cmake'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'python'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extensions ['python_setup_py']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(New folder) by extension 'python_setup_py'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extensions ['ignore', 'ignore_ament_install']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'ignore'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'ignore_ament_install'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extensions ['colcon_pkg']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'colcon_pkg'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extensions ['colcon_meta']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'colcon_meta'
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extensions ['ros']
+[4.144s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'ros'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extensions ['cmake', 'python']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'cmake'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'python'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extensions ['python_setup_py']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(Results) by extension 'python_setup_py'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'ignore'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'ignore_ament_install'
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extensions ['colcon_pkg']
+[4.145s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'colcon_pkg'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extensions ['colcon_meta']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'colcon_meta'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extensions ['ros']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'ros'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extensions ['cmake', 'python']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'cmake'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'python'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extensions ['python_setup_py']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(fifteenVehs) by extension 'python_setup_py'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extensions ['ignore', 'ignore_ament_install']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'ignore'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'ignore_ament_install'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extensions ['colcon_pkg']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'colcon_pkg'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extensions ['colcon_meta']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'colcon_meta'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extensions ['ros']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'ros'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extensions ['cmake', 'python']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'cmake'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'python'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extensions ['python_setup_py']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs) by extension 'python_setup_py'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extensions ['ignore', 'ignore_ament_install']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'ignore'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'ignore_ament_install'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extensions ['colcon_pkg']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'colcon_pkg'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extensions ['colcon_meta']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'colcon_meta'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extensions ['ros']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'ros'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extensions ['cmake', 'python']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'cmake'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'python'
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extensions ['python_setup_py']
+[4.147s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay) by extension 'python_setup_py'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'ignore'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'ignore_ament_install'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extensions ['colcon_pkg']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'colcon_pkg'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extensions ['colcon_meta']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'colcon_meta'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extensions ['ros']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'ros'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extensions ['cmake', 'python']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'cmake'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'python'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extensions ['python_setup_py']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/FIS) by extension 'python_setup_py'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'ignore'
+[4.148s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'ignore_ament_install'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extensions ['colcon_pkg']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'colcon_pkg'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extensions ['colcon_meta']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'colcon_meta'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extensions ['ros']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'ros'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extensions ['cmake', 'python']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'cmake'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'python'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extensions ['python_setup_py']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/SpdDst) by extension 'python_setup_py'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'ignore'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'ignore_ament_install'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extensions ['colcon_pkg']
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'colcon_pkg'
+[4.149s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extensions ['colcon_meta']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'colcon_meta'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extensions ['ros']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'ros'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extensions ['cmake', 'python']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'cmake'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'python'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extensions ['python_setup_py']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/fourWay/Static) by extension 'python_setup_py'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extensions ['ignore', 'ignore_ament_install']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'ignore'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'ignore_ament_install'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extensions ['colcon_pkg']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'colcon_pkg'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extensions ['colcon_meta']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'colcon_meta'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extensions ['ros']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'ros'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extensions ['cmake', 'python']
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'cmake'
+[4.150s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'python'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extensions ['python_setup_py']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay) by extension 'python_setup_py'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'ignore'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'ignore_ament_install'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extensions ['colcon_pkg']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'colcon_pkg'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extensions ['colcon_meta']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'colcon_meta'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extensions ['ros']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'ros'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extensions ['cmake', 'python']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'cmake'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'python'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extensions ['python_setup_py']
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/FIS) by extension 'python_setup_py'
+[4.151s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extensions ['ignore', 'ignore_ament_install']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'ignore'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'ignore_ament_install'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extensions ['colcon_pkg']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'colcon_pkg'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extensions ['colcon_meta']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'colcon_meta'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extensions ['ros']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'ros'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extensions ['cmake', 'python']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'cmake'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'python'
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extensions ['python_setup_py']
+[4.152s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth) by extension 'python_setup_py'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'ignore'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'ignore_ament_install'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extensions ['colcon_pkg']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'colcon_pkg'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extensions ['colcon_meta']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'colcon_meta'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extensions ['ros']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'ros'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extensions ['cmake', 'python']
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'cmake'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'python'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extensions ['python_setup_py']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/FIS) by extension 'python_setup_py'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'ignore'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'ignore_ament_install'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['colcon_pkg']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'colcon_pkg'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['colcon_meta']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'colcon_meta'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['ros']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'ros'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['cmake', 'python']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'cmake'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'python'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extensions ['python_setup_py']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/SpdDst) by extension 'python_setup_py'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'ignore'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'ignore_ament_install'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extensions ['colcon_pkg']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'colcon_pkg'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extensions ['colcon_meta']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'colcon_meta'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extensions ['ros']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'ros'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extensions ['cmake', 'python']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'cmake'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'python'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extensions ['python_setup_py']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/NorthSouth/Static) by extension 'python_setup_py'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'ignore'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'ignore_ament_install'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extensions ['colcon_pkg']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'colcon_pkg'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extensions ['colcon_meta']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'colcon_meta'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extensions ['ros']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'ros'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extensions ['cmake', 'python']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'cmake'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'python'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extensions ['python_setup_py']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/SpdDst) by extension 'python_setup_py'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'ignore'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'ignore_ament_install'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extensions ['colcon_pkg']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'colcon_pkg'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extensions ['colcon_meta']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'colcon_meta'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extensions ['ros']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'ros'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extensions ['cmake', 'python']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'cmake'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'python'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extensions ['python_setup_py']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(hundredVehs/twoWay/Static) by extension 'python_setup_py'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['ignore', 'ignore_ament_install']
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'ignore'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'ignore_ament_install'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['colcon_pkg']
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'colcon_pkg'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['colcon_meta']
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'colcon_meta'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extensions ['ros']
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cim) by extension 'ros'
+[4.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cim' with type 'ros.ament_python' and name 'cim'
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['ignore', 'ignore_ament_install']
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'ignore'
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'ignore_ament_install'
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['colcon_pkg']
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'colcon_pkg'
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['colcon_meta']
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'colcon_meta'
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extensions ['ros']
+[4.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/dsrcmsg) by extension 'ros'
+[4.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dsrcmsg' with type 'ros.ament_cmake' and name 'dsrcmsg'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extensions ['ignore', 'ignore_ament_install']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extension 'ignore'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extension 'ignore_ament_install'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extensions ['colcon_pkg']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extension 'colcon_pkg'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extensions ['colcon_meta']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extension 'colcon_meta'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extensions ['ros']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/onecim) by extension 'ros'
+[4.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/onecim' with type 'ros.ament_python' and name 'onecim'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['ignore', 'ignore_ament_install']
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'ignore'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'ignore_ament_install'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['colcon_pkg']
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'colcon_pkg'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['colcon_meta']
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'colcon_meta'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extensions ['ros']
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/reactivemethods) by extension 'ros'
+[4.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/reactivemethods' with type 'ros.ament_python' and name 'reactivemethods'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['ignore', 'ignore_ament_install']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'ignore'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'ignore_ament_install'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['colcon_pkg']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'colcon_pkg'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['colcon_meta']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'colcon_meta'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extensions ['ros']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/trafficrecord) by extension 'ros'
+[4.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trafficrecord' with type 'ros.ament_cmake' and name 'trafficrecord'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extensions ['ignore', 'ignore_ament_install']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'ignore'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'ignore_ament_install'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extensions ['colcon_pkg']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'colcon_pkg'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extensions ['colcon_meta']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'colcon_meta'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extensions ['ros']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'ros'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extensions ['cmake', 'python']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'cmake'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'python'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extensions ['python_setup_py']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred) by extension 'python_setup_py'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extensions ['ignore', 'ignore_ament_install']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'ignore'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'ignore_ament_install'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extensions ['colcon_pkg']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'colcon_pkg'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extensions ['colcon_meta']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'colcon_meta'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extensions ['ros']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'ros'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extensions ['cmake', 'python']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'cmake'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'python'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extensions ['python_setup_py']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay) by extension 'python_setup_py'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'ignore'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'ignore_ament_install'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extensions ['colcon_pkg']
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'colcon_pkg'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extensions ['colcon_meta']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'colcon_meta'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extensions ['ros']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'ros'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extensions ['cmake', 'python']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'cmake'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'python'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extensions ['python_setup_py']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/FIS) by extension 'python_setup_py'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'ignore'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'ignore_ament_install'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extensions ['colcon_pkg']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'colcon_pkg'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extensions ['colcon_meta']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'colcon_meta'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extensions ['ros']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'ros'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extensions ['cmake', 'python']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'cmake'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'python'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extensions ['python_setup_py']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/SpdDst) by extension 'python_setup_py'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'ignore'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'ignore_ament_install'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extensions ['colcon_pkg']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'colcon_pkg'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extensions ['colcon_meta']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'colcon_meta'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extensions ['ros']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'ros'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extensions ['cmake', 'python']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'cmake'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'python'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extensions ['python_setup_py']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/fourWay/Static) by extension 'python_setup_py'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extensions ['ignore', 'ignore_ament_install']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'ignore'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'ignore_ament_install'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extensions ['colcon_pkg']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'colcon_pkg'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extensions ['colcon_meta']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'colcon_meta'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extensions ['ros']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'ros'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extensions ['cmake', 'python']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'cmake'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'python'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extensions ['python_setup_py']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay) by extension 'python_setup_py'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'ignore'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'ignore_ament_install'
+[4.176s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extensions ['colcon_pkg']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'colcon_pkg'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extensions ['colcon_meta']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'colcon_meta'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extensions ['ros']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'ros'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extensions ['cmake', 'python']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'cmake'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'python'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extensions ['python_setup_py']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/FIS) by extension 'python_setup_py'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extensions ['ignore', 'ignore_ament_install']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'ignore'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'ignore_ament_install'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extensions ['colcon_pkg']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'colcon_pkg'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extensions ['colcon_meta']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'colcon_meta'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extensions ['ros']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'ros'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extensions ['cmake', 'python']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'cmake'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'python'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extensions ['python_setup_py']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth) by extension 'python_setup_py'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extensions ['ignore', 'ignore_ament_install']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'ignore'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'ignore_ament_install'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extensions ['colcon_pkg']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'colcon_pkg'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extensions ['colcon_meta']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'colcon_meta'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extensions ['ros']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'ros'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extensions ['cmake', 'python']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'cmake'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'python'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extensions ['python_setup_py']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/FIS) by extension 'python_setup_py'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'ignore'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'ignore_ament_install'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['colcon_pkg']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'colcon_pkg'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['colcon_meta']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'colcon_meta'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['ros']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'ros'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['cmake', 'python']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'cmake'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'python'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extensions ['python_setup_py']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/SpdDst) by extension 'python_setup_py'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'ignore'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'ignore_ament_install'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extensions ['colcon_pkg']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'colcon_pkg'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extensions ['colcon_meta']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'colcon_meta'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extensions ['ros']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'ros'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extensions ['cmake', 'python']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'cmake'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'python'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extensions ['python_setup_py']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SouthNorth/Static) by extension 'python_setup_py'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extensions ['ignore', 'ignore_ament_install']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'ignore'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'ignore_ament_install'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extensions ['colcon_pkg']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'colcon_pkg'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extensions ['colcon_meta']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'colcon_meta'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extensions ['ros']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'ros'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extensions ['cmake', 'python']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'cmake'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'python'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extensions ['python_setup_py']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/SpdDst) by extension 'python_setup_py'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extensions ['ignore', 'ignore_ament_install']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'ignore'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'ignore_ament_install'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extensions ['colcon_pkg']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'colcon_pkg'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extensions ['colcon_meta']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'colcon_meta'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extensions ['ros']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'ros'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extensions ['cmake', 'python']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'cmake'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'python'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extensions ['python_setup_py']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(twoHundred/twoWay/Static) by extension 'python_setup_py'
+[4.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.398s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dsrcmsg' in 'src/dsrcmsg'
+[4.398s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'trafficrecord' in 'src/trafficrecord'
+[4.398s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cim' in 'src/cim'
+[4.398s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'reactivemethods' in 'src/reactivemethods'
+[4.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.656s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/babangida/ros_ws/install
+[4.720s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/foxy
+[4.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'cmake_args' from command line to 'None'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'cmake_target' from command line to 'None'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'cmake_clean_cache' from command line to 'False'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'cmake_clean_first' from command line to 'False'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'cmake_force_configure' from command line to 'False'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'ament_cmake_args' from command line to 'None'
+[4.967s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'catkin_cmake_args' from command line to 'None'
+[4.968s] Level 5:colcon.colcon_core.verb:set package 'onecim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.968s] DEBUG:colcon.colcon_core.verb:Building package 'onecim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/babangida/ros_ws/build/onecim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/babangida/ros_ws/install/onecim', 'merge_install': False, 'path': '/home/babangida/ros_ws/src/onecim', 'symlink_install': False, 'test_result_base': None}
+[5.030s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.091s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.092s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/babangida/ros_ws/src/onecim' with build type 'ament_python'
+[5.092s] Level 1:colcon.colcon_core.shell:create_environment_hook('onecim', 'ament_prefix_path')
+[5.160s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/onecim/share/onecim/hook/ament_prefix_path.ps1'
+[5.161s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/onecim/share/onecim/hook/ament_prefix_path.dsv'
+[5.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/onecim/share/onecim/hook/ament_prefix_path.sh'
+[5.241s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.241s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.324s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/babangida/ros_ws/src/onecim'
+[6.389s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/babangida/ros_ws/src/onecim': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/onecim build --build-base /home/babangida/ros_ws/build/onecim/build install --record /home/babangida/ros_ws/build/onecim/install.log --install-scripts $base/lib/onecim --single-version-externally-managed
+[8.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/babangida/ros_ws/src/onecim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/onecim build --build-base /home/babangida/ros_ws/build/onecim/build install --record /home/babangida/ros_ws/build/onecim/install.log --install-scripts $base/lib/onecim --single-version-externally-managed
+[8.201s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim' for CMake module files
+[8.202s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim' for CMake config files
+[8.202s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim/lib'
+[8.203s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim/bin'
+[8.203s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim/lib/pkgconfig/onecim.pc'
+[8.203s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages'
+[8.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('onecim', 'pythonpath')
+[8.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/onecim/share/onecim/hook/pythonpath.ps1'
+[8.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/babangida/ros_ws/install/onecim/share/onecim/hook/pythonpath.dsv'
+[8.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/babangida/ros_ws/install/onecim/share/onecim/hook/pythonpath.sh'
+[8.270s] Level 1:colcon.colcon_core.environment:checking '/home/babangida/ros_ws/install/onecim/bin'
+[8.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(onecim)
+[8.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/onecim/share/onecim/package.ps1'
+[8.335s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/babangida/ros_ws/install/onecim/share/onecim/package.dsv'
+[8.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/onecim/share/onecim/package.sh'
+[8.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/onecim/share/onecim/package.bash'
+[8.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/babangida/ros_ws/install/onecim/share/onecim/package.zsh'
+[8.338s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/babangida/ros_ws/install/onecim/share/colcon-core/packages/onecim)
+[8.339s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.339s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.340s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.340s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.513s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.513s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.513s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.513s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.515s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.515s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.577s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.ps1'
+[8.579s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/babangida/ros_ws/install/_local_setup_util_ps1.py'
+[8.581s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.ps1'
+[8.651s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.sh'
+[8.652s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/babangida/ros_ws/install/_local_setup_util_sh.py'
+[8.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.sh'
+[8.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.bash'
+[8.717s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.bash'
+[8.783s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/babangida/ros_ws/install/local_setup.zsh'
+[8.783s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/babangida/ros_ws/install/setup.zsh'

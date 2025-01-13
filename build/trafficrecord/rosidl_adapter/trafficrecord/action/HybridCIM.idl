@@ -1,0 +1,89 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from trafficrecord/action/HybridCIM.action
+// generated code does not contain a copyright notice
+
+
+module trafficrecord {
+  module action {
+    @verbatim (language="comment", text=
+      " This action interface file is used by autonomous vehicles (decentralized controller) and traffic light system (centralized controller)" "\n"
+      " for the purpose of exchanging traffic information and intersection schedule" "\n"
+      " Vehicles (decentralized controller) request to be scheduled to utilize an intersection" "\n"
+      " TLS (Centralized controller) receive vehicles request and determine an optimized schedule based on the current (or predicted)" "\n"
+      " traffic scenario. TLS communicates the schedule to all connected vehicles." "\n"
+      " Vehicles determine if they have been scheduled or not and then act accordingly" "\n"
+      "The format of the communication is as follows:")
+    struct HybridCIM_Goal {
+      @verbatim (language="comment", text=
+        " The vehicle identification")
+      string vehicleid;
+
+      @verbatim (language="comment", text=
+        " The name of Junction")
+      string junction;
+
+      @verbatim (language="comment", text=
+        " The identification of the approach leg")
+      string approachleg;
+
+      @verbatim (language="comment", text=
+        " The identification of the departure leg")
+      string departleg;
+
+      @verbatim (language="comment", text=
+        " The arrival time of vehicle, which is used to determine the waiting time of the vehicle")
+      double arrivaltime;
+
+      @verbatim (language="comment", text=
+        " The point where the vehicle is at currently")
+      sequence<float> point;
+
+      @verbatim (language="comment", text=
+        " The current speed of vehicle")
+      float speed;
+
+      @verbatim (language="comment", text=
+        " Earlier (string): The vehicle type: two-seater, minicompact, subcompact, compact, mid-size and large/full-size cars --- based on https://www.fueleconomy.gov/feg/info.shtml#sizeclasses" "\n"
+        " Later(int): Based on vehicle type codes found at https://actar.org/pdf/ca_veh1.pdf")
+      int32 vehicletype;
+
+      @verbatim (language="comment", text=
+        " The priority of vehicles may be used to influence schedule and is between 0 and N depending on the classes of priority")
+      int32 priority;
+    };
+    struct HybridCIM_Result {
+      @verbatim (language="comment", text=
+        " Opon schedule, the vehicle receive the following information from the centralized TLS controller" "\n"
+        "list of scheduled vehicles")
+      sequence<string> vehicleids;
+
+      @verbatim (language="comment", text=
+        " The start time of schedule")
+      double starttime;
+
+      @verbatim (language="comment", text=
+        " The duration of the schedule")
+      int32 duration;
+
+      @verbatim (language="comment", text=
+        " The recommended speed of vehicle")
+      int32 speed;
+
+      @verbatim (language="comment", text=
+        " The returned value to indicate whether the vehicle arrival traffic information was successfully record" "\n"
+        " by the CIM controller unit (node)")
+      boolean recorded;
+    };
+    struct HybridCIM_Feedback {
+      @verbatim (language="comment", text=
+        " Because the centralized TLS Controller execute schedule at (or towards) the of the previous, there might be need for feedback" "\n"
+        "" "\n"
+        " The remaining time before the next schedule")
+      int32 schedulein;
+
+      @verbatim (language="comment", text=
+        " Next approach leg to be scheduled")
+      string nextapproachleg;
+    };
+  };
+};

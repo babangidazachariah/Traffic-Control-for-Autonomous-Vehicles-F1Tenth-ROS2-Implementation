@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsrcmsg/msg/OneCIMTlsMsg.msg
+// generated code does not contain a copyright notice
+
+#include "dsrcmsg/msg/OneCIMKeypoints.idl"
+
+module dsrcmsg {
+  module msg {
+    @verbatim (language="comment", text=
+      " OneCIMTlsMsg.msg")
+    struct OneCIMTlsMsg {
+      @verbatim (language="comment", text=
+        "intersection identification/name in case of intersections that are closely spaced")
+      string junctionid;
+
+      @verbatim (language="comment", text=
+        "Vehicle ID in case of Decentralized Cooperative Intersection Management.")
+      string vehicleid;
+
+      @verbatim (language="comment", text=
+        "The identification of the path that has greenwave")
+      sequence<string> pathids;
+
+      @verbatim (language="comment", text=
+        "Initial time the greenwave traffic ligh signal was assigned")
+      double starttime;
+
+      @verbatim (language="comment", text=
+        "the duration of the greenwave")
+      double duration;
+
+      @verbatim (language="comment", text=
+        "Intersection Controller provides coordinates of important locations of the intersection such as:" "\n"
+        "Each approach leg's stop line" "\n"
+        "Each depart leg's safety/Exit point")
+      sequence<dsrcmsg::msg::OneCIMKeypoints> approachpoints;
+
+      sequence<dsrcmsg::msg::OneCIMKeypoints> departpoints;
+
+      @verbatim (language="comment", text=
+        "recommended speed for vehicles")
+      double speed;
+    };
+  };
+};

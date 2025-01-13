@@ -1,0 +1,25 @@
+[console_scripts]
+benchmark = onecim.benchmarkcontroller:main
+ewfiscim = onecim.ewagentFISCIM:main
+fisonecimlooptls = onecim.FISBasedCIMLoopTls:main
+fisonecimtls = onecim.FISBasedOneCIMTLS:main
+genveh = onecim.generateVehicles:main
+onecimew = onecim.oneintersectionewagent:main
+onecimloopew = onecim.onecimloopewagent:main
+onecimloopsn = onecim.onecimloopsnagent:main
+onecimloopstatictls = onecim.onecimloopstatictls:main
+onecimlooptls = onecim.onecimlooptls:main
+onecimsn = onecim.oneintersectionsnagent:main
+onecimtls = onecim.onecimtls:main
+playde = onecim.DisparityExtenderObstacleAvoidance:main
+playpp = onecim.PurePursuit:main
+rectraffic = onecim.trafficRecordingNode:main
+rrfisonecimlooptls = onecim.RoundRobinFISBasedOneCIMLoopTLS:main
+rronecimlooptls = onecim.RoundRobinOneCIMLoopTLS:main
+simspeed = onecim.simSpeed:main
+snfiscim = onecim.snagentFISCIM:main
+speed = onecim.measureSpeed:main
+timegenveh = onecim.timedVehicleGeneration:main
+veh = onecim.generateMultipleVehicles:main
+wypts = onecim.simpleWaypoints:main
+

@@ -1,0 +1,10 @@
+{
+  "package_name": "dsrcmsg",
+  "non_idl_tuples": [
+    "/home/babangida/ros_ws/src/dsrcmsg:msg/DSRCMessage.msg",
+    "/home/babangida/ros_ws/src/dsrcmsg:msg/IntersectionBSM.msg",
+    "/home/babangida/ros_ws/src/dsrcmsg:msg/TrafficLightsMessage.msg",
+    "/home/babangida/ros_ws/src/dsrcmsg:msg/OneCIMKeypoints.msg",
+    "/home/babangida/ros_ws/src/dsrcmsg:msg/OneCIMTlsMsg.msg"
+  ]
+}

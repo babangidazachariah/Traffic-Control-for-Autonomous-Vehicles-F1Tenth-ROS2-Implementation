@@ -1,0 +1,4 @@
+source;share/dsrcmsg/local_setup.bash
+source;share/dsrcmsg/local_setup.dsv
+source;share/dsrcmsg/local_setup.sh
+source;share/dsrcmsg/local_setup.zsh

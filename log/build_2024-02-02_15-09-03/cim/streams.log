@@ -1,0 +1,150 @@
+[3.398s] Invoking command in '/home/babangida/ros_ws/src/cim': PYTHONPATH=/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/cim build --build-base /home/babangida/ros_ws/build/cim/build install --record /home/babangida/ros_ws/build/cim/install.log --install-scripts $base/lib/cim --single-version-externally-managed
+[3.865s] running egg_info
+[3.866s] creating ../../build/cim/cim.egg-info
+[3.866s] writing ../../build/cim/cim.egg-info/PKG-INFO
+[3.867s] writing dependency_links to ../../build/cim/cim.egg-info/dependency_links.txt
+[3.867s] writing entry points to ../../build/cim/cim.egg-info/entry_points.txt
+[3.867s] writing requirements to ../../build/cim/cim.egg-info/requires.txt
+[3.868s] writing top-level names to ../../build/cim/cim.egg-info/top_level.txt
+[3.870s] writing manifest file '../../build/cim/cim.egg-info/SOURCES.txt'
+[3.936s] reading manifest file '../../build/cim/cim.egg-info/SOURCES.txt'
+[3.940s] writing manifest file '../../build/cim/cim.egg-info/SOURCES.txt'
+[3.940s] running build
+[3.940s] running build_py
+[3.940s] creating /home/babangida/ros_ws/build/cim/build
+[3.941s] creating /home/babangida/ros_ws/build/cim/build/lib
+[3.941s] creating /home/babangida/ros_ws/build/cim/build/lib/cim
+[3.941s] copying cim/FISTrafficSignalOptimizer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[3.968s] copying cim/cimnode.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.058s] copying cim/GlpkTrafficSignalOptimizer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.058s] copying cim/debugewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.104s] copying cim/stlssnagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.134s] copying cim/tlsewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.134s] copying cim/__init__.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.134s] copying cim/TrafficRecordingAnalysisServer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.134s] copying cim/fisewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.135s] copying cim/plotPoint.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.206s] copying cim/fisnsagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.263s] copying cim/fibonacci_action_client.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.263s] copying cim/WePurePursuit.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.264s] copying cim/ewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.264s] copying cim/snagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.264s] copying cim/simplemodel.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.265s] copying cim/GeneralFunctions.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.327s] copying cim/TrafficRecordingAnalysis.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.327s] copying cim/PurePursuit.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.328s] copying cim/HybridCentralizedTLSController.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.328s] copying cim/stlsewagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.329s] copying cim/fibonacci_action_server.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.329s] copying cim/FISBasedCIM.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.330s] copying cim/gen.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.330s] copying cim/GurobiTrafficSignalOptimizer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.330s] copying cim/DsrcBasedSimpleCIM.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.330s] copying cim/testStop.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.349s] copying cim/CplexTrafficSignalOptimizer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.350s] copying cim/StaticTrafficLights.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.370s] copying cim/tlssnagent.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.370s] copying cim/DisparityExtenderObstacleAvoidance.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.398s] copying cim/FISOptimizer.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.424s] copying cim/FISCentralizedIntersectionController.py -> /home/babangida/ros_ws/build/cim/build/lib/cim
+[4.425s] running install
+[4.426s] running install_lib
+[4.427s] creating /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.427s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.428s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/cimnode.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.428s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/GlpkTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.428s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/debugewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.428s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/stlssnagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.429s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/tlsewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.429s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/__init__.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.429s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/TrafficRecordingAnalysisServer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.429s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/fisewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.430s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/plotPoint.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.430s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/fisnsagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.431s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/fibonacci_action_client.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.431s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/WePurePursuit.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.431s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/ewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.431s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/snagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.432s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/simplemodel.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.432s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/GeneralFunctions.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.432s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/TrafficRecordingAnalysis.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.432s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/PurePursuit.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.433s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/HybridCentralizedTLSController.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.433s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/stlsewagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.433s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/fibonacci_action_server.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.434s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISBasedCIM.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.434s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/gen.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.434s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/GurobiTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.434s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/DsrcBasedSimpleCIM.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.434s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/testStop.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.434s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/CplexTrafficSignalOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.435s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/StaticTrafficLights.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.435s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/tlssnagent.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.435s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/DisparityExtenderObstacleAvoidance.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.435s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISOptimizer.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.435s] copying /home/babangida/ros_ws/build/cim/build/lib/cim/FISCentralizedIntersectionController.py -> /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim
+[4.435s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISTrafficSignalOptimizer.py to FISTrafficSignalOptimizer.cpython-38.pyc
+[4.440s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/cimnode.py to cimnode.cpython-38.pyc
+[4.445s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/GlpkTrafficSignalOptimizer.py to GlpkTrafficSignalOptimizer.cpython-38.pyc
+[4.446s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/debugewagent.py to debugewagent.cpython-38.pyc
+[4.450s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/stlssnagent.py to stlssnagent.cpython-38.pyc
+[4.452s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/tlsewagent.py to tlsewagent.cpython-38.pyc
+[4.454s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/__init__.py to __init__.cpython-38.pyc
+[4.455s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/TrafficRecordingAnalysisServer.py to TrafficRecordingAnalysisServer.cpython-38.pyc
+[4.455s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fisewagent.py to fisewagent.cpython-38.pyc
+[4.459s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/plotPoint.py to plotPoint.cpython-38.pyc
+[4.459s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fisnsagent.py to fisnsagent.cpython-38.pyc
+[4.463s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fibonacci_action_client.py to fibonacci_action_client.cpython-38.pyc
+[4.464s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/WePurePursuit.py to WePurePursuit.cpython-38.pyc
+[4.467s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/ewagent.py to ewagent.cpython-38.pyc
+[4.470s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/snagent.py to snagent.cpython-38.pyc
+[4.477s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/simplemodel.py to simplemodel.cpython-38.pyc
+[4.477s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/GeneralFunctions.py to GeneralFunctions.cpython-38.pyc
+[4.477s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/TrafficRecordingAnalysis.py to TrafficRecordingAnalysis.cpython-38.pyc
+[4.478s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/PurePursuit.py to PurePursuit.cpython-38.pyc
+[4.481s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/HybridCentralizedTLSController.py to HybridCentralizedTLSController.cpython-38.pyc
+[4.483s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/stlsewagent.py to stlsewagent.cpython-38.pyc
+[4.486s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/fibonacci_action_server.py to fibonacci_action_server.cpython-38.pyc
+[4.486s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISBasedCIM.py to FISBasedCIM.cpython-38.pyc
+[4.504s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/gen.py to gen.cpython-38.pyc
+[4.505s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/GurobiTrafficSignalOptimizer.py to GurobiTrafficSignalOptimizer.cpython-38.pyc
+[4.507s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/DsrcBasedSimpleCIM.py to DsrcBasedSimpleCIM.cpython-38.pyc
+[4.508s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/testStop.py to testStop.cpython-38.pyc
+[4.511s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/CplexTrafficSignalOptimizer.py to CplexTrafficSignalOptimizer.cpython-38.pyc
+[4.514s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/StaticTrafficLights.py to StaticTrafficLights.cpython-38.pyc
+[4.515s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/tlssnagent.py to tlssnagent.cpython-38.pyc
+[4.517s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/DisparityExtenderObstacleAvoidance.py to DisparityExtenderObstacleAvoidance.cpython-38.pyc
+[4.518s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISOptimizer.py to FISOptimizer.cpython-38.pyc
+[4.519s] byte-compiling /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim/FISCentralizedIntersectionController.py to FISCentralizedIntersectionController.cpython-38.pyc
+[4.523s] running install_data
+[4.523s] creating /home/babangida/ros_ws/install/cim/share/ament_index
+[4.524s] creating /home/babangida/ros_ws/install/cim/share/ament_index/resource_index
+[4.524s] creating /home/babangida/ros_ws/install/cim/share/ament_index/resource_index/packages
+[4.524s] copying resource/cim -> /home/babangida/ros_ws/install/cim/share/ament_index/resource_index/packages
+[4.525s] copying package.xml -> /home/babangida/ros_ws/install/cim/share/cim
+[4.525s] copying launch/cimagents_launch.py -> /home/babangida/ros_ws/install/cim/share/cim
+[4.525s] running install_egg_info
+[4.528s] Copying ../../build/cim/cim.egg-info to /home/babangida/ros_ws/install/cim/lib/python3.8/site-packages/cim-0.0.0-py3.8.egg-info
+[4.530s] running install_scripts
+[4.556s] Installing cimnode script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.557s] Installing debugewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.557s] Installing dsrcsimplecim script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.557s] Installing ewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.558s] Installing fhcim script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.558s] Installing fiscim script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.558s] Installing fisewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.559s] Installing fissnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.559s] Installing playde script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.559s] Installing playpp script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.560s] Installing plotpoint script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.560s] Installing recanalysis script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.560s] Installing recanalysisserver script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.560s] Installing snagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.561s] Installing statictls script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.561s] Installing stlsewagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.561s] Installing stlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.561s] Installing test script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.561s] Installing tlsewgent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.561s] Installing tlssnagent script to /home/babangida/ros_ws/install/cim/lib/cim
+[4.562s] writing list of installed files to '/home/babangida/ros_ws/build/cim/install.log'
+[4.593s] Invoked command in '/home/babangida/ros_ws/src/cim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/cim/prefix_override:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/cim:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/action_tutorials_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/cim build --build-base /home/babangida/ros_ws/build/cim/build install --record /home/babangida/ros_ws/build/cim/install.log --install-scripts $base/lib/cim --single-version-externally-managed

@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: reactivemethods
+Version: 0.0.0
+Summary: A simple Reactive Autononomous Driving: Automatic Breaking, left-wall following, right-wall following, gap following, waypoint following (pure pursuit) ROS-based self-driven vehicle.
+Home-page: UNKNOWN
+Maintainer: babangida
+Maintainer-email: babangida.zachariah@ontariotechu.net
+License: Ontario Tech University License
+Description: UNKNOWN
+Platform: UNKNOWN

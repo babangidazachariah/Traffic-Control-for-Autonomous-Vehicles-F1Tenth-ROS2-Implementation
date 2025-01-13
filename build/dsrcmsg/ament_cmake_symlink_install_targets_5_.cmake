@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/babangida/ros_ws/build/dsrcmsg/rosidl_generator_py/dsrcmsg/libdsrcmsg__python.so" "TARGETS" "dsrcmsg__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

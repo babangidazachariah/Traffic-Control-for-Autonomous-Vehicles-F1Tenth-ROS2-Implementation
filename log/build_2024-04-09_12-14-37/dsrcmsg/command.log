@@ -1,0 +1,2 @@
+Invoking command in '/home/debangis/ros_ws/build/dsrcmsg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/debangis/ros_ws/src/dsrcmsg -DCMAKE_INSTALL_PREFIX=/home/debangis/ros_ws/install/dsrcmsg
+Invoked command in '/home/debangis/ros_ws/build/dsrcmsg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/debangis/ros_ws/src/dsrcmsg -DCMAKE_INSTALL_PREFIX=/home/debangis/ros_ws/install/dsrcmsg

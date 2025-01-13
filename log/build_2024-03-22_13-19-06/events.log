@@ -1,0 +1,695 @@
+[0.000000] (-) TimerEvent: {}
+[0.001130] (-) JobUnselected: {'identifier': 'cim'}
+[0.001187] (-) JobUnselected: {'identifier': 'reactivemethods'}
+[0.001209] (-) JobUnselected: {'identifier': 'trafficrecord'}
+[0.001258] (dsrcmsg) JobQueued: {'identifier': 'dsrcmsg', 'dependencies': OrderedDict()}
+[0.001308] (onecim) JobQueued: {'identifier': 'onecim', 'dependencies': OrderedDict([('dsrcmsg', '/home/babangida/ros_ws/install/dsrcmsg'), ('trafficrecord', '/home/babangida/ros_ws/install/trafficrecord')])}
+[0.001335] (dsrcmsg) JobStarted: {'identifier': 'dsrcmsg'}
+[0.069897] (-) TimerEvent: {}
+[0.170337] (-) TimerEvent: {}
+[0.192284] (dsrcmsg) JobProgress: {'identifier': 'dsrcmsg', 'progress': 'cmake'}
+[0.195388] (dsrcmsg) JobProgress: {'identifier': 'dsrcmsg', 'progress': 'build'}
+[0.195462] (dsrcmsg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/babangida/ros_ws/build/dsrcmsg', '--', '-j8', '-l8'], 'cwd': '/home/babangida/ros_ws/build/dsrcmsg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'babangida'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/babangida'), ('OLDPWD', '/home/babangida'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/babangida/ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'babangida'), ('NAME', 'DeBangis'), ('WSL_INTEROP', '/run/WSL/2679_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/Eclipse/Sumo/bin/:/mnt/c/Program Files (x86)/Eclipse/Sumo/tools/:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Daddy/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin'), ('WT_SESSION', '6ffa9fef-f76a-4ed8-8c9d-cbb3cf16ce1b'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/reactivemethods:/home/babangida/ros_ws/install/dsrcmsg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/babangida/ros_ws/build/dsrcmsg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg:/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.270598] (-) TimerEvent: {}
+[0.371134] (-) TimerEvent: {}
+[0.471667] (-) TimerEvent: {}
+[0.541112] (dsrcmsg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.571877] (-) TimerEvent: {}
+[0.589656] (dsrcmsg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.589858] (dsrcmsg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.672029] (-) TimerEvent: {}
+[0.764112] (dsrcmsg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.772268] (-) TimerEvent: {}
+[0.813857] (dsrcmsg) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[0.872440] (-) TimerEvent: {}
+[0.972795] (-) TimerEvent: {}
+[1.069215] (dsrcmsg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.072881] (dsrcmsg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.073045] (-) TimerEvent: {}
+[1.173426] (-) TimerEvent: {}
+[1.273884] (-) TimerEvent: {}
+[1.374216] (-) TimerEvent: {}
+[1.474536] (-) TimerEvent: {}
+[1.574841] (-) TimerEvent: {}
+[1.675226] (-) TimerEvent: {}
+[1.775637] (-) TimerEvent: {}
+[1.875971] (-) TimerEvent: {}
+[1.976331] (-) TimerEvent: {}
+[2.076630] (-) TimerEvent: {}
+[2.176950] (-) TimerEvent: {}
+[2.277247] (-) TimerEvent: {}
+[2.377549] (-) TimerEvent: {}
+[2.477866] (-) TimerEvent: {}
+[2.578190] (-) TimerEvent: {}
+[2.678489] (-) TimerEvent: {}
+[2.778785] (-) TimerEvent: {}
+[2.879112] (-) TimerEvent: {}
+[2.979498] (-) TimerEvent: {}
+[3.079807] (-) TimerEvent: {}
+[3.180197] (-) TimerEvent: {}
+[3.280555] (-) TimerEvent: {}
+[3.380864] (-) TimerEvent: {}
+[3.481192] (-) TimerEvent: {}
+[3.581508] (-) TimerEvent: {}
+[3.682283] (-) TimerEvent: {}
+[3.783114] (-) TimerEvent: {}
+[3.944748] (-) TimerEvent: {}
+[4.045189] (-) TimerEvent: {}
+[4.145512] (-) TimerEvent: {}
+[4.245885] (-) TimerEvent: {}
+[4.346206] (-) TimerEvent: {}
+[4.446528] (-) TimerEvent: {}
+[4.546949] (-) TimerEvent: {}
+[4.647305] (-) TimerEvent: {}
+[4.747726] (-) TimerEvent: {}
+[4.848101] (-) TimerEvent: {}
+[4.948446] (-) TimerEvent: {}
+[5.050129] (-) TimerEvent: {}
+[5.158005] (-) TimerEvent: {}
+[5.260432] (-) TimerEvent: {}
+[5.361104] (-) TimerEvent: {}
+[5.461602] (-) TimerEvent: {}
+[5.562112] (-) TimerEvent: {}
+[5.662801] (-) TimerEvent: {}
+[5.763353] (-) TimerEvent: {}
+[5.863812] (-) TimerEvent: {}
+[5.964698] (-) TimerEvent: {}
+[6.065135] (-) TimerEvent: {}
+[6.165665] (-) TimerEvent: {}
+[6.266343] (-) TimerEvent: {}
+[6.367577] (-) TimerEvent: {}
+[6.468163] (-) TimerEvent: {}
+[6.568710] (-) TimerEvent: {}
+[6.669812] (-) TimerEvent: {}
+[6.770395] (-) TimerEvent: {}
+[6.870990] (-) TimerEvent: {}
+[6.971717] (-) TimerEvent: {}
+[7.072423] (-) TimerEvent: {}
+[7.173058] (-) TimerEvent: {}
+[7.273579] (-) TimerEvent: {}
+[7.374228] (-) TimerEvent: {}
+[7.474979] (-) TimerEvent: {}
+[7.575338] (-) TimerEvent: {}
+[7.675654] (-) TimerEvent: {}
+[7.775987] (-) TimerEvent: {}
+[7.876444] (-) TimerEvent: {}
+[7.976831] (-) TimerEvent: {}
+[8.077314] (-) TimerEvent: {}
+[8.177740] (-) TimerEvent: {}
+[8.278203] (-) TimerEvent: {}
+[8.378537] (-) TimerEvent: {}
+[8.478915] (-) TimerEvent: {}
+[8.755739] (-) TimerEvent: {}
+[8.856046] (-) TimerEvent: {}
+[8.956371] (-) TimerEvent: {}
+[9.056704] (-) TimerEvent: {}
+[9.157098] (-) TimerEvent: {}
+[9.257521] (-) TimerEvent: {}
+[9.357944] (-) TimerEvent: {}
+[9.458327] (-) TimerEvent: {}
+[9.558825] (-) TimerEvent: {}
+[9.659257] (-) TimerEvent: {}
+[9.759671] (-) TimerEvent: {}
+[9.860045] (-) TimerEvent: {}
+[9.960459] (-) TimerEvent: {}
+[10.060887] (-) TimerEvent: {}
+[10.161283] (-) TimerEvent: {}
+[10.261678] (-) TimerEvent: {}
+[10.362083] (-) TimerEvent: {}
+[10.462586] (-) TimerEvent: {}
+[10.563042] (-) TimerEvent: {}
+[10.663484] (-) TimerEvent: {}
+[10.717953] (dsrcmsg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.754465] (dsrcmsg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[10.763676] (-) TimerEvent: {}
+[10.816300] (dsrcmsg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[10.863816] (-) TimerEvent: {}
+[10.964373] (-) TimerEvent: {}
+[11.064823] (-) TimerEvent: {}
+[11.144318] (dsrcmsg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[11.164958] (-) TimerEvent: {}
+[11.265348] (-) TimerEvent: {}
+[11.365814] (-) TimerEvent: {}
+[11.466257] (-) TimerEvent: {}
+[11.566699] (-) TimerEvent: {}
+[11.667157] (-) TimerEvent: {}
+[11.767557] (-) TimerEvent: {}
+[11.867939] (-) TimerEvent: {}
+[11.968322] (-) TimerEvent: {}
+[12.068683] (-) TimerEvent: {}
+[12.169102] (-) TimerEvent: {}
+[12.269500] (-) TimerEvent: {}
+[12.369982] (-) TimerEvent: {}
+[12.470409] (-) TimerEvent: {}
+[12.570901] (-) TimerEvent: {}
+[12.671350] (-) TimerEvent: {}
+[12.771734] (-) TimerEvent: {}
+[12.872177] (-) TimerEvent: {}
+[12.972595] (-) TimerEvent: {}
+[13.073065] (-) TimerEvent: {}
+[13.173744] (-) TimerEvent: {}
+[13.274279] (-) TimerEvent: {}
+[13.374810] (-) TimerEvent: {}
+[13.475287] (-) TimerEvent: {}
+[13.575736] (-) TimerEvent: {}
+[13.676310] (-) TimerEvent: {}
+[13.776774] (-) TimerEvent: {}
+[13.877178] (-) TimerEvent: {}
+[13.977539] (-) TimerEvent: {}
+[14.077927] (-) TimerEvent: {}
+[14.178372] (-) TimerEvent: {}
+[14.278875] (-) TimerEvent: {}
+[14.379293] (-) TimerEvent: {}
+[14.479721] (-) TimerEvent: {}
+[14.580227] (-) TimerEvent: {}
+[14.680713] (-) TimerEvent: {}
+[14.781105] (-) TimerEvent: {}
+[14.881508] (-) TimerEvent: {}
+[14.981954] (-) TimerEvent: {}
+[15.082660] (-) TimerEvent: {}
+[15.183118] (-) TimerEvent: {}
+[15.283652] (-) TimerEvent: {}
+[15.384164] (-) TimerEvent: {}
+[15.484742] (-) TimerEvent: {}
+[15.585312] (-) TimerEvent: {}
+[15.685760] (-) TimerEvent: {}
+[15.786768] (-) TimerEvent: {}
+[15.888229] (-) TimerEvent: {}
+[15.988747] (-) TimerEvent: {}
+[16.089490] (-) TimerEvent: {}
+[16.189892] (-) TimerEvent: {}
+[16.290360] (-) TimerEvent: {}
+[16.390886] (-) TimerEvent: {}
+[16.491325] (-) TimerEvent: {}
+[16.591813] (-) TimerEvent: {}
+[16.692418] (-) TimerEvent: {}
+[16.793072] (-) TimerEvent: {}
+[16.893493] (-) TimerEvent: {}
+[16.993964] (-) TimerEvent: {}
+[17.094397] (-) TimerEvent: {}
+[17.194894] (-) TimerEvent: {}
+[17.295363] (-) TimerEvent: {}
+[17.395788] (-) TimerEvent: {}
+[17.496150] (-) TimerEvent: {}
+[17.596482] (-) TimerEvent: {}
+[17.696832] (-) TimerEvent: {}
+[17.797250] (-) TimerEvent: {}
+[17.897741] (-) TimerEvent: {}
+[17.998212] (-) TimerEvent: {}
+[18.098584] (-) TimerEvent: {}
+[18.198993] (-) TimerEvent: {}
+[18.299410] (-) TimerEvent: {}
+[18.399810] (-) TimerEvent: {}
+[18.500186] (-) TimerEvent: {}
+[18.600577] (-) TimerEvent: {}
+[18.701017] (-) TimerEvent: {}
+[18.801450] (-) TimerEvent: {}
+[18.901889] (-) TimerEvent: {}
+[19.002346] (-) TimerEvent: {}
+[19.102801] (-) TimerEvent: {}
+[19.203279] (-) TimerEvent: {}
+[19.303802] (-) TimerEvent: {}
+[19.409790] (-) TimerEvent: {}
+[19.510204] (-) TimerEvent: {}
+[19.610597] (-) TimerEvent: {}
+[19.711031] (-) TimerEvent: {}
+[19.814099] (-) TimerEvent: {}
+[19.915997] (-) TimerEvent: {}
+[20.016459] (-) TimerEvent: {}
+[20.116865] (-) TimerEvent: {}
+[20.217234] (-) TimerEvent: {}
+[20.317644] (-) TimerEvent: {}
+[20.418085] (-) TimerEvent: {}
+[20.518511] (-) TimerEvent: {}
+[20.618940] (-) TimerEvent: {}
+[20.719415] (-) TimerEvent: {}
+[20.819866] (-) TimerEvent: {}
+[20.920247] (-) TimerEvent: {}
+[21.020586] (-) TimerEvent: {}
+[21.120969] (-) TimerEvent: {}
+[21.221460] (-) TimerEvent: {}
+[21.321929] (-) TimerEvent: {}
+[21.422335] (-) TimerEvent: {}
+[21.522717] (-) TimerEvent: {}
+[21.623091] (-) TimerEvent: {}
+[21.723506] (-) TimerEvent: {}
+[21.823854] (-) TimerEvent: {}
+[21.924195] (-) TimerEvent: {}
+[22.024655] (-) TimerEvent: {}
+[22.125061] (-) TimerEvent: {}
+[22.154462] (dsrcmsg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[22.212367] (dsrcmsg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[22.225174] (-) TimerEvent: {}
+[22.256344] (dsrcmsg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[22.256802] (dsrcmsg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[22.296898] (dsrcmsg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[22.297089] (dsrcmsg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[22.297172] (dsrcmsg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[22.322652] (dsrcmsg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[22.325292] (-) TimerEvent: {}
+[22.364329] (dsrcmsg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[22.367222] (dsrcmsg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[22.368864] (dsrcmsg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[22.379961] (dsrcmsg) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.425432] (-) TimerEvent: {}
+[22.525772] (-) TimerEvent: {}
+[22.626250] (-) TimerEvent: {}
+[22.679610] (dsrcmsg) StdoutLine: {'line': b'-- Generating done\n'}
+[22.686614] (dsrcmsg) StdoutLine: {'line': b'-- Build files have been written to: /home/babangida/ros_ws/build/dsrcmsg\n'}
+[22.726372] (-) TimerEvent: {}
+[22.732788] (dsrcmsg) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[22.745725] (dsrcmsg) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[22.826492] (-) TimerEvent: {}
+[22.926881] (-) TimerEvent: {}
+[23.027345] (-) TimerEvent: {}
+[23.127786] (-) TimerEvent: {}
+[23.228247] (-) TimerEvent: {}
+[23.328691] (-) TimerEvent: {}
+[23.429095] (-) TimerEvent: {}
+[23.529511] (-) TimerEvent: {}
+[23.629911] (-) TimerEvent: {}
+[23.730408] (-) TimerEvent: {}
+[23.830893] (-) TimerEvent: {}
+[23.931363] (-) TimerEvent: {}
+[24.031815] (-) TimerEvent: {}
+[24.132252] (-) TimerEvent: {}
+[24.217749] (dsrcmsg) StdoutLine: {'line': b'[  3%] Built target dsrcmsg__cpp\n'}
+[24.232424] (-) TimerEvent: {}
+[24.246577] (dsrcmsg) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[24.254535] (dsrcmsg) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[24.259466] (dsrcmsg) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[24.299893] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_generator_c\x1b[0m\n'}
+[24.333804] (-) TimerEvent: {}
+[24.348074] (dsrcmsg) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_generator_c.dir/rosidl_generator_c/dsrcmsg/msg/detail/dsrc_message__functions.c.o\x1b[0m\n'}
+[24.348429] (dsrcmsg) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_generator_c.dir/rosidl_generator_c/dsrcmsg/msg/detail/traffic_lights_message__functions.c.o\x1b[0m\n'}
+[24.348712] (dsrcmsg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_generator_c.dir/rosidl_generator_c/dsrcmsg/msg/detail/intersection_bsm__functions.c.o\x1b[0m\n'}
+[24.356928] (dsrcmsg) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_generator_c.dir/rosidl_generator_c/dsrcmsg/msg/detail/one_cim_tls_msg__functions.c.o\x1b[0m\n'}
+[24.357905] (dsrcmsg) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_generator_c.dir/rosidl_generator_c/dsrcmsg/msg/detail/one_cim_keypoints__functions.c.o\x1b[0m\n'}
+[24.433930] (-) TimerEvent: {}
+[24.547933] (-) TimerEvent: {}
+[24.681683] (-) TimerEvent: {}
+[24.782085] (-) TimerEvent: {}
+[24.918155] (-) TimerEvent: {}
+[24.982753] (dsrcmsg) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libdsrcmsg__rosidl_generator_c.so\x1b[0m\n'}
+[25.018277] (-) TimerEvent: {}
+[25.118666] (-) TimerEvent: {}
+[25.219025] (-) TimerEvent: {}
+[25.319405] (-) TimerEvent: {}
+[25.420615] (-) TimerEvent: {}
+[25.450970] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_cpp\x1b[0m\n'}
+[25.473605] (dsrcmsg) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dsrcmsg/msg/dsrc_message__type_support.cpp.o\x1b[0m\n'}
+[25.474226] (dsrcmsg) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dsrcmsg/msg/one_cim_keypoints__type_support.cpp.o\x1b[0m\n'}
+[25.479560] (dsrcmsg) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dsrcmsg/msg/intersection_bsm__type_support.cpp.o\x1b[0m\n'}
+[25.487807] (dsrcmsg) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dsrcmsg/msg/traffic_lights_message__type_support.cpp.o\x1b[0m\n'}
+[25.491824] (dsrcmsg) StdoutLine: {'line': b'[ 23%] Built target dsrcmsg__rosidl_generator_c\n'}
+[25.492288] (dsrcmsg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dsrcmsg/msg/one_cim_tls_msg__type_support.cpp.o\x1b[0m\n'}
+[25.547948] (-) TimerEvent: {}
+[25.595844] (dsrcmsg) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[25.648069] (-) TimerEvent: {}
+[25.748493] (-) TimerEvent: {}
+[25.767841] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[25.818866] (dsrcmsg) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dsrcmsg/msg/detail/dsrc_message__type_support.cpp.o\x1b[0m\n'}
+[25.848663] (-) TimerEvent: {}
+[25.949074] (-) TimerEvent: {}
+[26.017963] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[26.049206] (-) TimerEvent: {}
+[26.127955] (dsrcmsg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/dsrc_message__type_support.cpp.o\x1b[0m\n'}
+[26.149385] (-) TimerEvent: {}
+[26.249783] (-) TimerEvent: {}
+[26.350157] (-) TimerEvent: {}
+[26.450470] (-) TimerEvent: {}
+[26.561604] (-) TimerEvent: {}
+[26.701054] (-) TimerEvent: {}
+[26.714609] (dsrcmsg) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dsrcmsg/msg/detail/intersection_bsm__type_support.cpp.o\x1b[0m\n'}
+[26.716491] (dsrcmsg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dsrcmsg/msg/detail/traffic_lights_message__type_support.cpp.o\x1b[0m\n'}
+[26.718828] (dsrcmsg) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libdsrcmsg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[26.728703] (dsrcmsg) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[26.741581] (dsrcmsg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/intersection_bsm__type_support.cpp.o\x1b[0m\n'}
+[26.801179] (-) TimerEvent: {}
+[26.901607] (-) TimerEvent: {}
+[26.906199] (dsrcmsg) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dsrcmsg/msg/detail/one_cim_keypoints__type_support.cpp.o\x1b[0m\n'}
+[27.001744] (-) TimerEvent: {}
+[27.038002] (dsrcmsg) StdoutLine: {'line': b'[ 39%] Built target dsrcmsg__rosidl_typesupport_cpp\n'}
+[27.098123] (dsrcmsg) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dsrcmsg/msg/detail/one_cim_tls_msg__type_support.cpp.o\x1b[0m\n'}
+[27.101862] (-) TimerEvent: {}
+[27.209999] (-) TimerEvent: {}
+[27.310423] (-) TimerEvent: {}
+[27.410865] (-) TimerEvent: {}
+[27.460828] (dsrcmsg) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/traffic_lights_message__type_support.cpp.o\x1b[0m\n'}
+[27.504705] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[27.510998] (-) TimerEvent: {}
+[27.547673] (dsrcmsg) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dsrcmsg/msg/detail/dsrc_message__type_support.c.o\x1b[0m\n'}
+[27.552850] (dsrcmsg) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/one_cim_keypoints__type_support.cpp.o\x1b[0m\n'}
+[27.584659] (dsrcmsg) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dsrcmsg/msg/detail/dds_fastrtps/one_cim_tls_msg__type_support.cpp.o\x1b[0m\n'}
+[27.611130] (-) TimerEvent: {}
+[27.659869] (dsrcmsg) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dsrcmsg/msg/detail/intersection_bsm__type_support.c.o\x1b[0m\n'}
+[27.695352] (dsrcmsg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dsrcmsg/msg/detail/traffic_lights_message__type_support.c.o\x1b[0m\n'}
+[27.711252] (-) TimerEvent: {}
+[27.805215] (dsrcmsg) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dsrcmsg/msg/detail/one_cim_keypoints__type_support.c.o\x1b[0m\n'}
+[27.811382] (-) TimerEvent: {}
+[27.887186] (dsrcmsg) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dsrcmsg/msg/detail/one_cim_tls_msg__type_support.c.o\x1b[0m\n'}
+[27.911511] (-) TimerEvent: {}
+[28.008997] (dsrcmsg) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libdsrcmsg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[28.011636] (-) TimerEvent: {}
+[28.101153] (dsrcmsg) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libdsrcmsg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[28.111760] (-) TimerEvent: {}
+[28.212290] (-) TimerEvent: {}
+[28.274404] (dsrcmsg) StdoutLine: {'line': b'[ 57%] Built target dsrcmsg__rosidl_typesupport_introspection_c\n'}
+[28.313208] (-) TimerEvent: {}
+[28.413809] (-) TimerEvent: {}
+[28.485319] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_c\x1b[0m\n'}
+[28.489689] (dsrcmsg) StdoutLine: {'line': b'[ 57%] Built target dsrcmsg__rosidl_typesupport_introspection_cpp\n'}
+[28.507051] (dsrcmsg) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/dsrcmsg/msg/traffic_lights_message__type_support.cpp.o\x1b[0m\n'}
+[28.508007] (dsrcmsg) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/dsrcmsg/msg/dsrc_message__type_support.cpp.o\x1b[0m\n'}
+[28.513944] (-) TimerEvent: {}
+[28.514420] (dsrcmsg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/dsrcmsg/msg/intersection_bsm__type_support.cpp.o\x1b[0m\n'}
+[28.537969] (dsrcmsg) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/dsrcmsg/msg/one_cim_tls_msg__type_support.cpp.o\x1b[0m\n'}
+[28.541451] (dsrcmsg) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/dsrcmsg/msg/one_cim_keypoints__type_support.cpp.o\x1b[0m\n'}
+[28.599943] (dsrcmsg) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libdsrcmsg__rosidl_typesupport_c.so\x1b[0m\n'}
+[28.614094] (-) TimerEvent: {}
+[28.714590] (-) TimerEvent: {}
+[28.793592] (dsrcmsg) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libdsrcmsg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[28.814832] (-) TimerEvent: {}
+[28.858088] (dsrcmsg) StdoutLine: {'line': b'[ 68%] Built target dsrcmsg__rosidl_typesupport_c\n'}
+[28.914982] (-) TimerEvent: {}
+[29.015423] (-) TimerEvent: {}
+[29.111831] (dsrcmsg) StdoutLine: {'line': b'[ 68%] Built target dsrcmsg__rosidl_typesupport_fastrtps_cpp\n'}
+[29.115606] (-) TimerEvent: {}
+[29.125997] (dsrcmsg) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[29.215736] (-) TimerEvent: {}
+[29.316067] (-) TimerEvent: {}
+[29.416461] (-) TimerEvent: {}
+[29.516857] (-) TimerEvent: {}
+[29.617273] (-) TimerEvent: {}
+[29.717666] (-) TimerEvent: {}
+[29.818105] (-) TimerEvent: {}
+[29.918455] (-) TimerEvent: {}
+[30.018894] (-) TimerEvent: {}
+[30.040954] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[30.065527] (dsrcmsg) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dsrcmsg/msg/detail/intersection_bsm__type_support_c.cpp.o\x1b[0m\n'}
+[30.065799] (dsrcmsg) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dsrcmsg/msg/detail/dsrc_message__type_support_c.cpp.o\x1b[0m\n'}
+[30.068435] (dsrcmsg) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dsrcmsg/msg/detail/one_cim_keypoints__type_support_c.cpp.o\x1b[0m\n'}
+[30.068714] (dsrcmsg) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dsrcmsg/msg/detail/one_cim_tls_msg__type_support_c.cpp.o\x1b[0m\n'}
+[30.070060] (dsrcmsg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dsrcmsg/msg/detail/traffic_lights_message__type_support_c.cpp.o\x1b[0m\n'}
+[30.119041] (-) TimerEvent: {}
+[30.219477] (-) TimerEvent: {}
+[30.319914] (-) TimerEvent: {}
+[30.420343] (-) TimerEvent: {}
+[30.520745] (-) TimerEvent: {}
+[30.621188] (-) TimerEvent: {}
+[30.721609] (-) TimerEvent: {}
+[30.793936] (dsrcmsg) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libdsrcmsg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[30.821743] (-) TimerEvent: {}
+[30.922286] (-) TimerEvent: {}
+[31.022761] (-) TimerEvent: {}
+[31.123317] (-) TimerEvent: {}
+[31.174692] (dsrcmsg) StdoutLine: {'line': b'[ 79%] Built target dsrcmsg__rosidl_typesupport_fastrtps_c\n'}
+[31.207002] (dsrcmsg) StdoutLine: {'line': b'[ 79%] Built target dsrcmsg\n'}
+[31.223462] (-) TimerEvent: {}
+[31.240075] (dsrcmsg) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[31.323586] (-) TimerEvent: {}
+[31.423950] (-) TimerEvent: {}
+[31.524387] (-) TimerEvent: {}
+[31.624805] (-) TimerEvent: {}
+[31.725218] (-) TimerEvent: {}
+[31.825668] (-) TimerEvent: {}
+[31.926045] (-) TimerEvent: {}
+[32.026441] (-) TimerEvent: {}
+[32.126886] (-) TimerEvent: {}
+[32.227257] (-) TimerEvent: {}
+[32.327656] (-) TimerEvent: {}
+[32.428075] (-) TimerEvent: {}
+[32.528493] (-) TimerEvent: {}
+[32.628844] (-) TimerEvent: {}
+[32.729180] (-) TimerEvent: {}
+[32.829513] (-) TimerEvent: {}
+[32.929879] (-) TimerEvent: {}
+[33.030274] (-) TimerEvent: {}
+[33.130776] (-) TimerEvent: {}
+[33.231199] (-) TimerEvent: {}
+[33.265772] (dsrcmsg) StdoutLine: {'line': b'[ 80%] Built target dsrcmsg__py\n'}
+[33.281787] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__python\x1b[0m\n'}
+[33.310797] (dsrcmsg) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__python.dir/rosidl_generator_py/dsrcmsg/msg/_one_cim_tls_msg_s.c.o\x1b[0m\n'}
+[33.312045] (dsrcmsg) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__python.dir/rosidl_generator_py/dsrcmsg/msg/_dsrc_message_s.c.o\x1b[0m\n'}
+[33.312449] (dsrcmsg) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__python.dir/rosidl_generator_py/dsrcmsg/msg/_intersection_bsm_s.c.o\x1b[0m\n'}
+[33.312562] (dsrcmsg) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__python.dir/rosidl_generator_py/dsrcmsg/msg/_one_cim_keypoints_s.c.o\x1b[0m\n'}
+[33.312651] (dsrcmsg) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__python.dir/rosidl_generator_py/dsrcmsg/msg/_traffic_lights_message_s.c.o\x1b[0m\n'}
+[33.331313] (-) TimerEvent: {}
+[33.431685] (-) TimerEvent: {}
+[33.486614] (dsrcmsg) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dsrcmsg/libdsrcmsg__python.so\x1b[0m\n'}
+[33.531816] (-) TimerEvent: {}
+[33.632191] (-) TimerEvent: {}
+[33.698362] (dsrcmsg) StdoutLine: {'line': b'[ 90%] Built target dsrcmsg__python\n'}
+[33.715823] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[33.716899] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[33.717047] (dsrcmsg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dsrcmsg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[33.732320] (-) TimerEvent: {}
+[33.735361] (dsrcmsg) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dsrcmsg/_dsrcmsg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[33.735735] (dsrcmsg) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dsrcmsg/_dsrcmsg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[33.739947] (dsrcmsg) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/dsrcmsg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dsrcmsg/_dsrcmsg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[33.832464] (-) TimerEvent: {}
+[33.868501] (dsrcmsg) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dsrcmsg/dsrcmsg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[33.879879] (dsrcmsg) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dsrcmsg/dsrcmsg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[33.891456] (dsrcmsg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/dsrcmsg/dsrcmsg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[33.932634] (-) TimerEvent: {}
+[34.033098] (-) TimerEvent: {}
+[34.131873] (dsrcmsg) StdoutLine: {'line': b'[100%] Built target dsrcmsg__rosidl_typesupport_introspection_c__pyext\n'}
+[34.133192] (-) TimerEvent: {}
+[34.136515] (dsrcmsg) StdoutLine: {'line': b'[100%] Built target dsrcmsg__rosidl_typesupport_c__pyext\n'}
+[34.233329] (-) TimerEvent: {}
+[34.262259] (dsrcmsg) StdoutLine: {'line': b'[100%] Built target dsrcmsg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[34.280953] (dsrcmsg) CommandEnded: {'returncode': 0}
+[34.333481] (-) TimerEvent: {}
+[34.421074] (dsrcmsg) JobProgress: {'identifier': 'dsrcmsg', 'progress': 'install'}
+[34.435039] (dsrcmsg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/babangida/ros_ws/build/dsrcmsg'], 'cwd': '/home/babangida/ros_ws/build/dsrcmsg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'babangida'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/babangida'), ('OLDPWD', '/home/babangida'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/babangida/ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'babangida'), ('NAME', 'DeBangis'), ('WSL_INTEROP', '/run/WSL/2679_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/Eclipse/Sumo/bin/:/mnt/c/Program Files (x86)/Eclipse/Sumo/tools/:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Daddy/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin'), ('WT_SESSION', '6ffa9fef-f76a-4ed8-8c9d-cbb3cf16ce1b'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/reactivemethods:/home/babangida/ros_ws/install/dsrcmsg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/babangida/ros_ws/build/dsrcmsg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg:/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/reactivemethods:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[34.436917] (-) TimerEvent: {}
+[34.448038] (dsrcmsg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.448773] (dsrcmsg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[34.449160] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/rosidl_interfaces/dsrcmsg\n'}
+[34.450106] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__functions.h\n'}
+[34.450422] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__struct.h\n'}
+[34.450726] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__type_support.h\n'}
+[34.451076] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__functions.h\n'}
+[34.451393] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__struct.h\n'}
+[34.451657] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__type_support.h\n'}
+[34.451891] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__functions.h\n'}
+[34.452156] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__struct.h\n'}
+[34.452402] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__type_support.h\n'}
+[34.452624] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__functions.h\n'}
+[34.452863] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__struct.h\n'}
+[34.453102] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__type_support.h\n'}
+[34.453363] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__functions.h\n'}
+[34.453647] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__struct.h\n'}
+[34.453937] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__type_support.h\n'}
+[34.454195] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/dsrc_message.h\n'}
+[34.454509] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/intersection_bsm.h\n'}
+[34.454812] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/one_cim_keypoints.h\n'}
+[34.455145] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/one_cim_tls_msg.h\n'}
+[34.455432] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_generator_c__visibility_control.h\n'}
+[34.455800] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/traffic_lights_message.h\n'}
+[34.456134] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/library_path.sh\n'}
+[34.456522] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/library_path.dsv\n'}
+[34.457403] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_fastrtps_c.h\n'}
+[34.457667] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_fastrtps_c.h\n'}
+[34.457994] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__rosidl_typesupport_fastrtps_c.h\n'}
+[34.458370] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[34.458941] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_fastrtps_c.h\n'}
+[34.459710] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[34.459907] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_fastrtps_c.so\n'}
+[34.460846] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.461130] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.461437] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.461749] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.462013] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[34.462258] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[34.462941] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[34.464013] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_introspection_c.h\n'}
+[34.464244] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_introspection_c.h\n'}
+[34.464523] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__rosidl_typesupport_introspection_c.h\n'}
+[34.464741] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__rosidl_typesupport_introspection_c.h\n'}
+[34.464987] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_introspection_c.h\n'}
+[34.465347] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[34.466176] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__builder.hpp\n'}
+[34.468681] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__struct.hpp\n'}
+[34.468984] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__traits.hpp\n'}
+[34.469141] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__type_support.hpp\n'}
+[34.469355] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__builder.hpp\n'}
+[34.469497] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__struct.hpp\n'}
+[34.469675] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__traits.hpp\n'}
+[34.469794] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__type_support.hpp\n'}
+[34.469912] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__builder.hpp\n'}
+[34.470109] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__struct.hpp\n'}
+[34.470229] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__traits.hpp\n'}
+[34.470363] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__type_support.hpp\n'}
+[34.470692] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__builder.hpp\n'}
+[34.470930] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__struct.hpp\n'}
+[34.471056] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__traits.hpp\n'}
+[34.471161] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__type_support.hpp\n'}
+[34.471368] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__builder.hpp\n'}
+[34.471575] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__struct.hpp\n'}
+[34.471821] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__traits.hpp\n'}
+[34.472134] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__type_support.hpp\n'}
+[34.472587] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/dsrc_message.hpp\n'}
+[34.473053] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/intersection_bsm.hpp\n'}
+[34.473560] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/one_cim_keypoints.hpp\n'}
+[34.473881] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/one_cim_tls_msg.hpp\n'}
+[34.474273] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[34.475490] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/traffic_lights_message.hpp\n'}
+[34.475917] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/dsrc_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.476258] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/intersection_bsm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.476605] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_keypoints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.476863] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/one_cim_tls_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.477225] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/include/dsrcmsg/msg/detail/traffic_lights_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[34.477803] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/pythonpath.sh\n'}
+[34.478276] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/pythonpath.dsv\n'}
+[34.478703] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/__init__.py\n'}
+[34.479594] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/__init__.py\n'}
+[34.479942] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_dsrc_message.py\n'}
+[34.480172] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_intersection_bsm.py\n'}
+[34.480459] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_one_cim_keypoints.py\n'}
+[34.480720] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_one_cim_tls_msg.py\n'}
+[34.480917] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/msg/_traffic_lights_message.py\n'}
+[34.481548] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/dsrcmsg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[34.482070] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/dsrcmsg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[34.482525] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/dsrcmsg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[34.482955] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__python.so\n'}
+[34.483366] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/DSRCMessage.idl\n'}
+[34.483721] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/IntersectionBSM.idl\n'}
+[34.484098] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/TrafficLightsMessage.idl\n'}
+[34.484475] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/OneCIMKeypoints.idl\n'}
+[34.484843] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/OneCIMTlsMsg.idl\n'}
+[34.485122] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/DSRCMessage.msg\n'}
+[34.485399] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/IntersectionBSM.msg\n'}
+[34.485708] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/TrafficLightsMessage.msg\n'}
+[34.486005] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/OneCIMKeypoints.msg\n'}
+[34.486273] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/msg/OneCIMTlsMsg.msg\n'}
+[34.486610] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/package_run_dependencies/dsrcmsg\n'}
+[34.487008] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/parent_prefix_path/dsrcmsg\n'}
+[34.487451] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/ament_prefix_path.sh\n'}
+[34.487801] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/ament_prefix_path.dsv\n'}
+[34.488135] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/path.sh\n'}
+[34.488439] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/environment/path.dsv\n'}
+[34.488758] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.bash\n'}
+[34.489126] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.sh\n'}
+[34.489798] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.zsh\n'}
+[34.490287] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/local_setup.dsv\n'}
+[34.490577] (dsrcmsg) StdoutLine: {'line': b'-- Symlinking: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.dsv\n'}
+[34.503741] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/ament_index/resource_index/packages/dsrcmsg\n'}
+[34.504105] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/rosidl_cmake-extras.cmake\n'}
+[34.504510] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[34.504864] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[34.505674] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[34.506376] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[34.506829] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[34.507326] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[34.507854] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsgConfig.cmake\n'}
+[34.508214] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsgConfig-version.cmake\n'}
+[34.508626] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/package.xml\n'}
+[34.509322] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_generator_c.so\n'}
+[34.509990] (dsrcmsg) StdoutLine: {'line': b'-- Set runtime path of "/home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_generator_c.so" to ""\n'}
+[34.510564] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_introspection_c.so\n'}
+[34.511219] (dsrcmsg) StdoutLine: {'line': b'-- Set runtime path of "/home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[34.511454] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_c.so\n'}
+[34.511952] (dsrcmsg) StdoutLine: {'line': b'-- Set runtime path of "/home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_c.so" to ""\n'}
+[34.512395] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_introspection_cpp.so\n'}
+[34.514029] (dsrcmsg) StdoutLine: {'line': b'-- Set runtime path of "/home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[34.514523] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_cpp.so\n'}
+[34.515167] (dsrcmsg) StdoutLine: {'line': b'-- Set runtime path of "/home/babangida/ros_ws/install/dsrcmsg/lib/libdsrcmsg__rosidl_typesupport_cpp.so" to ""\n'}
+[34.537141] (-) TimerEvent: {}
+[34.559631] (dsrcmsg) StdoutLine: {'line': b"Compiling '/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages/dsrcmsg/__init__.py'...\n"}
+[34.565954] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_generator_cExport.cmake\n'}
+[34.566228] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_generator_cExport-noconfig.cmake\n'}
+[34.566770] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[34.566971] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[34.567474] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cExport.cmake\n'}
+[34.567717] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[34.568110] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_generator_cppExport.cmake\n'}
+[34.568457] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[34.568945] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[34.569473] (dsrcmsg) StdoutLine: {'line': b'-- Up-to-date: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cppExport.cmake\n'}
+[34.569681] (dsrcmsg) StdoutLine: {'line': b'-- Installing: /home/babangida/ros_ws/install/dsrcmsg/share/dsrcmsg/cmake/dsrcmsg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[34.573354] (dsrcmsg) CommandEnded: {'returncode': 0}
+[34.637572] (-) TimerEvent: {}
+[34.738228] (-) TimerEvent: {}
+[34.839166] (-) TimerEvent: {}
+[34.940426] (-) TimerEvent: {}
+[35.040881] (-) TimerEvent: {}
+[35.141353] (-) TimerEvent: {}
+[35.243169] (-) TimerEvent: {}
+[35.346425] (-) TimerEvent: {}
+[35.448914] (-) TimerEvent: {}
+[35.469506] (dsrcmsg) JobEnded: {'identifier': 'dsrcmsg', 'rc': 0}
+[35.471299] (onecim) JobStarted: {'identifier': 'onecim'}
+[35.549259] (-) TimerEvent: {}
+[35.650377] (-) TimerEvent: {}
+[35.751285] (-) TimerEvent: {}
+[35.852545] (-) TimerEvent: {}
+[35.953081] (-) TimerEvent: {}
+[36.053459] (-) TimerEvent: {}
+[36.153847] (-) TimerEvent: {}
+[36.254354] (-) TimerEvent: {}
+[36.354863] (-) TimerEvent: {}
+[36.455428] (-) TimerEvent: {}
+[36.555828] (-) TimerEvent: {}
+[36.656163] (-) TimerEvent: {}
+[36.756627] (-) TimerEvent: {}
+[36.858524] (-) TimerEvent: {}
+[36.960198] (-) TimerEvent: {}
+[37.062470] (-) TimerEvent: {}
+[37.163018] (-) TimerEvent: {}
+[37.263493] (-) TimerEvent: {}
+[37.363922] (-) TimerEvent: {}
+[37.464301] (-) TimerEvent: {}
+[37.564713] (-) TimerEvent: {}
+[37.665187] (-) TimerEvent: {}
+[37.765563] (-) TimerEvent: {}
+[37.865978] (-) TimerEvent: {}
+[37.966372] (-) TimerEvent: {}
+[38.066922] (-) TimerEvent: {}
+[38.167313] (-) TimerEvent: {}
+[38.176402] (onecim) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/babangida/ros_ws/build/onecim/build', '--no-deps', 'install_data'], 'cwd': '/home/babangida/ros_ws/build/onecim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'babangida', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/babangida/ros_ws/install/trafficrecord/lib:/home/babangida/ros_ws/install/dsrcmsg/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/babangida', 'OLDPWD': '/home/babangida', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/babangida/ros_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'babangida', 'NAME': 'DeBangis', 'WSL_INTEROP': '/run/WSL/2679_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/home/babangida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.4.101-hotspot/bin:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_333/bin:/mnt/c/Program Files/Java/jre1.8.0_333/bin:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/IncrediBuild:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Daddy/eclipse/jee-2022-12/eclipse/javafx-sdk-19.0.2.1/lib:/mnt/c/Users/Daddy/AppData/Roaming/Python/Python39/Scripts:/mnt/c/wamp64/bin/php/php7.4.33:/mnt/c/xampp/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/Eclipse/Sumo/bin/:/mnt/c/Program Files (x86)/Eclipse/Sumo/tools/:/mnt/c/Users/Daddy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Daddy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Daddy/AppData/Roaming/npm:/mnt/c/Users/Daddy/.dotnet/tools:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/Daddy/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PyCharm 2023.2/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Daddy/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin', 'WT_SESSION': '6ffa9fef-f76a-4ed8-8c9d-cbb3cf16ce1b', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/babangida/ros_ws/install/onecim:/home/babangida/ros_ws/install/cim:/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/reactivemethods:/home/babangida/ros_ws/install/dsrcmsg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/babangida/ros_ws/build/onecim', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/babangida/ros_ws/install/trafficrecord:/home/babangida/ros_ws/install/dsrcmsg', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[38.267432] (-) TimerEvent: {}
+[38.367786] (-) TimerEvent: {}
+[38.468130] (-) TimerEvent: {}
+[38.502397] (onecim) StdoutLine: {'line': b'running develop\n'}
+[38.568310] (-) TimerEvent: {}
+[38.668763] (-) TimerEvent: {}
+[38.714468] (onecim) StdoutLine: {'line': b'running egg_info\n'}
+[38.714956] (onecim) StdoutLine: {'line': b'writing onecim.egg-info/PKG-INFO\n'}
+[38.715428] (onecim) StdoutLine: {'line': b'writing dependency_links to onecim.egg-info/dependency_links.txt\n'}
+[38.715834] (onecim) StdoutLine: {'line': b'writing entry points to onecim.egg-info/entry_points.txt\n'}
+[38.716145] (onecim) StdoutLine: {'line': b'writing requirements to onecim.egg-info/requires.txt\n'}
+[38.716499] (onecim) StdoutLine: {'line': b'writing top-level names to onecim.egg-info/top_level.txt\n'}
+[38.761737] (onecim) StdoutLine: {'line': b"reading manifest file 'onecim.egg-info/SOURCES.txt'\n"}
+[38.763240] (onecim) StdoutLine: {'line': b"writing manifest file 'onecim.egg-info/SOURCES.txt'\n"}
+[38.768897] (-) TimerEvent: {}
+[38.809880] (onecim) StdoutLine: {'line': b'running build_ext\n'}
+[38.810446] (onecim) StdoutLine: {'line': b'Creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim.egg-link (link to .)\n'}
+[38.811696] (onecim) StdoutLine: {'line': b'Installing ewfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.812211] (onecim) StdoutLine: {'line': b'Installing fisonecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.812442] (onecim) StdoutLine: {'line': b'Installing fisonecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.812697] (onecim) StdoutLine: {'line': b'Installing genveh script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.812911] (onecim) StdoutLine: {'line': b'Installing onecimew script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.813332] (onecim) StdoutLine: {'line': b'Installing onecimloopew script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.813692] (onecim) StdoutLine: {'line': b'Installing onecimloopsn script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.813952] (onecim) StdoutLine: {'line': b'Installing onecimloopstatictls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.814174] (onecim) StdoutLine: {'line': b'Installing onecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.814397] (onecim) StdoutLine: {'line': b'Installing onecimsn script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.814703] (onecim) StdoutLine: {'line': b'Installing onecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.814951] (onecim) StdoutLine: {'line': b'Installing playde script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.815277] (onecim) StdoutLine: {'line': b'Installing playpp script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.815517] (onecim) StdoutLine: {'line': b'Installing rectraffic script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.815894] (onecim) StdoutLine: {'line': b'Installing simspeed script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.816099] (onecim) StdoutLine: {'line': b'Installing snfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.816349] (onecim) StdoutLine: {'line': b'Installing veh script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.816549] (onecim) StdoutLine: {'line': b'Installing wypts script to /home/babangida/ros_ws/install/onecim/lib/onecim\n'}
+[38.817051] (onecim) StdoutLine: {'line': b'\n'}
+[38.817179] (onecim) StdoutLine: {'line': b'Installed /home/babangida/ros_ws/build/onecim\n'}
+[38.817260] (onecim) StdoutLine: {'line': b'running install_data\n'}
+[38.855936] (onecim) CommandEnded: {'returncode': 0}
+[38.869979] (-) TimerEvent: {}
+[38.973395] (-) TimerEvent: {}
+[39.077981] (-) TimerEvent: {}
+[39.178563] (-) TimerEvent: {}
+[39.184677] (onecim) JobEnded: {'identifier': 'onecim', 'rc': 0}
+[39.187210] (-) EventReactorShutdown: {}

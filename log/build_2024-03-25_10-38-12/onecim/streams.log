@@ -1,0 +1,35 @@
+[3.356s] Invoking command in '/home/babangida/ros_ws/build/onecim': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/onecim:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/onecim/build --no-deps install_data
+[3.819s] running develop
+[4.161s] running egg_info
+[4.161s] writing onecim.egg-info/PKG-INFO
+[4.161s] writing dependency_links to onecim.egg-info/dependency_links.txt
+[4.162s] writing entry points to onecim.egg-info/entry_points.txt
+[4.162s] writing requirements to onecim.egg-info/requires.txt
+[4.162s] writing top-level names to onecim.egg-info/top_level.txt
+[4.226s] reading manifest file 'onecim.egg-info/SOURCES.txt'
+[4.227s] writing manifest file 'onecim.egg-info/SOURCES.txt'
+[4.292s] running build_ext
+[4.293s] Creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim.egg-link (link to .)
+[4.294s] Installing ewfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.295s] Installing fisonecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.295s] Installing fisonecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.296s] Installing genveh script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.296s] Installing onecimew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.296s] Installing onecimloopew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.296s] Installing onecimloopsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.296s] Installing onecimloopstatictls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.296s] Installing onecimlooptls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.297s] Installing onecimsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.297s] Installing onecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.297s] Installing playde script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.297s] Installing playpp script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.297s] Installing rectraffic script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.297s] Installing simspeed script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.298s] Installing snfiscim script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.298s] Installing speed script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.298s] Installing veh script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.298s] Installing wypts script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[4.298s] 
+[4.298s] Installed /home/babangida/ros_ws/build/onecim
+[4.298s] running install_data
+[4.347s] Invoked command in '/home/babangida/ros_ws/build/onecim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/onecim:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/build/reactivemethods:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/onecim/build --no-deps install_data

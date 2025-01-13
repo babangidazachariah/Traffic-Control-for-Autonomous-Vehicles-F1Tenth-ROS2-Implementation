@@ -1,0 +1,6 @@
+[0.131s] Invoking command in '/home/debangis/ros_ws/build/trafficrecord': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/debangis/ros_ws/build/trafficrecord -- -j8 -l8
+[0.572s] CMake Error: The current CMakeCache.txt directory /home/debangis/ros_ws/build/trafficrecord/CMakeCache.txt is different than the directory /home/babangida/ros_ws/build/trafficrecord where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.648s] CMake Error: The source directory "/home/babangida/ros_ws/src/trafficrecord" does not exist.
+[0.648s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.649s] make: *** [Makefile:988: cmake_check_build_system] Error 1
+[0.651s] Invoked command in '/home/debangis/ros_ws/build/trafficrecord' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/debangis/ros_ws/build/trafficrecord -- -j8 -l8

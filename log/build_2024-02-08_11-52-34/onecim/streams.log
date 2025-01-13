@@ -1,0 +1,22 @@
+[1.924s] Invoking command in '/home/babangida/ros_ws/build/onecim': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/onecim:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/onecim/build --no-deps install_data
+[2.153s] running develop
+[2.290s] running egg_info
+[2.290s] writing onecim.egg-info/PKG-INFO
+[2.290s] writing dependency_links to onecim.egg-info/dependency_links.txt
+[2.290s] writing entry points to onecim.egg-info/entry_points.txt
+[2.290s] writing requirements to onecim.egg-info/requires.txt
+[2.290s] writing top-level names to onecim.egg-info/top_level.txt
+[2.322s] reading manifest file 'onecim.egg-info/SOURCES.txt'
+[2.323s] writing manifest file 'onecim.egg-info/SOURCES.txt'
+[2.356s] running build_ext
+[2.356s] Creating /home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages/onecim.egg-link (link to .)
+[2.357s] Installing onecimew script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[2.358s] Installing onecimsn script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[2.358s] Installing onecimtls script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[2.359s] Installing playde script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[2.359s] Installing playpp script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[2.359s] Installing simspeed script to /home/babangida/ros_ws/install/onecim/lib/onecim
+[2.359s] 
+[2.360s] Installed /home/babangida/ros_ws/build/onecim
+[2.360s] running install_data
+[2.382s] Invoked command in '/home/babangida/ros_ws/build/onecim' returned '0': PYTHONPATH=/home/babangida/ros_ws/build/onecim/prefix_override:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/trafficrecord/lib/python3.8/site-packages:/home/babangida/ros_ws/install/dsrcmsg/lib/python3.8/site-packages:/home/babangida/ros_ws/build/onecim:/home/babangida/ros_ws/install/onecim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/cim/lib/python3.8/site-packages:/home/babangida/ros_ws/install/reactivemethods/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/babangida/ros_ws/build/onecim/build --no-deps install_data
